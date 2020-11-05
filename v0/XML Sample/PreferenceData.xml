@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PreferenceData>
+    <partner>
+        <partnerKey>cnpj</partnerKey>
+        <partnerValue>13042274000195</partnerValue>
+    </partner>
+    <item>
+        <keyName>key1</keyName>
+        <keyValue>value1</keyValue>
+    </item>
+    <item>
+        <keyName>key2</keyName>
+        <keyValue>value2</keyValue>
+    </item>
+</PreferenceData>

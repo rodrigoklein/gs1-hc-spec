@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryRequest>
+    <queryRequestItem>
+        <parameterKey>param1_</parameterKey>
+        <parameterValue>parameterValue1</parameterValue>
+    </queryRequestItem>
+    <queryRequestItem>
+        <parameterKey>param2</parameterKey>
+        <parameterValue>parameterValue2</parameterValue>
+    </queryRequestItem>
+</QueryRequest>

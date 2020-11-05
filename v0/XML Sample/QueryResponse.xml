@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryResponse>
+    <partner>
+        <partnerKey>cnpj</partnerKey>
+        <partnerValue>13042274000195</partnerValue>
+    </partner>
+    <queryResponseItem>
+        <date>1604401505056</date>
+        <publicFileURL>http://www.domain/file_1234.xml</publicFileURL>
+    </queryResponseItem>
+    <queryResponseItem>
+        <date>1604401505056</date>
+        <publicFileURL>http://www.domain/file_5678.xml</publicFileURL>
+    </queryResponseItem>
+</QueryResponse>

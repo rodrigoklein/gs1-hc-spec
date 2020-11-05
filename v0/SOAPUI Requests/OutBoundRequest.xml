@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.med.healthcare.gs1br.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getMessage>
+         <queryRequest><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryRequest>
+    <queryRequestItem>
+        <parameterKey>param1_</parameterKey>
+        <parameterValue>parameterValue1</parameterValue>
+    </queryRequestItem>
+    <queryRequestItem>
+        <parameterKey>param2</parameterKey>
+        <parameterValue>parameterValue2</parameterValue>
+    </queryRequestItem>
+</QueryRequest>]]></queryRequest>
+      </ws:getMessage>
+   </soapenv:Body>
+</soapenv:Envelope>

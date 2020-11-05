@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.med.healthcare.gs1br.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:sendMessage>
+         <inboundMessage><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<InBoundMessage>
+    <partnerFrom>
+        <partnerKey>cnpj</partnerKey>
+        <partnerValue>23042274000165</partnerValue>
+    </partnerFrom>
+    <partnerTo>
+        <partnerKey>cnpj</partnerKey>
+        <partnerValue>13042274000195</partnerValue>
+    </partnerTo>
+    <publicFileURL>https://host.domain/files/transactionid.xml</publicFileURL>
+    <date>1603786209742</date>
+</InBoundMessage>]]></inboundMessage>
+      </ws:sendMessage>
+   </soapenv:Body>
+</soapenv:Envelope>
