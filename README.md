@@ -24,6 +24,8 @@ The GS1 Horizontal Communication working group can address this problem by putti
 
 This neutral standard can solve the problem we have today where we have many Level 4 companies in the market that have a lot of data but no standard connections among them. This situation is forcing trading partners to manage many connections to keep their business running increasing the operational costs for all players.
 
+For this standard doesn´t matter the content you are sending to the next node of the supply chain. It can be (preferred) the ANVISA SNCM files, GS1 EPCIS, Eletronic Invoice xml or any other file.
+
 Using this approach we believe that we can have a cost effective solution that can enable companies and providers to exchange information and explore the value of the data around an open standard.
 
 If you believe that you can cooperate with us, please stay in touch with us using the following contacts below.
