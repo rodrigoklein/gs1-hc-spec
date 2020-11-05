@@ -4,8 +4,6 @@
             targetNamespace="http://hc.gs1br.org.br/"
      version="0.01">
 
-
- 
     <xs:complexType name="Error">
       <xs:sequence>
         <xs:element name="errorCode" type="xs:string" />
@@ -76,11 +74,4 @@
     </xs:complexType>
   </xs:element>  
 
-    
-
-    
-
- 
-    
-    
 </xs:schema>
