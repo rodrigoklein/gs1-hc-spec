@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://hc.gs1br.org.br/"
+            targetNamespace="http://hc.gs1br.org.br/"
+     version="0.01">
+
+
+ 
+    <xs:complexType name="Error">
+      <xs:sequence>
+        <xs:element name="errorCode" type="xs:string" />
+        <xs:element name="errorDescription" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+
+   <xs:element name="ErrorMessage">
+       <xs:complexType>
+    <xs:sequence> 
+    <xs:element name="error" type="Error"/>    
+    </xs:sequence>
+              </xs:complexType>
+  </xs:element>  
+    
+    <xs:complexType name="file">
+		<xs:choice>
+			<xs:element name="fileURL" type="xs:string"/>
+			<xs:element name="fileContent" type="xs:base64Binary">
+            </xs:element>			
+		</xs:choice>
+	</xs:complexType>
+        
+        
+    <xs:complexType name="Partner">
+      <xs:sequence>
+        <xs:element name="partnerKey" type="xs:string" />
+        <xs:element name="partnerValue" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+    
+     <xs:element name="InBoundMessage">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="partnerFrom" type="Partner"/>         
+                <xs:element name="partnerTo" type="Partner"/>   
+               
+                <xs:element name="data" type="file" />
+                <xs:element name="date" type="xs:unsignedLong" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+     <xs:element name="InboundResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="date" type="xs:unsignedLong" />
+        <xs:element name="partner" type="Partner"/>   
+        <xs:element name="receipt" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>  
+
+    
+   <xs:element name="PreferenceData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="partner" type="Partner"/>   
+        <xs:element maxOccurs="unbounded" name="item">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="keyName" type="xs:string" />
+              <xs:element name="keyValue" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>  
+
+    
+
+    
+
+ 
+    
+    
+</xs:schema>
