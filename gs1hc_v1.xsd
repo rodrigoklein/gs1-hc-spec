@@ -12,7 +12,6 @@
 		</xs:choice>
 	</xs:complexType>
         
-        
     <xs:complexType name="Partner">
       <xs:sequence>
         <xs:element name="partnerKey" type="xs:string" />
@@ -49,10 +48,6 @@
     </xs:complexType>
   </xs:element>
     
-
-   
-   
-
   <xs:element name="QueryResponse">
       <xs:complexType>
             <xs:sequence>
@@ -71,16 +66,13 @@
        </xs:complexType>
   </xs:element>  
     
-   
-    
-     <xs:element name="InBoundMessage">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="partnerFrom" type="Partner"/>         
-                <xs:element name="partnerTo" type="Partner"/>   
-               
-                <xs:element name="data" type="file" />
-                <xs:element name="date" type="xs:unsignedLong" />
+  <xs:element name="InboundMessage">
+       <xs:complexType>
+           <xs:sequence>
+              <xs:element name="partnerFrom" type="Partner"/>         
+               <xs:element name="partnerTo" type="Partner"/>                
+               <xs:element name="data" type="file" />
+               <xs:element name="date" type="xs:unsignedLong" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -94,7 +86,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>  
-
     
    <xs:element name="PreferenceData">
     <xs:complexType>
