@@ -10,13 +10,47 @@
         <xs:element name="errorDescription" type="xs:string" />
       </xs:sequence>
     </xs:complexType>
+    
+      <xs:element name="QueryRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="queryRequestItem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="parameterKey" type="xs:string" />
+              <xs:element name="parameterValue" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    
 
-   <xs:element name="ErrorMessage">
+    <xs:complexType name="QueryResponseItem">
+      <xs:sequence>
+        <xs:element name="date" type="xs:unsignedLong" />
+      <xs:element name="data" type="file" />
+      </xs:sequence>
+    </xs:complexType>
+   
+
+  <xs:element name="QueryResponse">
+      <xs:complexType>
+            <xs:sequence>
+                <xs:element name="partner" type="Partner"/>         
+                <xs:element maxOccurs="unbounded" name="QueryResponseItem"
+                            type="QueryResponseItem" />
+            </xs:sequence>
+        </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ErrorMessage">
        <xs:complexType>
-    <xs:sequence> 
-    <xs:element name="error" type="Error"/>    
-    </xs:sequence>
-              </xs:complexType>
+            <xs:sequence> 
+              <xs:element name="error" type="Error"/>    
+            </xs:sequence>
+       </xs:complexType>
   </xs:element>  
     
     <xs:complexType name="file">
