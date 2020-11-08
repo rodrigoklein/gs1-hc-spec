@@ -4,7 +4,9 @@ XSD and XML sample repository for GS1 working group
 
 ################################
 
-This repository is to share files during the Work in Progress
+# This repository is to share files during the Work in Progress
+
+################################
 
 # Horizontal Communication.
 
