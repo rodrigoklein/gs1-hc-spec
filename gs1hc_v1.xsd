@@ -70,7 +70,8 @@
        <xs:complexType>
            <xs:sequence>
               <xs:element name="partnerFrom" type="Partner"/>         
-               <xs:element name="partnerTo" type="Partner"/>                
+               <xs:element name="partnerTo" type="Partner"/>
+               <xs:element name="carrier" type="Partner"/>   
                <xs:element name="data" type="file" />
                <xs:element name="date" type="xs:unsignedLong" />
             </xs:sequence>
