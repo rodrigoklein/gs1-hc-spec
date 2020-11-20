@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2020-11-20T19:32:45.154-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+    <partner>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13042274000195</partnerValue>
+    </partner>
+    <QueryResponseItem>
+        <date>2020-11-20T19:32:45.154-03:00</date>
+        <content>
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-20T19:32:45.154-03:00</date>
+        <content>
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-20T19:32:45.155-03:00</date>
+        <content>
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-20T19:32:45.155-03:00</date>
+        <content>
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-20T19:32:45.156-03:00</date>
+        <content>
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+</QueryResponse>
