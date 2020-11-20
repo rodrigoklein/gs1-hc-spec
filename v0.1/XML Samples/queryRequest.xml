@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<QueryRequest id="123456978696050595050AAAABBBDDDDD" date="2020-11-20T19:32:45.139-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+<QueryRequest id="123456978696050595050AAAABBBDDDDD" date="2020-11-20T20:30:07.704-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>

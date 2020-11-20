@@ -303,7 +303,7 @@
                             minOccurs="1"
                             maxOccurs="1" />
                 <xs:element name="data" type="infolist"
-                            minOccurs="1">
+                            minOccurs="1" maxOccurs="unbounded">
                     
                 </xs:element>
             </xs:sequence>
