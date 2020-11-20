@@ -1,0 +1,431 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Docs the schema gs1hc_v1.xsd in GS1 Horizontal Communication - Working Group </title>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+                      EnsureInFrame('Schema', 'gs1hc_v1_xsd');
+                    </script><div class="pageheader">
+         Documentation for GS1 Horizontal Communication - Working Group 
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>gs1hc_v1.xsd</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Target Namespace:</b></td>
+               <td><a href="http___hc_gs1br_org_br_.html">http://hc.gs1br.org.br/</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;!-- Created with Liquid XML 2014 Starter Edition 12.2.8.5459 (http://www.liquid-technologies.com) --&gt;
+&lt;xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://hc.gs1br.org.br/"
+           targetNamespace="http://hc.gs1br.org.br/"
+           version="0.1"&gt;
+    
+    
+    &lt;xs:simpleType name="id"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;id field use in each message inside the schema.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:restriction base="xs:string"&gt;
+            &lt;xs:maxLength value="50" /&gt;
+            &lt;xs:pattern value="[A-Z][0-9]" /&gt;
+        &lt;/xs:restriction&gt;
+    &lt;/xs:simpleType&gt;
+    
+        
+        &lt;xs:simpleType name="UtcOnlyDateTime"&gt;
+		&lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;A strict subset of the XSD standard dateTime type (ISO 8601), accepting only dateTime values conforming to the format "yyyy-mm-ddThh:mm:ssZ".&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+		&lt;xs:restriction base="xs:dateTime"&gt;
+			&lt;xs:pattern value=".*:[0-9]{2}Z"/&gt;
+		&lt;/xs:restriction&gt;
+	&lt;/xs:simpleType&gt;
+
+   
+ &lt;xs:simpleType name="format"&gt;   
+     	&lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;The format of the message inside the field content/file. It is to help pre processors to handle the message with the right transformation&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+    &lt;xs:restriction base="xs:string"&gt;
+      &lt;xs:enumeration value="SNCM"/&gt;
+      &lt;xs:enumeration value="EPCIS"/&gt;
+      &lt;xs:enumeration value="HC"/&gt;
+      &lt;xs:enumeration value="eINVOICE"/&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;
+
+    
+  &lt;xs:complexType name="info"&gt;
+      		&lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Info field for general purporses.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="value"
+                        type="xs:string"&gt;              
+			&lt;/xs:element&gt;
+		&lt;/xs:sequence&gt;
+                &lt;xs:attribute name="key"
+                          type="xs:string"/&gt;
+	&lt;/xs:complexType&gt;  
+    
+    
+    &lt;xs:complexType name="infolist"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Info list field for general purporses.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="info"
+                        type="info"&gt;&lt;/xs:element&gt;
+		&lt;/xs:sequence&gt;
+	&lt;/xs:complexType&gt;    
+    
+    
+  &lt;xs:simpleType name="type"&gt;
+      &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;The types for each message we can find inside the envelope.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+    &lt;xs:restriction base="xs:string"&gt;
+      &lt;xs:enumeration value="Shipment"/&gt; &lt;!-- Type SNCM/EPCIS --&gt;
+      &lt;xs:enumeration value="Receiving"/&gt; &lt;!-- Type SNCM/EPCIS --&gt;
+      &lt;xs:enumeration value="Substitution"/&gt; &lt;!-- Type SNCM --&gt;
+      &lt;xs:enumeration value="Revocation"/&gt; &lt;!-- Type SNCM --&gt;        
+      &lt;xs:enumeration value="Refusal"/&gt; &lt;!-- Type HC --&gt;
+      &lt;xs:enumeration value="Damage"/&gt; &lt;!-- Type HC --&gt;
+      &lt;xs:enumeration value="ContentDif"/&gt; &lt;!-- Type HC --&gt;
+      &lt;xs:enumeration value="UnableToReceive"/&gt; &lt;!--Type HC --&gt;
+    &lt;/xs:restriction&gt;
+  &lt;/xs:simpleType&gt;   
+
+
+    &lt;xs:attribute name="version"
+                  type="xs:string" /&gt;
+    &lt;xs:attribute name="encoding"
+                  type="xs:string" /&gt;
+    
+    
+    &lt;xs:complexType name="file"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Element to carry the information or the file. It can be a base64 String or a file url to use in case we have larger files.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:choice&gt;
+                &lt;xs:element name="fileURL"
+                            type="xs:string" /&gt;
+                &lt;xs:element name="fileContent"
+                            type="xs:base64Binary" /&gt;
+            &lt;/xs:choice&gt;
+        &lt;/xs:sequence&gt;
+        &lt;xs:attribute name="format"
+                      type="format" /&gt;
+        &lt;xs:attribute name="type"
+                      type="type" /&gt;
+        &lt;xs:attribute name="schemaVersion"
+                      type="xs:string" /&gt;
+        &lt;xs:attribute name="encoding"
+                      type="xs:string" /&gt;
+    &lt;/xs:complexType&gt;
+    
+    &lt;xs:complexType name="Partner"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;The trading partner.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="partnerKey"
+                        type="xs:string" /&gt;
+            &lt;xs:element name="partnerValue"
+                        type="xs:string" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    
+    
+    &lt;xs:complexType name="Error"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Error field&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="errorCode"
+                        type="xs:string" /&gt;
+            &lt;xs:element name="errorDescription"
+                        type="xs:string" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    
+    &lt;xs:complexType name="QueryResponseItem"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;QueryResponseItem is the element of the list inside the query response.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:sequence&gt;
+            &lt;xs:element name="date"
+                        type="UtcOnlyDateTime"
+                        minOccurs="1"
+                        maxOccurs="1" /&gt;
+            &lt;xs:element name="content"
+                        type="file"
+                        minOccurs="1"
+                        maxOccurs="1" /&gt;
+        &lt;/xs:sequence&gt;
+    &lt;/xs:complexType&gt;
+    
+    &lt;xs:element name="QueryRequest"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Query request is the information we need to send against the webservice to query information. The response is the QueryResponse with a list of files/urls&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element name="partnerFrom"
+                            type="Partner"
+                            minOccurs="1"
+                            maxOccurs="1" /&gt;
+                &lt;xs:element name="partnerTo"
+                            type="Partner"
+                            minOccurs="1"
+                            maxOccurs="1" /&gt;
+                &lt;xs:element maxOccurs="unbounded"
+                            name="queryRequestItem"&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:sequence&gt;
+                            &lt;xs:element name="parameterKey"
+                                        type="xs:string" /&gt;
+                            &lt;xs:element name="parameterValue"
+                                        type="xs:string" /&gt;
+                        &lt;/xs:sequence&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+            &lt;xs:attribute name="id"
+                          type="id" /&gt;
+            &lt;xs:attribute name="date"
+                          type="UtcOnlyDateTime" /&gt;
+            &lt;xs:attribute name="schemaVersion"
+                          type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name="QueryResponse"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;QueryResponse is the element we receive after query the query method inside the webservice&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element name="partner"
+                            type="Partner"
+                            minOccurs="1" /&gt;
+                &lt;xs:element minOccurs="1"
+                            maxOccurs="unbounded"
+                            name="QueryResponseItem"
+                            type="QueryResponseItem" /&gt;
+            &lt;/xs:sequence&gt;
+            &lt;xs:attribute name="id"
+                          type="id" /&gt;
+            &lt;xs:attribute name="date"
+                          type="UtcOnlyDateTime" /&gt;
+            &lt;xs:attribute name="schemaVersion"
+                          type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name="ErrorMessage"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Error message.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element name="error"
+                            type="Error"
+                            minOccurs="1" /&gt;
+            &lt;/xs:sequence&gt;
+                        &lt;xs:attribute name="id"
+                          type="id" /&gt;
+                        &lt;xs:attribute name="date"
+                          type="UtcOnlyDateTime" /&gt;
+            &lt;xs:attribute name="schemaVersion"
+                          type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name="InboundMessage"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;InboundMessage is the element we need to send in the standard operations with the information/file &lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                                
+
+                &lt;xs:element name="partnerFrom"
+                            type="Partner"
+                            minOccurs="1" /&gt;
+                &lt;xs:element name="partnerTo"
+                            type="Partner"
+                            minOccurs="1" /&gt;
+                &lt;xs:element name="carrier"
+                            type="Partner" /&gt;
+                &lt;xs:element name="content"
+                            type="file"
+                            minOccurs="1" /&gt;
+
+                &lt;xs:element name="info"
+                            type="infolist" maxOccurs="1"&gt;&lt;/xs:element&gt;
+            
+            &lt;/xs:sequence&gt;
+                        &lt;xs:attribute name="id"
+                          type="id" /&gt;
+                        &lt;xs:attribute name="date"
+                          type="UtcOnlyDateTime" /&gt;
+            &lt;xs:attribute name="schemaVersion"
+                          type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name="InboundResponse"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;InboundResponse is the result of the InboundMessage delivery.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+
+                &lt;xs:element name="partner"
+                            type="Partner"
+                            minOccurs="1"
+                            maxOccurs="1" /&gt;
+                &lt;xs:choice&gt;
+                            &lt;xs:element name="error"
+                            type="Error"
+                            minOccurs="1" /&gt;
+                            &lt;xs:element name="receipt"
+                            type="xs:string"
+                            minOccurs="1"
+                            maxOccurs="1" /&gt;
+				&lt;/xs:choice&gt;
+
+            &lt;/xs:sequence&gt;
+
+                        &lt;xs:attribute name="id"
+                          type="id" /&gt;
+                        &lt;xs:attribute name="date"
+                          type="UtcOnlyDateTime" /&gt;
+            &lt;xs:attribute name="schemaVersion"
+                          type="xs:string" /&gt;
+            
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+    &lt;xs:element name="PreferenceData"&gt;
+        &lt;xs:annotation&gt;
+			&lt;xs:documentation&gt;Response of the preferences Webservice Method.&lt;/xs:documentation&gt;
+		&lt;/xs:annotation&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+                
+
+                &lt;xs:element name="partner"
+                            type="Partner"
+                            minOccurs="1"
+                            maxOccurs="1" /&gt;
+                &lt;xs:element name="data" type="infolist"
+                            minOccurs="1"&gt;
+                    
+                &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+             &lt;xs:attribute name="id"
+                          type="id" /&gt;
+            &lt;xs:attribute name="date"
+                          type="UtcOnlyDateTime" /&gt;
+            &lt;xs:attribute name="schemaVersion"
+                          type="xs:string" /&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+&lt;/xs:schema&gt;
+</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="Attribute" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Attributes:</b></td>
+            </tr>
+            <tr id="Attribute_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="encoding.html">encoding</a></li>
+                     <li><a href="version.html">version</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="ComplexType" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>ComplexTypes:</b></td>
+            </tr>
+            <tr id="ComplexType_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="error.html">Error</a></li>
+                     <li><a href="partner.html">Partner</a></li>
+                     <li><a href="queryresponseitem.html">QueryResponseItem</a></li>
+                     <li><a href="file.html">file</a></li>
+                     <li><a href="info.html">info</a></li>
+                     <li><a href="infolist.html">infolist</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Elements:</b></td>
+            </tr>
+            <tr id="Element_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="errormessage.html">ErrorMessage</a></li>
+                     <li><a href="inboundmessage.html">InboundMessage</a></li>
+                     <li><a href="inboundresponse.html">InboundResponse</a></li>
+                     <li><a href="preferencedata.html">PreferenceData</a></li>
+                     <li><a href="queryrequest.html">QueryRequest</a></li>
+                     <li><a href="queryresponse.html">QueryResponse</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="SimpleType" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>SimpleTypes:</b></td>
+            </tr>
+            <tr id="SimpleType_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="utconlydatetime.html">UtcOnlyDateTime</a></li>
+                     <li><a href="format1.html">format</a></li>
+                     <li><a href="id6.html">id</a></li>
+                     <li><a href="type1.html">type</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter"> 
+         Generated using <a href="http://www.liquid-technologies.com/">Liquid XML 2014 Starter Edition 12.2.8.5459</a><br></br>Featuring <a href="http://www.liquid-technologies.com/Xml-Schema-Editor.aspx">Xml Schema Editor</a></div>
+   </body>
+</html>
