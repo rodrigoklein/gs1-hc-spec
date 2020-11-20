@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item data in GS1 Horizontal Communication - Working Group </title>
+      <title>Docs for schema item data in GS1 Brazil Horizontal Communication Working Group</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('Element', 'data');
                     </script><div class="pageheader">
-         Documentation for GS1 Horizontal Communication - Working Group 
+         Documentation for GS1 Brazil Horizontal Communication Working Group
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -38,7 +38,7 @@
             </tr>
             <tr>
                <td class="label" width="120px;"><b>MaxOccurs</b></td>
-               <td>(1)</td>
+               <td>unbounded</td>
             </tr>
             <tr>
                <td class="label" width="120px;"><b>Abstract</b></td>
@@ -54,11 +54,11 @@
             </tr>
             <tr id="xsdDiagram_body_id">
                <td><map name="DiagramMap" id="DiagramMap">
-                     <area shape="rect" coords="483,85,624,110" href="value.html" alt="Drilldown into value"></area>
-                     <area shape="rect" coords="438,53,579,78" href="key.html" alt="Drilldown into key"></area>
-                     <area shape="rect" coords="418,28,632,139" href="info.html" alt="Drilldown into info"></area>
-                     <area shape="rect" coords="252,71,393,96" href="info1.html" alt="Drilldown into info"></area>
-                     <area shape="rect" coords="187,2,640,168" href="infolist.html" alt="Drilldown into infolist"></area></map><img src="images/data.png" border="0" alt="XSD Diagram of data" usemap="#DiagramMap"></img></td>
+                     <area shape="rect" coords="481,85,622,110" href="value.html" alt="Drilldown into value"></area>
+                     <area shape="rect" coords="436,53,577,78" href="key.html" alt="Drilldown into key"></area>
+                     <area shape="rect" coords="416,28,630,139" href="info.html" alt="Drilldown into info"></area>
+                     <area shape="rect" coords="250,71,391,96" href="info1.html" alt="Drilldown into info"></area>
+                     <area shape="rect" coords="185,2,638,168" href="infolist.html" alt="Drilldown into infolist"></area></map><img src="images/data.png" border="0" alt="XSD Diagram of data" usemap="#DiagramMap"></img></td>
             </tr>
          </tbody>
       </table>
@@ -70,7 +70,7 @@
             </tr>
             <tr id="xsdCode_body_id">
                <td><pre><code>&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;xs:element name="data" type="infolist" minOccurs="1"&gt;&lt;/xs:element&gt;</code></pre></td>
+&lt;xs:element name="data" type="infolist" minOccurs="1" maxOccurs="unbounded"&gt;&lt;/xs:element&gt;</code></pre></td>
             </tr>
          </tbody>
       </table>
