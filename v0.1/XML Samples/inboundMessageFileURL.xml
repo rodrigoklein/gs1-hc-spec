@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2020-11-20T20:30:07.686-03:00" xmlns="http://hc.gs1br.org.br/">
+<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2020-11-21T19:04:41.650-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
-        <partnerKey>13041786000176</partnerKey>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13041786000176</partnerValue>
     </partnerTo>
     <carrier>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
     </carrier>
-    <content>
-        <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL>
+    <content format="SNCM" schemaVersion="1.0" encoding="XML">
+        <fileContent>PHNvYXBlbnY6RW52ZWxvcGUgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6c29hcGVudj0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbnZlbG9wZS8iIHhtbG5zOnNuY209Imh0dHBzOi8vc25jbS1wcm90b3RpcG8tdGVzdC5nYWVzaS5lbmcuYnIvc25jbSI+Cjxzb2FwZW52OkhlYWRlcj4KPG1zZ0hkciB4bWxucz0iaHR0cDovL3d3dy5hbnZpc2EuZ292LmJyL1NOQ00vd3NkbC9zdGF0dXMiPgo8ZGF0YVZlcnNpb24+MjAxOC0wNi0wNzwvZGF0YVZlcnNpb24+CjwvbXNnSGRyPgo8L3NvYXBlbnY6SGVhZGVyPgogPHNvYXBlbnY6Qm9keT4KPHNuY206ZXZ0T3V0IHNvYXBlbnY6ZW5jb2RpbmdTdHlsZT0iaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvc29hcC9lbmNvZGluZy8iPgo8ZGF0YU1zZyB4c2k6dHlwZT0ieHNkOiBzdHJpbmciPjwhW0NEQVRBW++7vzw/eG1sIHZlcnNpb249IjEuMCIgZW5jb2Rpbmc9InV0Zi04IiBzdGFuZGFsb25lPSJ5ZXMiPz4NCjxtc2dfZXZ0T3V0IHhtbG5zPSJodHRwOi8vc25jbS5hbnZpc2EuZ292LmJyLyI+DQogIDxkb2NJZD40M0MzNDMzMEE5RjA0N0Q3OEYwMDwvZG9jSWQ+DQogIDxjbG50Q3VyVGltZT4yMDIwLTA2LTI0VDExOjM4OjI4WjwvY2xudEN1clRpbWU+DQogIDx2ZXJzaW9uPjIwMTgtMDYtMDc8L3ZlcnNpb24+DQogIDxsb2NhbGU+cHQtQlI8L2xvY2FsZT4NCiAgPGVudmlyPjE8L2VudmlyPg0KICA8ZGNscm50Pg0KICAgIDxjbnBqPjYwNjU5NDYzMDAwMTkxPC9jbnBqPg0KICA8L2RjbHJudD4NCiAgPG1ickFndD4xMzA0MjI3NDAwMDE5NTwvbWJyQWd0Pg0KICA8dXNyQWd0PlQyUyBWMS4wMDwvdXNyQWd0Pg0KICA8cmVjZWlwdD4xMjEyMTI8L3JlY2VpcHQ+DQo8L21zZ19ldnRPdXQ+XV0+PC9kYXRhTXNnPgo8L3NuY206ZXZ0T3V0Pgo8L3NvYXBlbnY6Qm9keT4KPC9zb2FwZW52OkVudmVsb3BlPg==</fileContent>
     </content>
 </InboundMessage>

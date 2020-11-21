@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><QueryResponse xmlns="http://hc.gs1br.org.br/" date="2020-11-21T19:04:42.938-03:00" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+    <partner>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13042274000195</partnerValue>
+    </partner>
+    <QueryResponseItem>
+        <date>2020-11-21T19:04:42.938-03:00</date>
+        <content encoding="XML" format="SNCM" schemaVersion="1.0">
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-21T19:04:42.938-03:00</date>
+        <content encoding="XML" format="SNCM" schemaVersion="1.0">
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-1.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-21T19:04:42.938-03:00</date>
+        <content encoding="XML" format="SNCM" schemaVersion="1.0">
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-21T19:04:42.939-03:00</date>
+        <content encoding="XML" format="SNCM" schemaVersion="1.0">
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-3.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+    <QueryResponseItem>
+        <date>2020-11-21T19:04:42.939-03:00</date>
+        <content encoding="XML" format="EPCIS" schemaVersion="2.0">
+            <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-4.xml</fileURL>
+        </content>
+    </QueryResponseItem>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>pxA5GtZXMKa+9IVjt3GSyPMNNc4=</DigestValue></Reference></SignedInfo><SignatureValue>YmciZajXpRsiZ1l3uqWEwuCNKeOUSFVzs7/CU3PonFF/8Cyu9gL492LqJfiza6tw7NJkQSHos2py&#13;
+7W3zOF0l9C02ax7CiUjSFO6gMMGT2zjQuih+usyxF+YDuJ7niwE36rhsFmbhfhNsiDdu4Z5CCZa8&#13;
+dXuvL4ufz6vQWz3VQuP0XA8VKoMgSfmL/6FjcRujZdjRa6XS19KE80eePuxjwSfSNN13keET78Cs&#13;
+RzM202Z9Z99JybTcUDS9527Yrtkc01AvuUvxxG6VBAw8TTHS55LX+Dkfj8422H1NbPfEXIctaOuZ&#13;
+uU6SB00GKpvvEuOfrbKwDzlSP5nNWC7IP+EIUQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=29277404000109,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIH5zCCBc+gAwIBAgIQetrBJVxhnbg5Xlen0jyGXjANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
+IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
+DTIwMDMyNjExNTQxN1oXDTIxMDMyNjExNTQxN1owgdUxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;
+Q1AtQnJhc2lsMQswCQYDVQQIDAJTUDESMBAGA1UEBwwJU2FvIFBhdWxvMTYwNAYDVQQLDC1TZWNy&#13;
+ZXRhcmlhIGRhIFJlY2VpdGEgRmVkZXJhbCBkbyBCcmFzaWwgLSBSRkIxFjAUBgNVBAsMDVJGQiBl&#13;
+LUNOUEogQTExFzAVBgNVBAsMDjI5Mjc3NDA0MDAwMTA5MScwJQYDVQQDDB5UMiBTT0ZUV0FSRSBT&#13;
+IEE6MTMwNDIyNzQwMDAxOTUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLzg/6N1FU&#13;
+pipB/kaISrm/YC6yVCBbIgbLYXCErMmyPC60DpMLDcSgAa6yIa383NOVCYQY1Dnwrp286DimIX5Q&#13;
+qQrNQObxzqEW/5CSK3elzM7yhTt+/wNDHqKMlNweHmCBslFloojYEJJt1tysuuTVL18/zQKNORmY&#13;
+jGAodCg8/lOif6EXMJXixs2WnjcjXI92lxwS8ZqFaKEYIrLmw9YN2F46REMgTqZegDAY/PRiXvHR&#13;
+sg0EvoIfeo3v0pudJ4iaWnJfRmtqJAMHnQQwTMz4TKdfJqrCAdh8yyH0wK5oT95SzxLpZmrPdYNS&#13;
+GLJzFAGvqyfkGC2dcZEVDljesoC5AgMBAAGjggMNMIIDCTCBvAYDVR0RBIG0MIGxoD0GBWBMAQME&#13;
+oDQEMjA4MTIxOTc5MjE2MjU2MjU4ODAwMDAwMDAwMDAwMDAwMDAwMDI5MjkxNjA5N1NTUFNQoB8G&#13;
+BWBMAQMCoBYEFFJPRFJJR08gS0xFSU4gU0FOVE9ToBkGBWBMAQMDoBAEDjEzMDQyMjc0MDAwMTk1&#13;
+oBcGBWBMAQMHoA4EDDAwMDAwMDAwMDAwMIEbQ0FST0xJTkUuUEFVTElOT0BCRE8uQ09NLkJSMAkG&#13;
+A1UdEwQCMAAwHwYDVR0jBBgwFoAUU31/nb7RYdAgutqf44mnE3NYzUIwfwYDVR0gBHgwdjB0BgZg&#13;
+TAECAQwwajBoBggrBgEFBQcCARZcaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9y&#13;
+ZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWduX1JGQi9EUENfQUNfQ2VydGlzaWduX1JGQi5wZGYw&#13;
+gbwGA1UdHwSBtDCBsTBXoFWgU4ZRaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9y&#13;
+ZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25SRkJHNS9MYXRlc3RDUkwuY3JsMFagVKBShlBodHRw&#13;
+Oi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWdu&#13;
+UkZCRzUvTGF0ZXN0Q1JMLmNybDAOBgNVHQ8BAf8EBAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUHAwIG&#13;
+CCsGAQUFBwMEMIGsBggrBgEFBQcBAQSBnzCBnDBfBggrBgEFBQcwAoZTaHR0cDovL2ljcC1icmFz&#13;
+aWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9jZXJ0aWZpY2Fkb3MvQUNfQ2VydGlzaWdu&#13;
+X1JGQl9HNS5wN2MwOQYIKwYBBQUHMAGGLWh0dHA6Ly9vY3NwLWFjLWNlcnRpc2lnbi1yZmIuY2Vy&#13;
+dGlzaWduLmNvbS5icjANBgkqhkiG9w0BAQsFAAOCAgEAL/NRwfFz5rPGiszlDmnV6ZeW7GwqPM04&#13;
+2b9z1Ie3fMY+Suh5NvW8R6ysAFzth7Cxcf36X+XteyM7DG4b9ySwAoeCAEVbPTH8PXPqrL7DgSR6&#13;
+zT+egUYsOerb1QYE/uR1lOj5xTBtbAlgJWuYL6TZO/LsUfWLTXUROyM6JvuCFGxbpEGLUAX6ZzVh&#13;
+PN5jRhRiaNpmsNriDFYhb10LpwJ25Alxaou9QpjMOkpg90pRT6U5ee5jiDGPV+l0xkzy/rz3jYdv&#13;
+QVwe2xZFVX132+xJNcJcmR8dOluh03ex8G2BfWIxWNeg0CmPvl4TROOOdBGHyam7+FWXPimkqQCZ&#13;
+eUFNFIPlrqv+F+ac5Skg/Gket7URNfj4qLsXJ6bTpNXz6py0nIgd9EW14xGTcB8cKR/frexkQQtu&#13;
+ibCTbyPQpLA4ITpWMWknjYCyJ6vE9Af1rOR2HQCLwM5Tue5yMnf8yFHW0m47XvI5j2bqKCxk2Ud3&#13;
+y2FTqP01J9SwydopHElXQ5WfSXEGRJxOE0JDzpMvdr0PE/2l4/F8UWlXZRYCA6RLQ+io2VraFd0a&#13;
+Ljioym7hO3P69Dcd8dPL0uDtD10RMy+Y91NUDwR0qhE5mcthdmm5Bs1iTaSBL7j9bXS9KiTlb9oT&#13;
+DIVBHbSEl91xc4Cj1l+abe9EiS7JS9besd18cqFhjpw=</X509Certificate></X509Data></KeyInfo></Signature></QueryResponse>

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2020-11-20T20:30:07.593-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2020-11-21T19:04:41.650-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
-        <partnerKey>13041786000176</partnerKey>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13041786000176</partnerValue>
     </partnerTo>
     <carrier>
         <partnerKey>CNPJ</partnerKey>
