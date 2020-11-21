@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2020-11-21T19:04:42.938-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2020-11-21T19:11:45.877-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partner>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
     </partner>
     <QueryResponseItem>
-        <date>2020-11-21T19:04:42.938-03:00</date>
+        <date>2020-11-21T19:11:45.878-03:00</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2020-11-21T19:04:42.938-03:00</date>
+        <date>2020-11-21T19:11:45.878-03:00</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-1.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2020-11-21T19:04:42.938-03:00</date>
+        <date>2020-11-21T19:11:45.878-03:00</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2020-11-21T19:04:42.939-03:00</date>
+        <date>2020-11-21T19:11:45.878-03:00</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-3.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2020-11-21T19:04:42.939-03:00</date>
+        <date>2020-11-21T19:11:45.878-03:00</date>
         <content format="EPCIS" schemaVersion="2.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-4.xml</fileURL>
         </content>
