@@ -2,13 +2,13 @@
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
-      <title>Docs for schema item type in GS1 BR Horizontal Communication</title>
+      <title>Docs for schema item type in GS1 HC Working Group</title>
       <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
       <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
    <body style="margin:10px"><script type="text/javascript">
                       EnsureInFrame('SimpleType', 'type1');
                     </script><div class="pageheader">
-         Documentation for GS1 BR Horizontal Communication
+         Documentation for GS1 HC Working Group
       </div>
       <table cellpadding="0" cellspacing="0" class="mainHelp2">
          <tbody>
@@ -68,6 +68,8 @@
         &lt;!-- Format SNCM --&gt;
         &lt;xs:enumeration value="Revocation" /&gt;
         &lt;!-- Format SNCM --&gt;
+        &lt;xs:enumeration value="ReceivingConfirmation" /&gt;
+        &lt;!-- Format HC - Only Boxes/Pallets --&gt;
         &lt;xs:enumeration value="Refusal" /&gt;
         &lt;!-- Format HC --&gt;
         &lt;xs:enumeration value="Damage" /&gt;
@@ -77,6 +79,8 @@
         &lt;xs:enumeration value="SerialNumberRequest" /&gt;
         &lt;!-- Format HC --&gt;
         &lt;xs:enumeration value="UnableToReceive" /&gt;
+        &lt;!--Format HC --&gt;
+        &lt;xs:enumeration value="OTHER" /&gt;
         &lt;!--Format HC --&gt;
     &lt;/xs:restriction&gt;
 &lt;/xs:simpleType&gt;</code></pre></td>
@@ -118,6 +122,10 @@
                      </tr>
                      <tr>
                         <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>ReceivingConfirmation</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
                         <td>Refusal</td>
                      </tr>
                      <tr>
@@ -135,6 +143,10 @@
                      <tr>
                         <td class="label" width="120px;"><b>Enumeration</b></td>
                         <td>UnableToReceive</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>OTHER</td>
                      </tr>
                   </table>
                </td>
