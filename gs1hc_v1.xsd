@@ -37,6 +37,7 @@
       <xs:enumeration value="EPCIS"/>
       <xs:enumeration value="HC"/>
       <xs:enumeration value="eINVOICE"/>
+      <xs:enumeration value="OTHER"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -71,14 +72,16 @@
 			<xs:documentation>The types for each message we can find inside the envelope.</xs:documentation>
 		</xs:annotation>
     <xs:restriction base="xs:string">
-      <xs:enumeration value="Shipment"/> <!-- Type SNCM/EPCIS -->
-      <xs:enumeration value="Receiving"/> <!-- Type SNCM/EPCIS -->
-      <xs:enumeration value="Substitution"/> <!-- Type SNCM -->
-      <xs:enumeration value="Revocation"/> <!-- Type SNCM -->        
-      <xs:enumeration value="Refusal"/> <!-- Type HC -->
-      <xs:enumeration value="Damage"/> <!-- Type HC -->
-      <xs:enumeration value="ContentDif"/> <!-- Type HC -->
-      <xs:enumeration value="UnableToReceive"/> <!--Type HC -->
+      <xs:enumeration value="Shipment"/> <!-- Format SNCM/EPCIS -->
+      <xs:enumeration value="Receiving"/> <!-- Format SNCM/EPCIS -->
+      <xs:enumeration value="History"/> <!-- Format EPCIS -->
+      <xs:enumeration value="Substitution"/> <!-- Format SNCM -->
+      <xs:enumeration value="Revocation"/> <!-- Format SNCM -->        
+      <xs:enumeration value="Refusal"/> <!-- Format HC -->
+      <xs:enumeration value="Damage"/> <!-- Format HC -->
+      <xs:enumeration value="ContentDif"/> <!-- Format HC -->
+      <xs:enumeration value="SerialNumberRequest"/> <!-- Format HC -->
+      <xs:enumeration value="UnableToReceive"/> <!--Format HC -->
     </xs:restriction>
   </xs:simpleType>   
 
