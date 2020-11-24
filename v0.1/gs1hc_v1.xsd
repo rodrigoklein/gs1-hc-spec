@@ -77,12 +77,12 @@
       <xs:enumeration value="History"/> <!-- Format EPCIS -->
       <xs:enumeration value="Substitution"/> <!-- Format SNCM -->
       <xs:enumeration value="Revocation"/> <!-- Format SNCM -->
-      <xs:enumeration value="ReceivingConfirmation"/> <!-- Format HC - Only Boxes/Pallets -->
-      <xs:enumeration value="Refusal"/> <!-- Format HC -->
-      <xs:enumeration value="Damage"/> <!-- Format HC -->
-      <xs:enumeration value="ContentDif"/> <!-- Format HC -->
-      <xs:enumeration value="SerialNumberRequest"/> <!-- Format HC -->
-      <xs:enumeration value="UnableToReceive"/> <!--Format HC -->
+      <xs:enumeration value="ReceivingConfirmation"/> <!-- *Format HC - Only Boxes/Pallets - **** Maybe EPCIS -->
+      <xs:enumeration value="Refusal"/> <!-- *Format HC -->
+      <xs:enumeration value="Damage"/> <!-- *Format HC -->
+      <xs:enumeration value="ContentDif"/> <!-- *Format HC -->
+      <xs:enumeration value="SerialNumberRequest"/> <!-- *Format HC -->
+      <xs:enumeration value="UnableToReceive"/> <!-- *Format HC -->
       <xs:enumeration value="OTHER"/> <!--Format HC -->
     </xs:restriction>
   </xs:simpleType>   
