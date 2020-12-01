@@ -82,7 +82,6 @@
       <xs:enumeration value="Damage"/> <!-- *Format HC -->
       <xs:enumeration value="ContentDif"/> <!-- *Format HC -->
       <xs:enumeration value="SerialNumberRequest"/> <!-- *Format HC -->
-      <xs:enumeration value="UnableToReceive"/> <!-- *Format HC -->
       <xs:enumeration value="OTHER"/> <!--Format HC -->
     </xs:restriction>
   </xs:simpleType>   
