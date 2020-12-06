@@ -78,10 +78,6 @@
       <xs:enumeration value="Substitution"/> <!-- Format SNCM -->
       <xs:enumeration value="Revocation"/> <!-- Format SNCM -->
       <xs:enumeration value="ReceivingConfirmation"/> <!-- *Format HC - Only Boxes/Pallets - **** Maybe EPCIS -->
-      <xs:enumeration value="Refusal"/> <!-- *Format HC -->
-      <xs:enumeration value="Damage"/> <!-- *Format HC -->
-      <xs:enumeration value="ContentDif"/> <!-- *Format HC -->
-      <xs:enumeration value="SerialNumberRequest"/> <!-- *Format HC -->
       <xs:enumeration value="OTHER"/> <!--Format HC -->
     </xs:restriction>
   </xs:simpleType>   
@@ -235,8 +231,7 @@
 			<xs:documentation>InboundMessage is the element we need to send in the standard operations with the information/file </xs:documentation>
 		</xs:annotation>
         <xs:complexType>
-            <xs:sequence>
-                                
+            <xs:sequence>             
 
                 <xs:element name="partnerFrom"
                             type="Partner"
