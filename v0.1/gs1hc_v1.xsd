@@ -264,10 +264,16 @@
         <xs:complexType>
             <xs:sequence>
 
-                <xs:element name="partner"
+                <xs:element name="partnerFrom"
                             type="Partner"
                             minOccurs="1"
                             maxOccurs="1" />
+                
+                            <xs:element name="partnerTo"
+                            type="Partner"
+                            minOccurs="1"
+                            maxOccurs="1" />
+                
                 <xs:choice>
                             <xs:element name="error"
                             type="Error"
