@@ -6,7 +6,6 @@
            targetNamespace="http://hc.gs1br.org.br/"
            version="0.1">
     
-    
     <xs:simpleType name="id">
         <xs:annotation>
 			<xs:documentation>id field use in each message inside the schema.</xs:documentation>
