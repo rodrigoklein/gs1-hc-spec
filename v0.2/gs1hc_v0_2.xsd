@@ -286,6 +286,9 @@
         </xs:annotation>
         <xs:complexType>
             <xs:sequence>
+                
+                <xs:element name="expireDate" 
+                          type="UtcOnlyDateTime"/>
 
                 <xs:element name="partnerFrom"
                             type="Partner"
@@ -293,6 +296,7 @@
                 <xs:element name="partnerAttorney"
                             type="Partner"
                             minOccurs="1" />
+                
 
                 <xs:element name="info"
                             type="infolist" maxOccurs="1"></xs:element>
@@ -300,10 +304,10 @@
             </xs:sequence>
             <xs:attribute name="id"
                           type="id" />
+            
             <xs:attribute name="date"
-                          type="UtcOnlyDateTime" />
-            <xs:attribute name="expiredate"
-                          type="UtcOnlyDateTime" />
+                          type="UtcOnlyDateTime"/>
+           
             <xs:attribute name="schemaVersion"
                           type="xs:string" />
         </xs:complexType>
