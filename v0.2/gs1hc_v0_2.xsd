@@ -17,7 +17,7 @@
     </xs:simpleType>
     
         
-        <xs:simpleType name="UtcOnlyDateTime">
+    <xs:simpleType name="UtcOnlyDateTime">
 		<xs:annotation>
 			<xs:documentation>A strict subset of the XSD standard dateTime type (ISO 8601), accepting only dateTime values conforming to the format "yyyy-mm-ddThh:mm:ssZ".</xs:documentation>
 		</xs:annotation>
@@ -192,6 +192,7 @@
                           type="xs:string" />
         </xs:complexType>
     </xs:element>
+    
     <xs:element name="QueryResponse">
         <xs:annotation>
 			<xs:documentation>QueryResponse is the element we receive after query the query method inside the webservice</xs:documentation>
@@ -241,6 +242,7 @@
                           type="xs:string" />
         </xs:complexType>
     </xs:element>
+    
     <xs:element name="InboundMessage">
         <xs:annotation>
 			<xs:documentation>InboundMessage is the element we need to send in the standard operations with the information/file </xs:documentation>
@@ -276,6 +278,41 @@
                           type="xs:string" />
         </xs:complexType>
     </xs:element>
+
+
+    <xs:element name="AttorneyAuthorization">
+        <xs:annotation>
+            <xs:documentation>Attorney Authorization</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                
+                <xs:element name="expireDate" 
+                          type="UtcOnlyDateTime"/>
+
+                <xs:element name="partnerFrom"
+                            type="Partner"
+                            minOccurs="1" />
+                <xs:element name="partnerAttorney"
+                            type="Partner"
+                            minOccurs="1" />
+                
+
+                <xs:element name="info"
+                            type="infolist" maxOccurs="1"></xs:element>
+
+            </xs:sequence>
+            <xs:attribute name="id"
+                          type="id" />
+            
+            <xs:attribute name="date"
+                          type="UtcOnlyDateTime"/>
+           
+            <xs:attribute name="schemaVersion"
+                          type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    
     <xs:element name="InboundResponse">
         <xs:annotation>
 			<xs:documentation>InboundResponse is the result of the InboundMessage delivery.</xs:documentation>
