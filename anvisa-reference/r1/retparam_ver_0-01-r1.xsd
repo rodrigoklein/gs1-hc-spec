@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 	Author:			    Anvisa/Gaesi-USP
 	Updated:		    2020-12-04
@@ -12,7 +12,7 @@
     elementFormDefault="qualified"
     version="0.01">
     
-    <xsd:include schemaLocation="sncmtypes_ver_0-01-r1.xsd"/>
+    <xsd:include schemaLocation="sncmTypes.xsd"/>
     
     <xsd:element name="retParam">
         <xsd:complexType>
