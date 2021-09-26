@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-06-09T05:27:35.197-03:00" id="123456978696050595050AAAABBBDDDDD">
+<?xml version="1.0" encoding="UTF-8"?><InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-09-26T20:33:19Z" id="123456978696050595050AAAABBBDDDDD">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
@@ -14,11 +14,11 @@
     <content>
         <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL>
     </content>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>f0nHicGShlvsDLhRfp4xmSAQziI=</DigestValue></Reference></SignedInfo><SignatureValue>R97kY1tVD9NXTYs7ePOo3Kg8zY2XN7S8xPSF7tsQxZ1snxahjS4fZA4l0wuLMexL0ArTVV2kjXU7&#13;
-7LCKDKIBzf04byzRZ/IM4CZL+wVbm9zs2bNpxO13ZlxL91RU2Q5oOaB4x4gFGUzA8qaOSwLq57sb&#13;
-nhYjIgX37B/GOPHAbi1i7cRMpMG3uxKl0rz7+ql+ejfjKFxK9yJjULKdexXtYCBbl7UdY23X/Rn+&#13;
-/3VKrklRv/B1coZOy+f928B1HZNY9P5M9zpwtKt6/tv0uWvPUKgJ0Z0tSIFzbKBzF4ymMj8V65Ha&#13;
-8VemxkvBD/JecVIqiKaQQc8xbRbfBYlOjFZ1mg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>0I9vCAEI2hw+8XHZ3q8mKpt4eRU=</DigestValue></Reference></SignedInfo><SignatureValue>XqHhWBSU+zb6WO1e9RDK0z7LLGLMayfeiS/QL1siInFYbjmn0pLclxUrNLjRtLASLSo0h0MhGb1k&#13;
+nJvFEmw3C0glE5pl9YGTjpqApVLVWily4FnriQAWtqO3A6QxeWDSj30lMDFQ2oCCje7jaYI4daqE&#13;
+8lzZ59rn6QgK8p+4hKV5K8Ci822QoOIiaIXkV5bog0Tsv6N0Ilo0rRsp7wzHy/xtJv7Kbw6Ms/IL&#13;
+xqJYuoRSP7VzQFgmxUkBXwYFaoAgJG2vKM4jMt6CFaBwuxYjzVtxQOeyjnXNDJZwkMAHlYnbYDBM&#13;
+AeIyrgaXnvAdAUvvqDvJlEoVE8QB5x5iOa/e8w==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;

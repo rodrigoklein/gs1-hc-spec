@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-06-09T05:27:35.561-03:00" xmlns="http://hc.gs1br.org.br/">
+<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-09-26T20:33:20Z" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
@@ -15,9 +15,7 @@
     <content>
         <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL>
     </content>
-    <info>
-        <info key="AttorneyAuthorization">
-            <value>https://files.xxxx.com/0000000111212.xml</value>
-        </info>
+    <info key="AttorneyAuthorization">
+        <value>https://files.xxxx.com/0000000111212.xml</value>
     </info>
 </InboundMessage>

@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-06-09T05:27:35.638-03:00" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-09-26T20:33:20Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
     </partnerFrom>
+    <partnerTo>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13041786000176</partnerValue>
+    </partnerTo>
     <QueryResponseItem>
-        <date>2021-06-09T05:27:35.638-03:00</date>
+        <date>2021-09-26T20:33:20Z</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-06-09T05:27:35.638-03:00</date>
+        <date>2021-09-26T20:33:20Z</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-1.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-06-09T05:27:35.639-03:00</date>
+        <date>2021-09-26T20:33:20Z</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-06-09T05:27:35.639-03:00</date>
+        <date>2021-09-26T20:33:20Z</date>
         <content format="SNCM" schemaVersion="1.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-3.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-06-09T05:27:35.639-03:00</date>
+        <date>2021-09-26T20:33:20Z</date>
         <content format="EPCIS" schemaVersion="2.0" encoding="XML">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-4.xml</fileURL>
         </content>
