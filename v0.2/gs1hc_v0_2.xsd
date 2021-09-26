@@ -324,9 +324,7 @@
                             type="Partner"
                             minOccurs="1"
                             maxOccurs="1" />
-                
-                
-                
+
                 <xs:element name="mbrAgt"
                             type="Partner"
                             minOccurs="1"
@@ -336,9 +334,7 @@
                             type="Partner"
                             minOccurs="1"
                             maxOccurs="1" />
-                
-                
-                
+                                
                 <xs:choice>
                             <xs:element name="error"
                             type="Error"
@@ -348,17 +344,14 @@
                             minOccurs="1"
                             maxOccurs="1" />
 				</xs:choice>
-
-            </xs:sequence>
-
-                        <xs:attribute name="id"
-                          type="id" />
-                        <xs:attribute name="date"
-                          type="UtcOnlyDateTime" />
-            <xs:attribute name="schemaVersion"
-                          type="xs:string" />
-            
-        </xs:complexType>
+                </xs:sequence>
+                <xs:attribute name="id"
+                         type="id" />
+                <xs:attribute name="date"
+                         type="UtcOnlyDateTime" />
+                <xs:attribute name="schemaVersion"
+                          type="xs:string" />            
+            </xs:complexType>
     </xs:element>
     <xs:element name="PreferenceData">
         <xs:annotation>
@@ -367,14 +360,12 @@
         <xs:complexType>
             <xs:sequence>
                 
-
                 <xs:element name="partner"
                             type="Partner"
                             minOccurs="1"
                             maxOccurs="1" />
                 <xs:element name="data" type="infolist"
                             minOccurs="1" maxOccurs="unbounded">
-                    
                 </xs:element>
             </xs:sequence>
              <xs:attribute name="id"

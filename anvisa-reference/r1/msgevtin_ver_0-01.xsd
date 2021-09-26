@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns="http://sncm.anvisa.gov.br/"
     targetNamespace="http://sncm.anvisa.gov.br/"
     elementFormDefault="qualified"
     version="0.01">
     
-    <xsd:include schemaLocation="sncmTypes.xsd"/>
+    <xsd:include schemaLocation="sncmtypes_ver_0-01-r1.xsd"/>
     
     <xsd:element name="msgEvtIn">
         <xsd:complexType>
