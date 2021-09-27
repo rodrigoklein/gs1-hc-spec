@@ -48,24 +48,21 @@
 			<xs:documentation>Info list field for general purporses.</xs:documentation>
 		</xs:annotation>
         <xs:sequence>
-            <xs:sequence>
-              <!--  <xs:element name="key"
-                            type="xs:string"
-                            minOccurs="1"
-                            maxOccurs="1" />
-                -->
-                <xs:element name="value"
-                            type="xs:string"
-                            minOccurs="1"
-                            maxOccurs="1" />
-                </xs:sequence>
-		</xs:sequence>
-        <xs:attribute name="key" type="xs:string"/>
-	</xs:complexType>    
-    
-    
-  <xs:simpleType name="type">
-      <xs:annotation>
+            <xs:element maxOccurs="unbounded" name="info">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="key" type="xs:string" use="required" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:simpleType name="type">
+        <xs:annotation>
 			<xs:documentation>The types for each message we can find inside the envelope.</xs:documentation>
 		</xs:annotation>
     <xs:restriction base="xs:string">
@@ -264,7 +261,7 @@
                             type="file"
                             minOccurs="1" />
 
-                <xs:element name="info"
+                <xs:element name="additionalInfo"
                             type="infolist" maxOccurs="unbounded"></xs:element>
             
             </xs:sequence>
@@ -296,7 +293,7 @@
                             minOccurs="1" />
                 
 
-                <xs:element name="info"
+                <xs:element name="additionalInfo"
                             type="infolist" maxOccurs="1"></xs:element>
 
             </xs:sequence>
@@ -363,7 +360,7 @@
                             minOccurs="1"
                             maxOccurs="1" />
                 
-                <xs:element type="infolist" name="info"
+                <xs:element type="infolist" name="preferences"
                             minOccurs="1" maxOccurs="unbounded">
                 </xs:element>
             </xs:sequence>
