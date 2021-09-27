@@ -265,7 +265,7 @@
                             minOccurs="1" />
 
                 <xs:element name="info"
-                            type="infolist" maxOccurs="1"></xs:element>
+                            type="infolist" maxOccurs="unbounded"></xs:element>
             
             </xs:sequence>
                         <xs:attribute name="id"
@@ -363,7 +363,7 @@
                             minOccurs="1"
                             maxOccurs="1" />
                 
-                <xs:element type="infolist"
+                <xs:element type="infolist" name="info"
                             minOccurs="1" maxOccurs="unbounded">
                 </xs:element>
             </xs:sequence>
