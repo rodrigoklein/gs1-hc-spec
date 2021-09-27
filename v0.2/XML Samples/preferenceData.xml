@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<PreferenceData id="123456978696050595050AAAABBBDDDDD" date="2021-09-26T20:33:20Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+<PreferenceData id="123456978696050595050AAAABBBDDDDD" date="2021-09-27T06:13:29Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partner>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13041786000176</partnerValue>
     </partner>
-    <data key="key0">
-        <value>value0</value>
-    </data>
-    <data key="key1">
-        <value>value1</value>
-    </data>
-    <data key="key2">
-        <value>value2</value>
-    </data>
-    <data key="key3">
-        <value>value3</value>
-    </data>
-    <data key="key4">
-        <value>value4</value>
-    </data>
+    <preferences>
+        <info key="key0">value0</info>
+        <info key="key1">value1</info>
+        <info key="key2">value2</info>
+        <info key="key3">value3</info>
+        <info key="key4">value4</info>
+    </preferences>
 </PreferenceData>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<AttorneyAuthorization id="123456978696050595050AAAABBBDDDDD" date="2021-09-26T20:33:20Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+<AttorneyAuthorization id="123456978696050595050AAAABBBDDDDD" date="2021-09-27T06:13:29Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <expireDate>2021-12-01T00:00:00Z</expireDate>
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
