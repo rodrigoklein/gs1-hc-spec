@@ -167,6 +167,7 @@
                             minOccurs="1"
                             maxOccurs="1" />
                 
+                
                 <xs:element maxOccurs="unbounded"
                             name="queryRequestItem">
                     <xs:complexType>
@@ -178,6 +179,9 @@
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
+
+                <xs:element name="additionalInfo"
+                            type="infolist" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
             <xs:attribute name="id"
                           type="id" />
@@ -210,6 +214,9 @@
                             maxOccurs="unbounded"
                             name="QueryResponseItem"
                             type="QueryResponseItem" />
+
+                <xs:element name="additionalInfo"
+                            type="infolist" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
             <xs:attribute name="id"
                           type="id" />
@@ -339,6 +346,10 @@
                             minOccurs="1"
                             maxOccurs="1" />
 				</xs:choice>
+
+                <xs:element name="additionalInfo"
+                            type="infolist" maxOccurs="unbounded"></xs:element>
+                
                 </xs:sequence>
                 <xs:attribute name="id"
                          type="id" />
