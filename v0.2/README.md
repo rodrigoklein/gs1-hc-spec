@@ -18,7 +18,7 @@ This standard developed by a GS1 Brazil Workgroup developed some common artifact
 
 The standard basically implements a Webservice whith 3 simple methods that allows the data exchange between the companies. In addition we also developed some XML artifacts that can act as an Envelope to provide a standard wey to package and route messages among the supply chain.
 
-### What is the security of the HC Standard?
+### What are the technology and security of the HC Standard?
 
 In the beginning of the work, the workgroup made some assumptions to speedup the development and put the focus on the most important points to work. 
 
@@ -26,11 +26,12 @@ The main assumption were that we do not need stay focused on the technology beca
 
 Based on that, we have decided to keep the same stack that ANVISA is using. With this strategy we can save time discussing the technology and can save a lot of money in terms of software development because, the same developer that need to implement the vertical connection to the SNCM also can develop the horizontal communication.
 
-In this way, we are following the same security stack of the SNCM System that means:
+In this way, we are following the same stack of the SNCM System that means:
 
 - The use of the SSL (Secure Shell Layer) over HTTP communication.
 - Mutual Authentication using the ICP-Brasil Digital certificates
 - Electronic Signature on the XML messages to assure the authenticity and integrity of the messages.
+- SOAP Webservices
 
 ![image info](authSchema.png)
 
@@ -116,4 +117,18 @@ sJ8=</X509Certificate>
 	</Signature>
 </InboundMessage>
 ```
+
+### Anatomy of the Webservice?
+
+The technology behind the main interface of the Horizontal Communication is SOAP (Simple Object Access Protocol). This technology is a well known technology which many companies already have developers tha knows it.
+
+The Standard has only one webservice which contains 3 methods that enables the communication.
+
+The webservice named DataWS are responsible to make available the methods below.
+
+| Method | Description | Return|
+|--------|-------------|--------|
+|getMessage| Method responsible to provide a query interface with the system| QueryResponse |
+|sendMessage|Method responsible to provide a standard way to receive messages|InboundResponse|
+
 
