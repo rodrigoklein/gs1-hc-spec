@@ -2,13 +2,15 @@
 
 The information on this page explain how the horizontal communication works.
 
-### The need
+### Whats is the Horizontal Communication?
 
 If you are here, probably you are in developing something or you are in charge to manage a traceability project to follow the Brazil Regulation about the SNCM.
 
-Based on the ANVISA´s decision to keep their efforts to handle only the regulatory information about the drug traceability, the market had to find a way to improve the efficiency of the data exchange on the supply chain. 
+Based on the ANVISA´s decision to keep their efforts to handle only the Vertical Communication of the drug traceability, the market need to find a way to improve the efficiency of the data exchange on the supply chain. 
 
 This search for efficiency, means that we need to have some standard interfaces to provide a faster onboarding of the trading partners in Brazil. If we start looking only on the private market, we have more than 70000 drugstores, 2000 distributors and 400 pharmaceutical companies to connect. It can consume a lot of time (and money) when we look at the common way that the service providers usually use to connect the trading partners.
+
+
 
 ### What this standard implement
 
