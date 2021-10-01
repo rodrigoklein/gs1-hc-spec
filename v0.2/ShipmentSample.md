@@ -4,9 +4,9 @@ Imagine you are a Manufacturer and you are trying to send to a Distributor a tra
 
 First of all, you need to generate the information about your shipment and submit it to SNCM.
 
-In this scenario, you are the CNPJ 13042274000195 and you are sending 3 serialized units to the CNPJ 83042274000167.
+In this scenario, you are the CNPJ 15042274000195 and you are sending 3 serialized units to the CNPJ 83042274000167.
 
-- Sender - CNPJ 13042274000195
+- Sender - CNPJ 15042274000195
 - Receiver - CNPJ 83042274000167
 
 > Just to give a clear information, 
@@ -31,9 +31,9 @@ This is the message you sent to SNCM:
     <lc>pt-BR</lc>
     <env>1</env>
     <declarant>
-        <cnpj>13042274000195</cnpj>
+        <cnpj>15042274000195</cnpj>
     </declarant>
-    <mbrAgt>13042274000195</mbrAgt>
+    <mbrAgt>15042274000195</mbrAgt>
     <usrAgt>T2 Software S.A - V1.0</usrAgt>
     <evts>
         <shpt>
@@ -103,7 +103,7 @@ Packaging this message inside an InboundMessage we have the XML below.
 <InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-09-29T10:26:49Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
@@ -132,7 +132,7 @@ Once you do it, you need to send the InboundMessage through the webservice using
 <InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-09-29T10:26:49Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
@@ -187,7 +187,7 @@ If you get an error tag instead a receipt, knows that the message can´t be cons
 <InboundResponse id="123456978696050595050AAAABBBDDDDD" date="2021-09-29T10:26:49Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
