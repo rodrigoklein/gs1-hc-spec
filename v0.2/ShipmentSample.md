@@ -176,4 +176,27 @@ If the receiver has any problem with the message in receiving process, the serve
 
 These problems can be an unknown partner at that server, problems with the message format, problems with the Authorization, with the certificate, with the signature etc.
 
+### Webservice Response with Error
 
+Below you can find an InboundResponse with an Error.
+
+If you get an error tag instead a receipt, knows that the message can´t be consider delivered.
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<InboundResponse id="123456978696050595050AAAABBBDDDDD" date="2021-09-29T10:26:49Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+    <partnerFrom>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13042274000195</partnerValue>
+    </partnerFrom>
+    <partnerTo>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13041786000176</partnerValue>
+    </partnerTo>
+    <error>
+        <errorCode>1001</errorCode>
+        <errorDescription>No data</errorDescription>
+    </error>
+</InboundResponse>
+
+```
