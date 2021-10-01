@@ -37,27 +37,44 @@ In this way, we are following the same security stack of the SNCM System that me
 Below you can find a Sample Signed message with the specific tags needed by the XML Signature using X509 Certificates.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?><InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-10-01T16:42:00Z" id="123456978696050595050AAAABBBDDDDD">
-    <partnerFrom>
-        <partnerKey>CNPJ</partnerKey>
-        <partnerValue>15042274000195</partnerValue>
-    </partnerFrom>
-    <partnerTo>
-        <partnerKey>CNPJ</partnerKey>
-        <partnerValue>15041786000176</partnerValue>
-    </partnerTo>
-    <carrier>
-        <partnerKey>CNPJ</partnerKey>
-        <partnerValue>15042274000195</partnerValue>
-    </carrier>
-    <content>
-        <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL>
-    </content>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>1qLlpV5ntvfZyx2rn9DAreSAD1c=</DigestValue></Reference></SignedInfo><SignatureValue>kL2Y/AaOnFnubSClHJiPZTSOpfYDh6QYQZqbgxX4VPgf9kTbIJIzHogDtdFoxg2gGQN+bUDpyaOw&#13;
+<?xml version="1.0" encoding="UTF-8"?>
+<InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-10-01T16:42:00Z" id="123456978696050595050AAAABBBDDDDD">
+	<partnerFrom>
+		<partnerKey>CNPJ</partnerKey>
+		<partnerValue>15042274000195</partnerValue>
+	</partnerFrom>
+	<partnerTo>
+		<partnerKey>CNPJ</partnerKey>
+		<partnerValue>15041786000176</partnerValue>
+	</partnerTo>
+	<carrier>
+		<partnerKey>CNPJ</partnerKey>
+		<partnerValue>15042274000195</partnerValue>
+	</carrier>
+	<content>
+		<fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL>
+	</content>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference URI="">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>1qLlpV5ntvfZyx2rn9DAreSAD1c=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>kL2Y/AaOnFnubSClHJiPZTSOpfYDh6QYQZqbgxX4VPgf9kTbIJIzHogDtdFoxg2gGQN+bUDpyaOw&#13;
 TH6qdegUJKQa+s2zrI60vAEulFCltzt9l9dIDDKeo0mNHk2GRb2qnOnJ7rHmyY5Qrjuoq0hTHSJp&#13;
 uvbFfYEyIQLJ2Htld3bj5P1L1ghANw0NZKq01QpblGZLei9c4Z6fRtLhyczR08UEc8gIxWKFASJd&#13;
 OvNfHqAJLEzcYIP0AzZXwSreJtM3ZOXGimipbCoJjUsAZ31c8d/EUsfUu2ez5BT6m0ICXbIUP+cG&#13;
-yo5UJnfAj1bcoy27Dm0w8NrfqBVtwkuWCyVhxg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:15042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+yo5UJnfAj1bcoy27Dm0w8NrfqBVtwkuWCyVhxg==</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName>
+				<X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;
@@ -93,6 +110,10 @@ iLMkUkLdILqf6qkoKgU31Cr6/ecZqKWcGpTUG7ZeB1wm1BISJQFRMe1ueweu21SW2IAt/a//HlNg&#13
 US7p7gdi2gN/OrexJULyKsXPVJ8BizAXL5CnV3SBsuCgmqcssgL09uFiqu/vOukqS2DoMTgRJirL&#13;
 hVTHGLvFjE5rTyU45i+K5+WwkCB2ZgFRY1oDwwefsQjzuWeeRLrAZVHhixgfkhq1md9cFcuyxXX9&#13;
 cz5I8hk6KZenuax1QFFEoi3xsSXSNZWrUnZGYMlmQVb3D6MBtibst4zU3fOWYvuf4k8+cBzL1Ltb&#13;
-sJ8=</X509Certificate></X509Data></KeyInfo></Signature></InboundMessage>
+sJ8=</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+</InboundMessage>
 ```
 
