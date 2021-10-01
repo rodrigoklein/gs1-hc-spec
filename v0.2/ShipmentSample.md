@@ -1,8 +1,10 @@
 # Shipment Sample
 
 Imagine you are a Manufacturer and you are trying to send to a distributor a transaction.
+
 First of all, you need to generate the information about your shipment and submit it to SNCM.
-In this scenario, you are the CNPJ 13042274000195 and you are sending 3 units to the CNPJ 83042274000167.
+
+In this scenario, you are the CNPJ 13042274000195 and you are sending 3 serialized units to the CNPJ 83042274000167.
 
 - Sender - CNPJ 13042274000195
 - Receiver - CNPJ 83042274000167
