@@ -132,4 +132,7 @@ The webservice named DataWS are responsible to make available the methods below.
 |sendMessage|Method responsible to provide a standard way to receive messages|InboundResponse|
 |getPreferences|Method responsible to provide the partner preferences to the network|PreferenceData|
 
+For more information about the webservice, please look at the WSDL file.
+
+[DataWS - Web Service Descriptor Language](WSDL/DataWS.wsdl)
 
