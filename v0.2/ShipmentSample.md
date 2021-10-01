@@ -13,6 +13,8 @@ In this scenario, you are the CNPJ 13042274000195 and you are sending 3 serializ
 > the messages in this sample
 > do not have the SIGNATURE tags
 
+### Communication flow
+
 ![image info](shipmentImage.jpg)
 
 
