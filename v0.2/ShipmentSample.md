@@ -1,6 +1,6 @@
 # Shipment Sample
 
-Imagine you are a Manufacturer and you are trying to send to a distributor a transaction.
+Imagine you are a Manufacturer and you are trying to send to a Distributor a transaction.
 
 First of all, you need to generate the information about your shipment and submit it to SNCM.
 
@@ -8,6 +8,10 @@ In this scenario, you are the CNPJ 13042274000195 and you are sending 3 serializ
 
 - Sender - CNPJ 13042274000195
 - Receiver - CNPJ 83042274000167
+
+> Just to give a clear information, 
+> the messages in this sample
+> do not have the SIGNATURE tags
 
 ### Sending message to SNCM
 
