@@ -17,7 +17,6 @@ In this scenario, you are the CNPJ 15042274000195 and you are sending 3 serializ
 
 ![image info](shipmentImage.jpg)
 
-
 ### Sending message to SNCM
 
 This is the message you sent to SNCM:
