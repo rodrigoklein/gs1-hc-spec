@@ -13,6 +13,9 @@ In this scenario, you are the CNPJ 13042274000195 and you are sending 3 serializ
 > the messages in this sample
 > do not have the SIGNATURE tags
 
+![image info](shipmentImage.jpg)
+
+
 ### Sending message to SNCM
 
 This is the message you sent to SNCM:
