@@ -118,7 +118,7 @@ sJ8=</X509Certificate>
 </InboundMessage>
 ```
 
-### Anatomy of the Webservice?
+### Anatomy of the Webservice
 
 The technology behind the main interface of the Horizontal Communication is SOAP (Simple Object Access Protocol). This technology is a well known technology which many companies already have developers tha knows it.
 
@@ -130,5 +130,6 @@ The webservice named DataWS are responsible to make available the methods below.
 |--------|-------------|--------|
 |getMessage| Method responsible to provide a query interface with the system| QueryResponse |
 |sendMessage|Method responsible to provide a standard way to receive messages|InboundResponse|
+|getPreferences|Method responsible to provide the partner preferences to the network|PreferenceData|
 
 
