@@ -191,7 +191,7 @@ If you get an error tag instead a receipt, knows that the message can´t be cons
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13041786000176</partnerValue>
+        <partnerValue>83042274000167</partnerValue>
     </partnerTo>
     <error>
         <errorCode>1001</errorCode>
