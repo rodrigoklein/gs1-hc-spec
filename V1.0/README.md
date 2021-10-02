@@ -154,3 +154,4 @@ Below you can see the list of Messages
 
 | Message  | Purpose | Sample File | Reference |
 |----------|---------|-------------|-----------|
+| Message  | Purpose | Sample File | Reference |
