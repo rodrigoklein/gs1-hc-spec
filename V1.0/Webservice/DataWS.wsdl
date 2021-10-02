@@ -1,0 +1,109 @@
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.med.healthcare.gs1br.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="DataWSService" targetNamespace="http://ws.med.healthcare.gs1br.org/">
+	<wsdl:types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.med.healthcare.gs1br.org/" elementFormDefault="unqualified" targetNamespace="http://ws.med.healthcare.gs1br.org/" version="1.0">
+			<xs:element name="getMessage" type="tns:getMessage"/>
+			<xs:element name="getMessageResponse" type="tns:getMessageResponse"/>
+			<xs:element name="getPreferences" type="tns:getPreferences"/>
+			<xs:element name="getPreferencesResponse" type="tns:getPreferencesResponse"/>
+			<xs:element name="sendMessage" type="tns:sendMessage"/>
+			<xs:element name="sendMessageResponse" type="tns:sendMessageResponse"/>
+			<xs:complexType name="getMessage">
+				<xs:sequence>
+					<xs:element name="queryRequest" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="getMessageResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="sendMessage">
+				<xs:sequence>
+					<xs:element name="inboundMessage" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="sendMessageResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="getPreferences">
+				<xs:sequence>
+					<xs:element name="queryRequest" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:complexType name="getPreferencesResponse">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="return" type="xs:string"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="getMessage">
+		<wsdl:part element="tns:getMessage" name="parameters"> </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="sendMessage">
+		<wsdl:part element="tns:sendMessage" name="parameters"> </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getPreferencesResponse">
+		<wsdl:part element="tns:getPreferencesResponse" name="parameters"> </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="sendMessageResponse">
+		<wsdl:part element="tns:sendMessageResponse" name="parameters"> </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getMessageResponse">
+		<wsdl:part element="tns:getMessageResponse" name="parameters"> </wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="getPreferences">
+		<wsdl:part element="tns:getPreferences" name="parameters"> </wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="DataWS">
+		<wsdl:operation name="getMessage">
+			<wsdl:input message="tns:getMessage" name="getMessage"> </wsdl:input>
+			<wsdl:output message="tns:getMessageResponse" name="getMessageResponse"> </wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="sendMessage">
+			<wsdl:input message="tns:sendMessage" name="sendMessage"> </wsdl:input>
+			<wsdl:output message="tns:sendMessageResponse" name="sendMessageResponse"> </wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getPreferences">
+			<wsdl:input message="tns:getPreferences" name="getPreferences"> </wsdl:input>
+			<wsdl:output message="tns:getPreferencesResponse" name="getPreferencesResponse"> </wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="DataWSServiceSoapBinding" type="tns:DataWS">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getMessage">
+			<soap:operation soapAction="" style="document"/>
+			<wsdl:input name="getMessage">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="getMessageResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="sendMessage">
+			<soap:operation soapAction="" style="document"/>
+			<wsdl:input name="sendMessage">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="sendMessageResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getPreferences">
+			<soap:operation soapAction="" style="document"/>
+			<wsdl:input name="getPreferences">
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output name="getPreferencesResponse">
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="DataWSService">
+		<wsdl:port binding="tns:DataWSServiceSoapBinding" name="DataWSPort">
+			<soap:address location="http://127.0.1.1:8080/mdw/DataWS"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

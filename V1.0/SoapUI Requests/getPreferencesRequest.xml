@@ -1,0 +1,65 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.med.healthcare.gs1br.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ws:getPreferences>
+         <queryRequest><![CDATA[<?xml version="1.0" encoding="UTF-8"?><QueryRequest xmlns="http://hc.gs1br.org.br/" date="2021-09-28T04:57:01Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+    <partnerFrom>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13042274000195</partnerValue>
+    </partnerFrom>
+    <partnerTo>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>13041786000176</partnerValue>
+    </partnerTo>
+    <queryRequestItem>
+        <parameterKey>parameter</parameterKey>
+        <parameterValue>value</parameterValue>
+    </queryRequestItem>
+    <queryRequestItem>
+        <parameterKey>parameter1</parameterKey>
+        <parameterValue>value1</parameterValue>
+    </queryRequestItem>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>wdOetCn4vbJpOS866rrZu+oBSlQ=</DigestValue></Reference></SignedInfo><SignatureValue>FmVJoQbFmQw0cc8tBTcgp9HZD3VBiZX8w5eZJlzroUFX9Sflw6vjFJ8R5VT4fb1mh1QUx4FnYa10&#13;
+CPdLF4FMaI75scNJ1qG5luoHJPBxk1UMMTNekoy/0sLc+tPbgDjce4q146SqukF4Sv+qJ/zix8R+&#13;
+2SMLAPJDbfTgcaB8e9s87MpQz+U1xMwHNB52qdY986Tel3fN6l0Zj649QcxNfNqM4rUNI+IqcacS&#13;
+fCP5iju56+gz1viz9CifXIDQmRkcn6vXRp2BEYA2/LA4MQy2NNyx+FQ/8HWMmHSk6Jxur2sbP+z0&#13;
+S58BKizuA7j0plpSF2cgrU9BtQWmdnosyiiBmQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
+IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
+DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;
+Q1AtQnJhc2lsMQswCQYDVQQIDAJTUDESMBAGA1UEBwwJU2FvIFBhdWxvMRkwFwYDVQQLDBBWaWRl&#13;
+b0NvbmZlcmVuY2lhMRcwFQYDVQQLDA4yOTI3NzQwNDAwMDEwOTE2MDQGA1UECwwtU2VjcmV0YXJp&#13;
+YSBkYSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRYwFAYDVQQLDA1SRkIgZS1DTlBK&#13;
+IEExMScwJQYDVQQDDB5UMiBTT0ZUV0FSRSBTIEE6MTMwNDIyNzQwMDAxOTUwggEiMA0GCSqGSIb3&#13;
+DQEBAQUAA4IBDwAwggEKAoIBAQC+18QseqwK5EVEKMLwifPHOmxG4V/Sj5RhBB4x9bX9UdtC1d8J&#13;
+/mJhaHRiIiAQSwvPrj0TDyO/3FHoip6KY5/WcMXH6xzMgRkq2zPhWuYUqAQbWSaYXRvBgmN0ifRr&#13;
+y8NWXXyrzXBtTJf5Xalh8wvXDA92BrPHjy/a1uicajXDsz7mOWNFTTU6xH/fqcKDx19zb5/+7TCp&#13;
+eeLWp+rhcKiiq5TylEVibGX8O49LaXq8NjDmvx4/+xh9/BUO6hGnpyqyiqVkfd7HVd1q8lB/3jV0&#13;
+ERA5AQPIiHmJCIAyQMeQZUsgVCCO9ntEok2YEpPiBpc1Qz9h8OsK8KQ9biaPFhn1AgMBAAGjggMN&#13;
+MIIDCTCBvAYDVR0RBIG0MIGxoD0GBWBMAQMEoDQEMjA4MTIxOTc5MjE2MjU2MjU4ODAwMDAwMDAw&#13;
+MDAwMDAwMDAwMDI5MjkxNjA5N1NTUFNQoB8GBWBMAQMCoBYEFFJPRFJJR08gS0xFSU4gU0FOVE9T&#13;
+oBkGBWBMAQMDoBAEDjEzMDQyMjc0MDAwMTk1oBcGBWBMAQMHoA4EDDAwMDAwMDAwMDAwMIEbQ0FS&#13;
+T0xJTkUuUEFVTElOT0BCRE8uQ09NLkJSMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAUU31/nb7RYdAg&#13;
+utqf44mnE3NYzUIwfwYDVR0gBHgwdjB0BgZgTAECAQwwajBoBggrBgEFBQcCARZcaHR0cDovL2lj&#13;
+cC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9kcGMvQUNfQ2VydGlzaWduX1JG&#13;
+Qi9EUENfQUNfQ2VydGlzaWduX1JGQi5wZGYwgbwGA1UdHwSBtDCBsTBXoFWgU4ZRaHR0cDovL2lj&#13;
+cC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jpby9sY3IvQUNDZXJ0aXNpZ25SRkJH&#13;
+NS9MYXRlc3RDUkwuY3JsMFagVKBShlBodHRwOi8vaWNwLWJyYXNpbC5vdXRyYWxjci5jb20uYnIv&#13;
+cmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduUkZCRzUvTGF0ZXN0Q1JMLmNybDAOBgNVHQ8BAf8E&#13;
+BAMCBeAwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMIGsBggrBgEFBQcBAQSBnzCBnDBf&#13;
+BggrBgEFBQcwAoZTaHR0cDovL2ljcC1icmFzaWwuY2VydGlzaWduLmNvbS5ici9yZXBvc2l0b3Jp&#13;
+by9jZXJ0aWZpY2Fkb3MvQUNfQ2VydGlzaWduX1JGQl9HNS5wN2MwOQYIKwYBBQUHMAGGLWh0dHA6&#13;
+Ly9vY3NwLWFjLWNlcnRpc2lnbi1yZmIuY2VydGlzaWduLmNvbS5icjANBgkqhkiG9w0BAQsFAAOC&#13;
+AgEAAd8T+YgIGpCB9gkEU4k1GCNV6Cyn3aGT0jjsk0w82weVFl7fgpSC/BBqmi53V8oHrEBd3nUU&#13;
+KTdYM++iGP/mPEYIx8pmWXmgzdyol8Kd49zhUSCF+uc5WYu8/UAaX+44Af8nd/T30hlFKWy6C/jo&#13;
+ES1XEhZU20u0SKVWtcLUjnupgSB7Hicv1SvF5jP7Zz7FiaFKdzOci9p/e2QP5Qv5vtpfiOXVJdYY&#13;
+oM5OYCjT3xVMubj5qsmT/3LE9np4fviBoAereb+AFSfaHiticLH9dfE149TYfm23Z1Yc4GxdwsFO&#13;
+EB1Jgntfk1PIZ8S8HjvFx4oxcqcov/N7xuvSRq3R3oBg6Y/2AWjIr2bCM2ya2PwgeefBTrFHnRkB&#13;
+iLMkUkLdILqf6qkoKgU31Cr6/ecZqKWcGpTUG7ZeB1wm1BISJQFRMe1ueweu21SW2IAt/a//HlNg&#13;
+US7p7gdi2gN/OrexJULyKsXPVJ8BizAXL5CnV3SBsuCgmqcssgL09uFiqu/vOukqS2DoMTgRJirL&#13;
+hVTHGLvFjE5rTyU45i+K5+WwkCB2ZgFRY1oDwwefsQjzuWeeRLrAZVHhixgfkhq1md9cFcuyxXX9&#13;
+cz5I8hk6KZenuax1QFFEoi3xsSXSNZWrUnZGYMlmQVb3D6MBtibst4zU3fOWYvuf4k8+cBzL1Ltb&#13;
+sJ8=</X509Certificate></X509Data></KeyInfo></Signature></QueryRequest>]]></queryRequest>
+      </ws:getPreferences>
+   </soapenv:Body>
+</soapenv:Envelope>
