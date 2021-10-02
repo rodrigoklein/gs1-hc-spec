@@ -150,8 +150,15 @@ For more information about the webservice, please look at the WSDL file.
 
 As we told before, the standard is a set of artifacts that can enable the communication between trading partners acting as a glue between then. To perform this task using the webservice above, we need to have a set of Messages that can be used as a Envelope to enable the routing between the parts.
 
-Below you can see the list of Messages
+Below you can see the list of the Sample Messages
 
 | Message  | Purpose | Sample File | Reference |
 |----------|---------|-------------|-----------|
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization_SIGNED.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
+| InboundMessage | The standard Message to pushing information to a Trading Partner | [inboundMessageBase64_SIGNED.xml](XML_Samples/inboundMessageBase64_SIGNED.xml)| Reference |
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
 | Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
