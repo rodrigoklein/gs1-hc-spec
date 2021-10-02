@@ -132,7 +132,7 @@ sJ8=</X509Certificate>
 
 The technology behind the main interface of the Horizontal Communication is SOAP (Simple Object Access Protocol). This technology is a well known technology which many companies already have developers that knows it.
 
-The Standard has only one webservice which contains 3 methods that enables the communication.
+The Standard has only one webservice which contains 3 methods that enable the communication.
 
 The webservice named DataWS are responsible to make available the methods below.
 
