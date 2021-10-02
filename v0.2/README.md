@@ -10,7 +10,7 @@ Based on the ANVISA´s decision to keep their efforts to handle only the Vertica
 
 This search for efficiency, means that we need to have some standard interfaces to provide a faster onboarding of the trading partners in Brazil. If we start looking only on the private market, we have more than 70000 drugstores, 2000 distributors and 400 pharmaceutical companies to connect. It can consume a lot of time (and money) when we look at the traditional approach that the service providers usually use to connect the trading partners.
 
-In the image below you can see the read line representing the Vertical Communication that is the data exchange between the companies and the regulatory authority (ANVISA). In blue you can see what we are addressing in this standard that is the communication among trading partners in the supply chain..
+In the image below you can see the *red line* representing the Vertical Communication that is the data exchange between the companies and the regulatory authority (ANVISA). In *blue* you can see what we are addressing in this standard that is the communication among trading partners in the supply chain..
 
 ![Horizontal Communication vs Vertical Communication](HorizontalComm.jpg)
 
