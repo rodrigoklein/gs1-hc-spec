@@ -163,3 +163,13 @@ Below you can see the list of the Sample Messages
 | PreferenceData | Message returned by the getPreferences method which expose the Trading Partner Preferences | [preferenceData_SIGNED.xml](XML_Samples/preferenceData_SIGNED.xml)| Reference |
 | QueryResponse | Response Message returned by the server in getMessage method | [queryResponse_SIGNED.xml](XML_Samples/queryResponse_SIGNED.xml)| Reference |
 
+### Hands on!
+
+Here we can demonstrate how the coreography works on the pratice.
+
+#### Sample Workflow
+
+Below you can see the real behavior of the standard an how it works.
+
+| Workflow  | Description |  Reference |
+
