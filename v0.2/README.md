@@ -138,7 +138,7 @@ The webservice named DataWS are responsible to make available the methods below.
 
 | Method | Description | Input | Return|
 |--------|-------------|--------|--------|
-|sendMessage|Method responsible to provide a standard way to receive messages| InboundMessage |InboundResponse|
+|sendMessage|Method responsible to provide a standard way to receive messages| [InboundMessage](XML Samples/inboundMessageBase64.xml) |InboundResponse|
 |getMessage| Method responsible to provide a query interface with the system| QueryRequest |QueryResponse |
 |getPreferences|Method responsible to provide the partner preferences to the network| QueryRequest |PreferenceData|
 
