@@ -154,4 +154,4 @@ Below you can see the list of Messages
 
 | Message  | Purpose | Sample File | Reference |
 |----------|---------|-------------|-----------|
-| Message  | Purpose | Sample File | Reference |
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
