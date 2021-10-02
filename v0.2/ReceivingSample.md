@@ -19,7 +19,7 @@ If in the last sample (Shipment), the sender was the CNPJ 15042274000195, now we
 
 ### Communication flow
 
-![image info](ReceivingImage.jpg)
+![image info](images/ReceivingImage.jpg)
 
 ### Sending message to SNCM
 

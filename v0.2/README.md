@@ -12,7 +12,7 @@ This search for efficiency, means that we need to have some standard interfaces 
 
 In the image below you can see the *red line* representing the Vertical Communication that is the data exchange between the companies and the regulatory authority (ANVISA). In *blue* you can see what we are addressing in this standard that is the communication among trading partners in the supply chain..
 
-![Horizontal Communication vs Vertical Communication](HorizontalComm.jpg)
+![Horizontal Communication vs Vertical Communication](images/HorizontalComm.jpg)
 
 ### What does this standard implement?
 
@@ -42,7 +42,7 @@ In this way, we are following the same stack of the SNCM System that means:
 - SOAP Webservices
 
 
-![image info](authSchema.png)
+![image info](images/authSchema.png)
 
 
 Below you can find a Sample Signed message with the specific tags needed by the XML Signature using X509 Certificates.
