@@ -2,7 +2,7 @@
 
 The information on this page explain how the horizontal communication works.
 
-### Whats is the Horizontal Communication?
+### What is the Horizontal Communication?
 
 If you are here, probably you are in developing something or you are in charge to manage a traceability project to follow the Brazil Regulation about the SNCM.
 
