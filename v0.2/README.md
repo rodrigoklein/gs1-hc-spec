@@ -12,11 +12,15 @@ This search for efficiency, means that we need to have some standard interfaces 
 
 In the image below you can see the read line representing the Vertical Communication that is the data exchange between the companies and the regulatory authority (ANVISA). In blue you can see what we are addressing in this standard that is the communication among trading partners in the supply chain.
 
-![image info](HorizontalComm.jpg)
+![Horizontal Communication vs Vertical Communication](HorizontalComm.jpg)
 
 ### What does this standard implement?
 
-This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. This artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain.
+This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. This artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed are basically an Envelope that carry the SNCM information from one Trading Partner to another.
+
+Additionally, the standard implement a common Query Interface that enables the companies to query information on the HC Databases. It means that the standard enable pushing or pulling strategy.
+
+![Two Way Communication](PushPull.jpg)
 
 ### What do we have inside the HC Stardard?
 
