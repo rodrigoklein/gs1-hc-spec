@@ -140,7 +140,7 @@ The webservice named DataWS are responsible to make available the methods below.
 |--------|-------------|--------|--------|
 |sendMessage|Method responsible to provide a standard way to receive messages| [InboundMessage](XML_Samples/inboundMessageBase64.xml) |[InboundResponse](XML_Samples/inboundResponseReceipt_SIGNED.xml)|
 |getMessage| Method responsible to provide a query interface with the system| [QueryRequest](XML_Samples/queryRequest_SIGNED.xml) |[QueryResponse](XML_Samples/queryResponse_SIGNED.xml) |
-|getPreferences|Method responsible to provide the partner preferences to the network| QueryRequest |PreferenceData|
+|getPreferences|Method responsible to provide the partner preferences to the network| [QueryRequest](XML_Samples/queryRequest_SIGNED.xml) |[PreferenceData](XML_Samples/preferenceData_SIGNED.xml)|
 
 For more information about the webservice, please look at the WSDL file.
 
