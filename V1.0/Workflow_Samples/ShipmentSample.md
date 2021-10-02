@@ -15,7 +15,7 @@ In this scenario, you are the CNPJ 15042274000195 and you are sending 3 serializ
 
 ### Communication flow
 
-![image info](images/shipmentImage.jpg)
+![image info](../images/shipmentImage.jpg)
 
 ### Sending message to SNCM
 
