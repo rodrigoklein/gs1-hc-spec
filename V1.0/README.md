@@ -138,9 +138,9 @@ The webservice named DataWS are responsible to make available the methods below.
 
 | Method | Description | Input | Return|
 |--------|-------------|--------|--------|
-|sendMessage|Method responsible to provide a standard way to receive messages| [InboundMessage](XML_Samples/inboundMessageBase64.xml) |[InboundResponse](XML_Samples/inboundResponseReceipt_SIGNED.xml)|
-|getMessage| Method responsible to provide a query interface with the system| [QueryRequest](XML_Samples/queryRequest_SIGNED.xml) |[QueryResponse](XML_Samples/queryResponse_SIGNED.xml) |
-|getPreferences|Method responsible to provide the partner preferences to the network| [QueryRequest](XML_Samples/queryRequest_SIGNED.xml) |[PreferenceData](XML_Samples/preferenceData_SIGNED.xml)|
+|sendMessage|Method responsible to provide a standard way to receive messages| [InboundMessage](SOAPUI_Requests/sendMessageRequest.xml) |[InboundResponse](SOAPUI_Requests/sendMessageResponse.xml)|
+|getMessage| Method responsible to provide a query interface with the system| [QueryRequest](SOAPUI_Requests/getMessageRequest.xml) |[QueryResponse](SOAPUI_Requests/getMessageResponse.xml) |
+|getPreferences|Method responsible to provide the partner preferences to the network| [QueryRequest](SOAPUI_Requests/getPreferencesRequest.xml) |[PreferenceData](SOAPUI_Requests/getPreferencesResponse.xml)|
 
 For more information about the webservice, please look at the WSDL file.
 
