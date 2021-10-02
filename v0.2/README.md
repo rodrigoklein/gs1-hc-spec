@@ -41,7 +41,9 @@ In this way, we are following the same stack of the SNCM System that means:
 - Electronic Signature on the XML messages to assure the authenticity and integrity of the messages.
 - SOAP Webservices
 
+
 ![image info](authSchema.png)
+
 
 Below you can find a Sample Signed message with the specific tags needed by the XML Signature using X509 Certificates.
 
@@ -134,11 +136,11 @@ The Standard has only one webservice which contains 3 methods that enables the c
 
 The webservice named DataWS are responsible to make available the methods below.
 
-| Method | Description | Return|
+| Method | Description | Input | Return|
 |--------|-------------|--------|
-|getMessage| Method responsible to provide a query interface with the system| QueryResponse |
-|sendMessage|Method responsible to provide a standard way to receive messages|InboundResponse|
-|getPreferences|Method responsible to provide the partner preferences to the network|PreferenceData|
+|getMessage| Method responsible to provide a query interface with the system| QueryRequest |QueryResponse |
+|sendMessage|Method responsible to provide a standard way to receive messages| InboundMessage |InboundResponse|
+|getPreferences|Method responsible to provide the partner preferences to the network| QueryRequest |PreferenceData|
 
 For more information about the webservice, please look at the WSDL file.
 
