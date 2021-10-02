@@ -157,7 +157,7 @@ Below you can see the list of the Sample Messages
 | Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization_SIGNED.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
 | InboundMessage | The standard Message to pushing information to a Trading Partner | [inboundMessageBase64_SIGNED.xml](XML_Samples/inboundMessageBase64_SIGNED.xml)| Reference |
 | InboundMessage | The standard Message to pushing information to a Trading Partner using the URL Option | [inboundMessageFileURL_SIGNED.xml](XML_Samples/inboundMessageFileURL_SIGNED.xml)| Reference |
-| inboundResponseReceipt | The receipt Message received by a Sender when send the Inbound Message to a Trading Partner | [Authorization.xml](XML_Samples/inboundResponseReceipt_SIGNED.xml)| Reference |
+| inboundResponseReceipt | The receipt Message received by a Sender when send the Inbound Message to a Trading Partner | [inboundResponseReceipt_SIGNED.xml](XML_Samples/inboundResponseReceipt_SIGNED.xml)| Reference |
 | PreferenceData | Message returned by the getPreferences method which expose the Trading Partner Preferences | [preferenceData_SIGNED.xml](XML_Samples/preferenceData_SIGNED.xml)| Reference |
 | Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
 | Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
