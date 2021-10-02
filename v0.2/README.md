@@ -145,4 +145,4 @@ The webservice named DataWS are responsible to make available the methods below.
 For more information about the webservice, please look at the WSDL file.
 
 [DataWS - Web Service Descriptor Language](WSDL/DataWS.wsdl)
-
+[InboundMessage](XML Samples/inboundMessageBase64.xml)
