@@ -152,4 +152,5 @@ As we told before, the standard is a set of artifacts that can enable the commun
 
 Below you can see the list of Messages
 
-| Message  | Purpose | Sample File  
+| Message  | Purpose | Sample File | Reference |
+|----------|---------|-------------|-----------|
