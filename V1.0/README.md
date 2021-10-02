@@ -173,5 +173,5 @@ Below you can see the real behavior of the standard an how it works.
 
 | Workflow  | Description |  Reference |
 |-----------|-------------|------------|
-| Shipment  | This workflow demonstrate how to send Message to a Trading Partner |  [Reference](Workflow_Samples\ShipmentSample.md) |
-| Receiving  | This workflow demonstrate how to confirm to a trading partner the receiving of the serialized products |  [Reference](Workflow_Samples\ReceivingSample.md) |
+| Shipment  | This workflow demonstrate how to send Message to a Trading Partner |  [Reference](Workflow_Samples/ShipmentSample.md) |
+| Receiving  | This workflow demonstrate how to confirm to a trading partner the receiving of the serialized products |  [Reference](Workflow_Samples/ReceivingSample.md) |
