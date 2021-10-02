@@ -22,7 +22,7 @@ Additionally, the standard implement a common Query Interface that enables the c
 
 ![Two Way Communication](PushPull.jpg)
 
-### What do we have inside the HC Stardard?
+### What does we have inside the HC Standard?
 
 The standard basically implements a Webservice whith 3 simple methods that allows the data exchange between the companies. In addition we also developed some XML artifacts that can act as an Envelope to provide a standard wey to package and route messages among the supply chain.
 
