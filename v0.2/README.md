@@ -138,8 +138,8 @@ The webservice named DataWS are responsible to make available the methods below.
 
 | Method | Description | Input | Return|
 |--------|-------------|--------|--------|
-|getMessage| Method responsible to provide a query interface with the system| QueryRequest |QueryResponse |
 |sendMessage|Method responsible to provide a standard way to receive messages| InboundMessage |InboundResponse|
+|getMessage| Method responsible to provide a query interface with the system| QueryRequest |QueryResponse |
 |getPreferences|Method responsible to provide the partner preferences to the network| QueryRequest |PreferenceData|
 
 For more information about the webservice, please look at the WSDL file.
