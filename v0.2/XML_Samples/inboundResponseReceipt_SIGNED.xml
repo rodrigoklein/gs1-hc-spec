@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><InboundResponse xmlns="http://hc.gs1br.org.br/" date="2021-09-27T06:13:29Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+<?xml version="1.0" encoding="UTF-8"?><InboundResponse xmlns="http://hc.gs1br.org.br/" date="2021-10-01T16:42:01Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13041786000176</partnerValue>
+        <partnerValue>15041786000176</partnerValue>
     </partnerTo>
     <receipt>1910191019333440ABCAHYG</receipt>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>J0KVe5S1JU1jCzZTvjxzFpOxiNI=</DigestValue></Reference></SignedInfo><SignatureValue>t/Xz210vfZsIl0e6bYq1k9R3KohcoovVNQ3mm6KKobbNI3FYRUnQNhp9IjepeoyUJ/5zZmgbSNsf&#13;
-xdNkAUF855JvHcAFclzAWZUD/576GX0/uFH3CugoOsfXWx4fyxFuTblkKRliZqHafhd4UooD7hlG&#13;
-pxa0UHgROS7ayKjUJ3QLL9E80ugmHDoehECI9jrQXxnS8ps/X/Ux/rC5XOxbbWIphKZGiiissnaE&#13;
-Axn3mrV5PN+wipRIomjWUij9+UvoyvqFfPSuvdii8olEtYt2VnrbbkIXGCyJqsFObac4rNR+7afB&#13;
-Srlwqq+y3EmYolyhepTI5FUjhg5qW2U9Zq2ZYw==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>imhhTwCcvff8oDNeoxkzMXSFppU=</DigestValue></Reference></SignedInfo><SignatureValue>mFWZkWhFJERMkxn5x8FTxKIpU04m5PoPWg9NJa9oE47GCHJboXgFufyGpwToCXbCncTbYKvisPIa&#13;
+6HSs5Q8EcA7B/dPb6ZK2TrzmuHAD7ZHb5+ZOXJ82EL7jRA7n9GVP4kwOxd4RyOlgdDw0xYAvn99K&#13;
+2K27vxM6UrueC041C2xJP7kv6TYgLEgApCqomlAMMHHwul6mvyz2xJcZl1ta/3NXKSktnM5wezH+&#13;
+DRdlpj8oHe+5H/m4sLvUQ5ldkXoqEJ5GxbTdHp/lM7FDySgLKGl99vr1Qe2yplTjgMiIm5gUG0kW&#13;
+2eAkvRjbr7nPeDTsiEceCfL6rD0EKW/q1Jrm8g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:15042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<PreferenceData id="123456978696050595050AAAABBBDDDDD" date="2021-09-27T06:13:29Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+<PreferenceData id="123456978696050595050AAAABBBDDDDD" date="2021-10-01T16:42:01Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <partner>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13041786000176</partnerValue>
+        <partnerValue>15041786000176</partnerValue>
     </partner>
     <preferences>
         <info key="key0">value0</info>

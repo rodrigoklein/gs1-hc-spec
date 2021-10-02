@@ -1,47 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?><QueryResponse xmlns="http://hc.gs1br.org.br/" date="2021-09-27T06:13:29Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+<?xml version="1.0" encoding="UTF-8"?><QueryResponse xmlns="http://hc.gs1br.org.br/" date="2021-10-01T16:42:01Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13041786000176</partnerValue>
+        <partnerValue>15041786000176</partnerValue>
     </partnerTo>
     <QueryResponseItem>
-        <date>2021-09-27T06:13:29Z</date>
+        <date>2021-10-01T16:42:01Z</date>
         <content encoding="XML" format="SNCM" schemaVersion="1.0">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-09-27T06:13:29Z</date>
+        <date>2021-10-01T16:42:01Z</date>
         <content encoding="XML" format="SNCM" schemaVersion="1.0">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-1.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-09-27T06:13:29Z</date>
+        <date>2021-10-01T16:42:01Z</date>
         <content encoding="XML" format="SNCM" schemaVersion="1.0">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-09-27T06:13:29Z</date>
+        <date>2021-10-01T16:42:01Z</date>
         <content encoding="XML" format="SNCM" schemaVersion="1.0">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-3.xml</fileURL>
         </content>
     </QueryResponseItem>
     <QueryResponseItem>
-        <date>2021-09-27T06:13:29Z</date>
+        <date>2021-10-01T16:42:01Z</date>
         <content encoding="XML" format="EPCIS" schemaVersion="2.0">
             <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-4.xml</fileURL>
         </content>
+        <additionalInfo>
+            <info key="AttorneyAuthorization">https://files.xxxx.com/0000000111212.xml</info>
+        </additionalInfo>
     </QueryResponseItem>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>9prDp4Mp0yzllqWsxpKTkiVFdKg=</DigestValue></Reference></SignedInfo><SignatureValue>dMxJJXJzROr1wWrw2uTbH4K+fdLxx2SZenJoDxdJVDIOLdnGAM92nUeCc2tJ1BruUmVUQM3se30z&#13;
-ZLBhge6ZYyUc42W+DpFPU855Sseupdz7nVS2bH6x/ca+e17s4Ft+BOyT9OhNFlfVJUThHhqE/cMj&#13;
-FGyBFjneN9Rt276/Fj/6o8MDAQAVTDW6IulPzmN+vnowrYhoxGbf878SHwcaxRzspzzXIhdPxHpD&#13;
-cyXCF8RALzaLIpAuycsSEohEkuAypyF3RcQMVBrQF5Sa2p4lLijxCy+rcrS14Pqu3s+Z+av19TEU&#13;
-r83zDiiHqC2UjGrzcvLRJGJN9SHpBb2U3fjifA==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>rcNnX2DOsbEq8SBPtRETOBRWL9o=</DigestValue></Reference></SignedInfo><SignatureValue>l4KdDSAbcpCeLL/HerLRlqUV41dO98flgphh4xnZ0UXnxWZszKcMh5zTTWtUeDBhIDcb3JkfoxKi&#13;
+lt1ESiz6suNSSsB8ToLe/+9aofLUNJbEDkq8pdX4nO0u4wG8uLMHhxunN88rvpXlem1oELkPSeMF&#13;
+UYYa8VT2t60LLucf1p3FPg8OkgwbE5yWUv8YF266N0iqv97kgf40lFD+KPac1QykpdaqlykR1lxd&#13;
+IaF5wlp5M8YJJ+wsDasbaessyakQ20DK7g3u2c1q74YqivMWjvM7G6De8+TFgJPi104c5rft3SE3&#13;
+Wgl5aLlF3wj+hhjWJp8pVH2dzs/sjYY40bt1bA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:15042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;

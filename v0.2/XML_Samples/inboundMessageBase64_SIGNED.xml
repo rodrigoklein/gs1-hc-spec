@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-09-27T06:13:29Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+<?xml version="1.0" encoding="UTF-8"?><InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-10-01T16:42:00Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13041786000176</partnerValue>
+        <partnerValue>15041786000176</partnerValue>
     </partnerTo>
     <carrier>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </carrier>
     <content encoding="XML" format="SNCM" schemaVersion="1.0">
         <fileContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxyZXRfZXZ0T3V0IElkPSJwZngyNmJiODIzNS0zMTNmLTEyNzAtZTM2Yy0zODExY2FjZWIwZDMiPg0KCTxkb2NJZD5BQUFBQUFBQUFBQkJCQkJCQkJCQjwvZG9jSWQ+DQoJPGRjbHJudD4NCgkJPGNucGo+MDAwMDAwMDAwMDAwMDwvY25waj4NCgk8L2RjbHJudD4NCgk8Y2xudEZybXJUaW1lPjIwMjAtMDctMDhUMDE6MjU6MDlaPC9jbG50RnJtclRpbWU+DQoJPHZlcnNpb24+MjAxOC0wNi0wNzwvdmVyc2lvbj4NCgk8bG9jYWxlPnB0LUJSPC9sb2NhbGU+DQoJPGVudmlyPjI8L2VudmlyPg0KCTxiY2tPZmY+MDE8L2Jja09mZj4NCgk8blJlYz4wMDAwMDAwMDAwMDAwMDAwMDVRQjwvblJlYz4NCgk8cmVzdWx0cz4NCgkJPHJlc3VsdD4NCgkJCTxldnROb3RpZklkPjAwUllHMDBXQzBLT1JaTVlEMFBCPC9ldnROb3RpZklkPg0KCQkJPGV2dElkPjAwMDAwMDBBV1JXQTwvZXZ0SWQ+DQoJCQk8cmVzdWx0RXZ0Q29kZT4wMTkwMjwvcmVzdWx0RXZ0Q29kZT4NCgkJCTxyZXN1bHRFdnREZXNjcmlwdGlvbj5JbnN0w6JuY2lhIGRlIGV2ZW50byBwcm9jZXNzYWRhIGNvbSBzdWNlc3NvPC9yZXN1bHRFdnREZXNjcmlwdGlvbj4NCgkJPC9yZXN1bHQ+DQoJPC9yZXN1bHRzPg0KCTxyZXR1cm5zPg0KCQk8cmV0dXJuPg0KCQkJPHJldHVybkNvZGU+MDAwMDU8L3JldHVybkNvZGU+DQoJCQk8cmV0dXJuRGVzY3JpcHRpb24+Q29uc3VsdGEgZG8gcHJvY2Vzc2FtZW50byBlZmV0dWFkYSBjb20gc3VjZXNzbzwvcmV0dXJuRGVzY3JpcHRpb24+DQoJCTwvcmV0dXJuPg0KCTwvcmV0dXJucz4NCgk8YW5vbT5mYWxzZTwvYW5vbT4NCgk8bm90aWY+ZmFsc2U8L25vdGlmPg0KCTxhY3Rpb24+ZmFsc2U8L2FjdGlvbj4NCgk8U2lnbmF0dXJlIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwLzA5L3htbGRzaWcjIj4NCgkJPFNpZ25lZEluZm8+DQoJCQk8Q2Fub25pY2FsaXphdGlvbk1ldGhvZCBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLXhtbC1jMTRuLTIwMDEwMzE1Ii8+DQoJCQk8U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxkc2lnLW1vcmUjcnNhLXNoYTI1NiIvPg0KCQkJPFJlZmVyZW5jZSBVUkk9IiNwZngyNmJiODIzNS0zMTNmLTEyNzAtZTM2Yy0zODExY2FjZWIwZDMiPg0KCQkJCTxUcmFuc2Zvcm1zPg0KCQkJCQk8VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiLz4NCgkJCQkJPFRyYW5zZm9ybSBBbGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnL1RSLzIwMDEvUkVDLXhtbC1jMTRuLTIwMDEwMzE1Ii8+DQoJCQkJPC9UcmFuc2Zvcm1zPg0KCQkJCTxEaWdlc3RNZXRob2QgQWxnb3JpdGhtPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGVuYyNzaGEyNTYiLz4NCgkJCQk8RGlnZXN0VmFsdWU+eTJob3ExMHNuTmtRRVIwaWtpWXZCYjNyY2dqdk5BTTh0elF1SC9QaDVYRT08L0RpZ2VzdFZhbHVlPg0KCQkJPC9SZWZlcmVuY2U+DQoJCTwvU2lnbmVkSW5mbz4NCgkJPFNpZ25hdHVyZVZhbHVlPm9KNDdDTitoNjhyVWRuRzhobGNvYnFwZTNYeXl5MEZnSUNJeStUVFBSUEUxV3haNnVuNDl2ZWVCNU9OTG4zeFNYN3hvUDF0RUR2bThMZEtSQ0JWLzUzMGZZM016MitPOWp6M2lza3gxQWlNVVRVTXlNRGJKeUN1SEh2M3FGc2pqbTgwNXpjWEJRekVtNXRtbVZFTTJINWREbWpzOW9mNW9rS3RGWGp2T3V6YzlURkVrZFFLM29WM01PVmxLN1ZUblFJT2hOc1J3U3ArVEM2SFRlUkNwU1RpMldBZDZKSlNCcS8yWkVKY2JDalBFK1g1bkNkSWxCZ0VOOXlDUlNuV2RuMHgyOFpraGR1T1B3ZVQzYWRlbDZ5ZWdGYWprTldxLzNPNUIxMy8xWm5USW5lUDlvY3RkLzlLUmN5Z2pDenNxeWg4SjdqRHlaTE41ZG4zK0VacVZpUT09PC9TaWduYXR1cmVWYWx1ZT4NCgkJPEtleUluZm8+DQoJCQk8WDUwOURhdGE+DQoJCQkJPFg1MDlDZXJ0aWZpY2F0ZT5NSUlEOVRDQ0F0MmdBdy4uLi4uLnNIWjU8L1g1MDlDZXJ0aWZpY2F0ZT4NCgkJCTwvWDUwOURhdGE+DQoJCTwvS2V5SW5mbz4NCgk8L1NpZ25hdHVyZT4NCjwvcmV0X2V2dE91dD4NCg==</fileContent>
     </content>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>4cQ8kRXiylPEBMjmF5MfJF/16Mk=</DigestValue></Reference></SignedInfo><SignatureValue>OBr5K5sASyIfpw45k9fWfDYIEQOADzO76nlg2I8p7K6gSouggZwamsB+SY9yz06+ZMXOP9ixL+eT&#13;
-CCr4zCSFHgp0QsUCsFEK/V6rODb/qCkjhqciRMToCN5dY/fkV1cW0/aOoXyEIZnl3Z6BpHH/c3YH&#13;
-dwmUHuBLnurzg1VWFhOoS6tZ275LUIbubDf4+Ynhffz6u0FcKQoLxb+I72Ge1BH1t9+HLrhn9JIA&#13;
-Pzoolua4t+xzUZE4inas/HKZ4RATRvmbkb07aIXr5tPQzocYa9KIyVkQJhc+76Jq8m51cTftCZ1S&#13;
-TZU5so4Xo/FRFbJ+pkJMQxNX47gND2r6hjBYkQ==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>DZHKCjn+NrGhidP04UEptkeahEY=</DigestValue></Reference></SignedInfo><SignatureValue>SdhIPYm5K6oddULGX/HO/Lt9Dz8trRVQIu5L4SJzYv/06lRC6XsVYLM3jmdGmv5q/BovVJKyKkv3&#13;
+p7LogOCnnZ1IlH+cc2cRy3xI5J4pQ6peM97O3iu8yL96B319+mUfehGzYt3hME2i+VLwNBP2gsxk&#13;
+vPWAVVsidVr//RGSsKtM42ms8cRhAVgr6lpjN8ytk3BZdTQ76RMaWxzcZqo1jSOtzosWkjF+WHCo&#13;
+2QA5rkBnGJ4B0ELu58sz/sR1XE3nKoAiOoBrT4XbX+OseigeTrLITG1P8ae84ydHMGFWy+PJxHJr&#13;
+kuOi8DW4oXjSrfdxCMFxvrIClx70SDrlRpxDOQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:15042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;

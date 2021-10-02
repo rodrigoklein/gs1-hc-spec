@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-09-27T06:13:29Z" xmlns="http://hc.gs1br.org.br/">
+<InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-10-01T16:42:00Z" xmlns="http://hc.gs1br.org.br/">
     <partnerFrom>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </partnerFrom>
     <partnerTo>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13041786000176</partnerValue>
+        <partnerValue>15041786000176</partnerValue>
     </partnerTo>
     <carrier>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </carrier>
     <content>
         <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL>
