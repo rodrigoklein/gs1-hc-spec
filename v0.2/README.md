@@ -26,7 +26,7 @@ Additionally, the standard implement a common Query Interface that enables the c
 
 The standard basically implements a Webservice whith 3 simple methods that allows the data exchange between the companies. In addition we also developed some XML artifacts that can act as an Envelope to provide a standard wey to package and route messages among the supply chain.
 
-### What are the technology and security of the HC Standard?
+### What is the technology and security of the HC Standard?
 
 In the beginning of the work, the workgroup made some assumptions to speedup the development and put the focus on the most important points to work. 
 
