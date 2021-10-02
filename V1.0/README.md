@@ -20,7 +20,7 @@ This standard developed by a GS1 Brazil Workgroup developed some common artifact
 
 Additionally, the standard implement a common Query Interface that enables the companies to query information on the HC Databases. It means that the standard enable pushing or pulling strategy.
 
-![Two Way Communication](PushPull.jpg)
+![Two Way Communication](images/PushPull.jpg)
 
 ### What does we have inside the HC Standard?
 
@@ -150,6 +150,6 @@ For more information about the webservice, please look at the WSDL file.
 
 As we told before, the standard is a set of artifacts that can enable the communication between trading partners acting as a glue between then. To perform this task using the webservice above, we need to have a set of Messages that can be used as a Envelope to enable the routing between the parts.
 
-Below we will explain each message
+Below you can see the list of Messages
 
-#### Message X
+| Message  | Purpose | Sample File  
