@@ -137,7 +137,7 @@ The Standard has only one webservice which contains 3 methods that enables the c
 The webservice named DataWS are responsible to make available the methods below.
 
 | Method | Description | Input | Return|
-|--------|-------------|--------|
+|--------|-------------|--------|--------|
 |getMessage| Method responsible to provide a query interface with the system| QueryRequest |QueryResponse |
 |sendMessage|Method responsible to provide a standard way to receive messages| InboundMessage |InboundResponse|
 |getPreferences|Method responsible to provide the partner preferences to the network| QueryRequest |PreferenceData|
