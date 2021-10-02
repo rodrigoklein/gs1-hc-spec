@@ -214,11 +214,21 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                             type="Partner"
                             minOccurs="1"
                             maxOccurs="1"/>
-                
-                <xs:element minOccurs="1"
-                            maxOccurs="unbounded"
-                            name="QueryResponseItem"
-                            type="QueryResponseItem" />
+                <xs:choice>
+                    
+                    
+                    <xs:element minOccurs="0"
+                                maxOccurs="unbounded"
+                                name="QueryResponseItem"
+                                type="QueryResponseItem" />
+    
+                    <xs:element name="error"
+                                type="Error"
+                                minOccurs="0"
+                                maxOccurs="unbounded"/>
+                    
+                    
+                </xs:choice>
 
                 <xs:element name="additionalInfo"
                             type="infolist" maxOccurs="unbounded"></xs:element>
