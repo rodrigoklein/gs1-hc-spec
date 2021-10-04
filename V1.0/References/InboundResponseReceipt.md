@@ -12,9 +12,9 @@ The InboundResponse is a Message responsbile to provide the feedback if the mess
 |id|The id of the Message|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID have to be unique inside the Trading Partner|
 |date|The date of the Message Generation|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined with GMT-0|
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
-|sender|The Sender of the Transaction|Partner (see XSD)|```<partnerFrom><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></partnerFrom>```||
-|receiver|The Receiver of the Transaction|Partner (see XSD)|```<partnerTo><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></partnerTo>```||
-|receipt|The content of the Message|Content (see XSD)|```<content><fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL></content>```||
+|sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
+|receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
+|receipt|The content of the Message|Content (see XSD)|1910191019333440ABCAHYG||
 
 ##### Sample using fileURL
 
