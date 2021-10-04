@@ -1,4 +1,4 @@
-# InboundMessage Reference
+# InboundResponse Reference
 
 The InboundResponse is a Message responsbile to provide the feedback if the message was accepted by the receiver.
 
@@ -14,9 +14,9 @@ The InboundResponse is a Message responsbile to provide the feedback if the mess
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
 |sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
 |receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
-|receipt|The content of the Message|Content (see XSD)|1910191019333440ABCAHYG||
+|receipt|The content of the Message|Content (see XSD)|1910191019333440ABCAHYG|Receipt identification of the transaction|
 
-##### Sample using fileURL
+##### Sample
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

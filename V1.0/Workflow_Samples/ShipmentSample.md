@@ -100,14 +100,14 @@ Packaging this message inside an InboundMessage we have the XML below.
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-09-29T10:26:49Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
-    <partnerFrom>
+    <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
-    </partnerFrom>
-    <partnerTo>
+    </sender>
+    <receiver>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>83042274000167</partnerValue>
-    </partnerTo>
+    </receiver>
     <carrier>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>73042274000167</partnerValue>
@@ -128,14 +128,14 @@ Once you do it, you need to send the InboundMessage through the receiver (Distri
       <ws:sendMessage>
          <inboundMessage><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <InboundMessage id="123456978696050595050AAAABBBDDDDD" date="2021-09-29T10:26:49Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
-    <partnerFrom>
+    <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
-    </partnerFrom>
-    <partnerTo>
+    </sender>
+    <receiver>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>83042274000167</partnerValue>
-    </partnerTo>
+    </receiver>
     <carrier>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>73042274000167</partnerValue>
@@ -160,14 +160,14 @@ The webservice will receive the message and need to return a InboundResponse mes
       <ns2:sendMessageResponse xmlns:ns2="http://ws.med.healthcare.gs1br.org/">
          <return><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <InboundResponse id="F02529FCC82C42229898D3451A4E897E" date="2021-10-01T14:32:51Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
-    <partnerFrom>
+    <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>83042274000167</partnerValue>
-    </partnerFrom>
-	<partnerTo>
+    </sender>
+	<receiver>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
-    </partnerTo>
+    </receiver>
     <receipt>F02529FCC82C42229898</receipt>
 </InboundResponse>]]></return>
       </ns2:sendMessageResponse>
@@ -187,14 +187,14 @@ If you get an error tag instead a receipt, knows that the message can´t be cons
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <InboundResponse id="123456978696050595050AAAABBBDDDDD" date="2021-09-29T10:26:49Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
-    <partnerFrom>
+    <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
-    </partnerFrom>
-    <partnerTo>
+    </sender>
+    <receiver>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>83042274000167</partnerValue>
-    </partnerTo>
+    </receiver>
     <error>
         <errorCode>1001</errorCode>
         <errorDescription>No data</errorDescription>
