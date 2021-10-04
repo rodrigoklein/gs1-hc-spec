@@ -16,7 +16,7 @@ In the image below you can see the *red line* representing the Vertical Communic
 
 ### What does this standard implement?
 
-This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. These artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed implements a Transport Layer and are basically an Envelope that carries the SNCM (or any other) information from one Trading Partner to another. The messages usually do not implement any Business Rule or limit the content to be delivered allowing the companies to exchange many types of files such as SNCM messages, EPCIS, electronic Invoice etc.
+This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. These artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed implements a **Transport Layer** and are basically an Envelope that carries the SNCM (or any other) information from one Trading Partner to another. The messages usually do not implement any Business Rule or limit the content to be delivered allowing the companies to exchange many types of files such as **SNCM** messages, **EPCIS**, **electronic Invoice** etc.
 
 Additionally, the standard implement a common Query Interface that enables the companies to query information on the HC Databases. It means that the sta##ndard enable pushing or pulling strategy.
 
