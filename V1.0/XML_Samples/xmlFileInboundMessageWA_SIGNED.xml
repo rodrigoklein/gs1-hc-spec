@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-10-04T15:24:05Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+<?xml version="1.0" encoding="UTF-8"?><InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-10-04T16:16:39Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
@@ -17,11 +17,11 @@
     <additionalInfo>
         <info key="AttorneyAuthorization">https://files.xxxx.com/0000000111212.xml</info>
     </additionalInfo>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>0Rqt/6iQRhI/BS9oRPjpLwwGMTc=</DigestValue></Reference></SignedInfo><SignatureValue>Oiw5ToUDOlpSBSOZH/kSdb0fipU5biWOszmz5mN6Sqy015XAX/IjJUm1PiWhYG5JoE4u3F5ZcD0N&#13;
-x3AJ5R4Bb9TgSfhJKaadgrZ+rLJfOt+qvAf5Ia+RyzS9GGiRQLvFZ/YZ+Xrf7soAPxYRoR4TmjFs&#13;
-P6IhgSpXRpgK+QiHE833q0L1gUBfwPmm9+WiYznWAXXcVw9+QZJM7U26y01BWCjIUFWTd4AlvIMK&#13;
-LbqhybXcs+UIq7yoUoBwKgSaZv7yhPr8wT2UEneWd2SE93gCCbyOsXhsEC7yzhoOA8Im7t3ACkcd&#13;
-Gb4aIxZ/eXfz0RTwPb7tZfdMDjZHKdoNEM1yfw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>EEPGirWSU+WpQ4f1z0Avosj5lEc=</DigestValue></Reference></SignedInfo><SignatureValue>LnVquA+y+ddnauMroIua3r+o1uRWhT5h6062UhST4y3HbrKGT00+qEnvQ8wTrkG9ezxJQfY7JiaT&#13;
+nWy1ijdlzY2fDO60hwLCXzcgc/9SRP20rkIJL8JvjwjrcmFb8iW/32d7NY4olqaXos+3ORvsEYuv&#13;
+EC91yShzUEDulJpccP5bYC8ciua8De4zFBARSLY/NYYmSUxdtK2QAyY7eQSHynvMSq/8oiKnvWp2&#13;
+V1B+aH6yL3XnMshFhOtPJpmb8sSa5jcoVljz1DtkX+0d1x5tepQKcuAb9GnLCH6dKRHYlyYO7rsV&#13;
+ja5cfY+unDrkoZ0epEkQvt4jhwddjZQ3XT0z0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;

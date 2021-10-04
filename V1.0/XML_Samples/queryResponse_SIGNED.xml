@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><QueryResponse xmlns="http://hc.gs1br.org.br/" date="2021-10-04T15:24:05Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+<?xml version="1.0" encoding="UTF-8"?><QueryResponse xmlns="http://hc.gs1br.org.br/" date="2021-10-04T16:16:40Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
@@ -9,31 +9,31 @@
     </receiver>
     <response>
         <queryResponseItem>
-            <date>2021-10-04T15:24:05Z</date>
+            <date>2021-10-04T16:16:40Z</date>
             <content encoding="XML" format="SNCM" schemaVersion="1.0">
                 <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL>
             </content>
         </queryResponseItem>
         <queryResponseItem>
-            <date>2021-10-04T15:24:05Z</date>
+            <date>2021-10-04T16:16:40Z</date>
             <content encoding="XML" format="SNCM" schemaVersion="1.0">
                 <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-1.xml</fileURL>
             </content>
         </queryResponseItem>
         <queryResponseItem>
-            <date>2021-10-04T15:24:05Z</date>
+            <date>2021-10-04T16:16:40Z</date>
             <content encoding="XML" format="SNCM" schemaVersion="1.0">
                 <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
             </content>
         </queryResponseItem>
         <queryResponseItem>
-            <date>2021-10-04T15:24:05Z</date>
+            <date>2021-10-04T16:16:40Z</date>
             <content encoding="XML" format="SNCM" schemaVersion="1.0">
                 <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-3.xml</fileURL>
             </content>
         </queryResponseItem>
         <queryResponseItem>
-            <date>2021-10-04T15:24:05Z</date>
+            <date>2021-10-04T16:16:40Z</date>
             <content encoding="XML" format="EPCIS" schemaVersion="2.0">
                 <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-4.xml</fileURL>
             </content>
@@ -46,11 +46,11 @@
             <errorDescription>Unknown Error</errorDescription>
         </error>
     </response>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>Zsb4/XpWO3+Bt7lJLovxPJE1AFg=</DigestValue></Reference></SignedInfo><SignatureValue>h73L2rvD4NlsL7jhHEEL8foZMqVIZi/R4xWtXBzIa+imec6Ja36Bk3gghNLY3zFw44i6XKVFK9m0&#13;
-z/6cioVSZPv9P0fLcb5igX8j9LhmYfAMom/Fp2TLcpTd8/eOK16+z9/5mO+2oMNISZ8f9htvXRvy&#13;
-BmbXZMTvjuPKckrHZdSGsbPWhP6olZmatee6AUgVpTq+E3eH4JqVBnBmQoogJe1DaH7jp6qfoDkw&#13;
-5QhW9QAdcX8yeM1axTXtJd80AmqN3JytTWLdNBSo6gQDWRQkkeHnNo2/1CTguXX61y8mLHwQYuFk&#13;
-A4XcgVQqeQ5rkfxCGgWD1E07+cvQUfOTViSrtw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>8ruoXdkFHgzOtgP0hxOMWvnu0MM=</DigestValue></Reference></SignedInfo><SignatureValue>Y+wBtA9FQXyzyqgM8lTucKVqBU0uBR6VNUPAGqX5CTsh0hCADWWRFwo22uvSeAVNUltbgQajKFkv&#13;
+pgNPkXdmG5mAUHqgOlNHx1u5hlbj/tzWynSrB9swi8GJx3enMj1dkTHxeWOP3j/QmU6fsHDuJ6oc&#13;
+mw0LYzif7CdELm27ekAIkrdr2iyJiR3t9fALXlcNlXN0cyvIV6+j6dLTt1BiOE4CsU1NJy48CthH&#13;
+iqHRaonhe3Lg4WvpS/ukpU+X38lHgu0MCD3j003IsUo9PoXkx7nNBrZiOO5YvDSrlxC0/clMAENA&#13;
+UZoAXjcD8HYU+AvFYgK1lbXkottTvCYFuIkVzA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;

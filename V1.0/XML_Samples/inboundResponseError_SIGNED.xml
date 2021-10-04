@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><InboundResponse xmlns="http://hc.gs1br.org.br/" date="2021-10-04T15:24:05Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+<?xml version="1.0" encoding="UTF-8"?><InboundResponse xmlns="http://hc.gs1br.org.br/" date="2021-10-04T16:16:39Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
@@ -7,15 +7,21 @@
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15041786000176</partnerValue>
     </receiver>
-    <error>
-        <errorCode>1001</errorCode>
-        <errorDescription>No data</errorDescription>
-    </error>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>/qvdcQ62MEJLwaB3TCrBx/1TaC0=</DigestValue></Reference></SignedInfo><SignatureValue>vDrkQHDEGOaNgwKR+My1e/njDktnwf6ci58IIaL/SsGCWbiWHzqc5U+UBXOPaeEIF+owHX75jYuR&#13;
-swMlM1CHVe62+ldzPskuq3DZhN8XJWz9LZbLdsjJvYZMIXWhnge28UlV/MxqceOCrsadS1jvSEVW&#13;
-EPXckY7qjYwkBuJtVxZ9ypesO+IMZfoq30FECnT8+l1ARTRDMLb4qClfee/X7mcRw7sAI5lIZIi+&#13;
-AJHcf/xsaYp9o3TvudqQ8i6d+9uJAMx8vQ/WJELmVN7QcBVGFoG0jes0iPpOJ44IGGerGWjomUNT&#13;
-ZtrBSwsJEgxaPeMmZgWg6LOaj6LBxZhad4DDmg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
+    <response>
+        <error>
+            <errorCode>1001</errorCode>
+            <errorDescription>No data</errorDescription>
+        </error>
+        <error>
+            <errorCode>2001</errorCode>
+            <errorDescription>Invalid parameters</errorDescription>
+        </error>
+    </response>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/><DigestValue>N5bhqivuya2AjPYQl9TY52aPCZg=</DigestValue></Reference></SignedInfo><SignatureValue>swH/ckBmD7rgt6768YJNM438aBtUTtTnPu5xdN+nWA5szP6LwgBVbCSuexOGs5r9DUvv+ZqCqsAE&#13;
+DXYamdN+ejFm77QWhlTP2EIndz75zaoaZo0cyb5cUilqS2bnTMGxepZjyN6hR5qOj5/CzZfXXtS+&#13;
+JiUUofvN0B9K3lcN6pjgRG8GYD9HZMYZEJxUFS6UHOwZT8HEaSfqvKpd5GTnKpLIC9/wq3hPTH1Y&#13;
+N3ft7VvunXnCS9gj7xQNiHd5vWmXRTTF6OLtRt8UtzEDoN7x/7snu+NeFSUCbgw9Ok8bTv+Q2vue&#13;
+zXjEiX845h+6L7JaBLSOmjSd8mtcvZf9F61gCA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=T2 SOFTWARE S A:13042274000195,OU=RFB e-CNPJ A1,OU=Secretaria da Receita Federal do Brasil - RFB,OU=29277404000109,OU=VideoConferencia,L=Sao Paulo,ST=SP,O=ICP-Brasil,C=BR</X509SubjectName><X509Certificate>MIIIAjCCBeqgAwIBAgIQC2LioAcGdMmoSdIbjUEVazANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQG&#13;
 EwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRh&#13;
 IEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc1MB4X&#13;
 DTIxMDMxOTE5NTczMVoXDTIyMDMxOTE5NTczMVowgfAxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJ&#13;
