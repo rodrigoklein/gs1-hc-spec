@@ -44,8 +44,6 @@ In this way, we are following the same stack of the SNCM System that means:
 
 - SOAP Webservices
 
-  
-
 
 ![image info](images/authSchema.png)
 
