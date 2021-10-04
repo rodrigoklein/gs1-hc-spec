@@ -16,9 +16,9 @@ In the image below you can see the *red line* representing the Vertical Communic
 
 ### What does this standard implement?
 
-This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. This artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed are basically an Envelope that carry the SNCM information from one Trading Partner to another.
+This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. These artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed implements a Transport Layer and are basically an Envelope that carries the SNCM (or any other) information from one Trading Partner to another. The messages usually do not implement any Business Rule or limit the content to be delivered allowing the companies to exchange many types of files such as SNCM messages, EPCIS, electronic Invoice etc.
 
-Additionally, the standard implement a common Query Interface that enables the companies to query information on the HC Databases. It means that the standard enable pushing or pulling strategy.
+Additionally, the standard implement a common Query Interface that enables the companies to query information on the HC Databases. It means that the sta##ndard enable pushing or pulling strategy.
 
 ![Two Way Communication](images/PushPull.jpg)
 
@@ -154,7 +154,7 @@ Below you can see the list of the Sample Messages
 
 | Message  | Purpose | Sample File | Reference |
 |----------|---------|-------------|-----------|
-| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization_SIGNED.xml](XML_Samples/Authorization_SIGNED.xml)| Reference |
+| Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization_SIGNED.xml](XML_Samples/Authorization_SIGNED.xml)| [Reference](References/Authorization.md) |
 | InboundMessage | The standard Message to send information to a Trading Partner (Pushing Strategy) | [inboundMessageBase64_SIGNED.xml](XML_Samples/inboundMessageBase64_SIGNED.xml)| Reference |
 | InboundMessage | The standard Message to send information to a Trading Partner using the URL Option (Pushing Strategy) | [inboundMessageFileURL_SIGNED.xml](XML_Samples/inboundMessageFileURL_SIGNED.xml)| Reference |
 | InboundMessage | The standard Message to send information to a Trading Partner with the Attorney Option | [xmlFileInboundMessageWA_SIGNED.xml](XML_Samples/xmlFileInboundMessageWA_SIGNED.xml)| Reference |
