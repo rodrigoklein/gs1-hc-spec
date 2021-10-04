@@ -37,9 +37,14 @@ Based on that, we have decided to keep the same stack that ANVISA is using. With
 In this way, we are following the same stack of the SNCM System that means:
 
 - The use of the SSL (Secure Shell Layer) over HTTP communication.
+
 - Mutual Authentication using the ICP-Brasil Digital certificates
+
 - Electronic Signature on the XML messages to assure the authenticity and integrity of the messages.
+
 - SOAP Webservices
+
+  
 
 
 ![image info](images/authSchema.png)
