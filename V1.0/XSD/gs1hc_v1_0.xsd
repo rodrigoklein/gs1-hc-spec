@@ -60,8 +60,7 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-
-
+     
     <xs:simpleType name="type">
         <xs:annotation>
 			<xs:documentation>The types for each message we can find inside the envelope.</xs:documentation>
@@ -77,12 +76,10 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
     </xs:restriction>
   </xs:simpleType>   
 
-
     <xs:attribute name="version"
                   type="xs:string" />
     <xs:attribute name="encoding"
                   type="xs:string" />
-    
     
     <xs:complexType name="file">
         <xs:annotation>
@@ -214,9 +211,8 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                             type="Partner"
                             minOccurs="1"
                             maxOccurs="1"/>
-                <xs:choice>
-                    
-                    
+
+               <!--<xs:choice>
                     <xs:element minOccurs="0"
                                 maxOccurs="unbounded"
                                 name="QueryResponseItem"
@@ -226,10 +222,13 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                                 type="Error"
                                 minOccurs="0"
                                 maxOccurs="unbounded"/>
-                    
-                    
                 </xs:choice>
 
+                -->
+                <xs:element minOccurs="0"
+                                maxOccurs="unbounded"
+                                name="response"
+                                type="ResponseList" />
                 <xs:element name="additionalInfo"
                             type="infolist" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
@@ -241,6 +240,19 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                           type="xs:string" />
         </xs:complexType>
     </xs:element>
+
+    <xs:complexType name="ResponseList">
+        <xs:choice>
+        <xs:sequence>
+            <xs:element name="queryResponseItem" type="QueryResponseItem" maxOccurs="unbounded"/>
+        </xs:sequence>
+            <xs:sequence>
+                <xs:element name="error" type="Error" maxOccurs="unbounded"/>
+            </xs:sequence>    
+        </xs:choice>
+
+    </xs:complexType>
+    
     <xs:element name="ErrorMessage">
         <xs:annotation>
 			<xs:documentation>Error message.</xs:documentation>
@@ -362,7 +374,7 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                             minOccurs="1" />
                             <xs:element name="receipt"
                             type="xs:string"
-                            minOccurs="1"
+                            minOccurs="0"
                             maxOccurs="1" />
 				</xs:choice>
 
