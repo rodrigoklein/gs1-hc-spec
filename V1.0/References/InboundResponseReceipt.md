@@ -42,7 +42,9 @@ The InboundResponse is a Message responsbile to provide the feedback if the mess
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
 |sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
 |receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
-|receipt|The content of the Message|Content (see XSD)|1910191019333440ABCAHYG|Receipt identification of the transaction|
+|response|list of Errors|Error List (see XSD)|<response>
+        ```<error><errorCode>1001</errorCode><errorDescription>No data</errorDescription></error><error><errorCode>2001</errorCode><errorDescription>Invalid parameters</errorDescription>
+                                                                                                </error></response>```|List of Errors|
 
 ##### Sample
 
