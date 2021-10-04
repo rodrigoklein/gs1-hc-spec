@@ -13,7 +13,7 @@ The InboundMessage is used to package the information to be sent from one partne
 |partnerTo|Receiver|Partner (see XSD)|```<partnerTo><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></partnerTo>```||
 |mbrAgt|Authorized Agent|Partner (see XSD)|```<mbrAgt><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></mbrAgt>```|Use this field if you are sending using the Authorization|
 |content|The content of the Message|Content (see XSD)|```<content><fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL></content>```||
-|additionalInfo|Tag/Value field to send and receive additional information in the transaction|additionalInfo (see XSD)|------|----|
+|additionalInfo|Tag/Value field to send and receive additional information in the transaction|additionalInfo (see XSD)|```<additionalInfo><info key="AttorneyAuthorization">https://files.xxxx.com/0000000111212.xml</info></additionalInfo>```|----|
 
 ##### Sample using fileURL
 
