@@ -212,23 +212,11 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                             minOccurs="1"
                             maxOccurs="1"/>
 
-               <!--<xs:choice>
-                    <xs:element minOccurs="0"
-                                maxOccurs="unbounded"
-                                name="QueryResponseItem"
-                                type="QueryResponseItem" />
-    
-                    <xs:element name="error"
-                                type="Error"
-                                minOccurs="0"
-                                maxOccurs="unbounded"/>
-                </xs:choice>
-
-                -->
                 <xs:element minOccurs="0"
                                 maxOccurs="unbounded"
                                 name="response"
                                 type="ResponseList" />
+                
                 <xs:element name="additionalInfo"
                             type="infolist" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
@@ -250,27 +238,13 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                 <xs:element name="error" type="Error" maxOccurs="unbounded"/>
             </xs:sequence>    
         </xs:choice>
-
     </xs:complexType>
-    
-    <xs:element name="ErrorMessage">
-        <xs:annotation>
-			<xs:documentation>Error message.</xs:documentation>
-		</xs:annotation>
-        <xs:complexType>
+
+    <xs:complexType name="ErrorList">
             <xs:sequence>
-                <xs:element name="error"
-                            type="Error"
-                            minOccurs="1" />
+                <xs:element name="error" type="Error" maxOccurs="unbounded"/>
             </xs:sequence>
-                        <xs:attribute name="id"
-                          type="id" />
-                        <xs:attribute name="date"
-                          type="UtcOnlyDateTime" />
-            <xs:attribute name="schemaVersion"
-                          type="xs:string" />
-        </xs:complexType>
-    </xs:element>
+    </xs:complexType>
     
     <xs:element name="InboundMessage">
         <xs:annotation>
@@ -369,9 +343,9 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                             minOccurs="1"
                             maxOccurs="1" />                                
                 <xs:choice>
-                            <xs:element name="error"
-                            type="Error"
-                            minOccurs="1" />
+                            <xs:element name="response"
+                            type="ErrorList"
+                            minOccurs="0" />
                             <xs:element name="receipt"
                             type="xs:string"
                             minOccurs="0"
