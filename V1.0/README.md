@@ -55,14 +55,14 @@ Below you can find a Sample Signed message with the specific tags needed by the 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <InboundMessage xmlns="http://hc.gs1br.org.br/" date="2021-10-01T16:42:00Z" id="123456978696050595050AAAABBBDDDDD">
-	<partnerFrom>
+	<sender>
 		<partnerKey>CNPJ</partnerKey>
 		<partnerValue>15042274000195</partnerValue>
-	</partnerFrom>
-	<partnerTo>
+	</sender>
+	<receiver>
 		<partnerKey>CNPJ</partnerKey>
 		<partnerValue>15041786000176</partnerValue>
-	</partnerTo>
+	</receiver>
 	<carrier>
 		<partnerKey>CNPJ</partnerKey>
 		<partnerValue>15042274000195</partnerValue>
