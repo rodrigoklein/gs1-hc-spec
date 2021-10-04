@@ -155,7 +155,7 @@ Below you can see the list of the Sample Messages
 | Message  | Purpose | Sample File | Reference |
 |----------|---------|-------------|-----------|
 | Authorization | Provide a way to inform the Attorney of a specific trading partner | [Authorization_SIGNED.xml](XML_Samples/Authorization_SIGNED.xml)| [Reference](References/Authorization.md) |
-| InboundMessage | The standard Message to send information to a Trading Partner (Pushing Strategy) | [inboundMessageBase64_SIGNED.xml](XML_Samples/inboundMessageBase64_SIGNED.xml)| Reference |
+| InboundMessage | The standard Message to send information to a Trading Partner (Pushing Strategy) | [inboundMessageBase64_SIGNED.xml](XML_Samples/inboundMessageBase64_SIGNED.xml)| [Reference](References/InboundMessage.md) |
 | InboundMessage | The standard Message to send information to a Trading Partner using the URL Option (Pushing Strategy) | [inboundMessageFileURL_SIGNED.xml](XML_Samples/inboundMessageFileURL_SIGNED.xml)| Reference |
 | InboundMessage | The standard Message to send information to a Trading Partner with the Attorney Option | [xmlFileInboundMessageWA_SIGNED.xml](XML_Samples/xmlFileInboundMessageWA_SIGNED.xml)| Reference |
 | inboundResponseReceipt | The receipt Message received by a Sender when send the Inbound Message to a Trading Partner | [inboundResponseReceipt_SIGNED.xml](XML_Samples/inboundResponseReceipt_SIGNED.xml)| Reference |
