@@ -1,0 +1,36 @@
+# InboundMessage Reference
+
+The InboundResponse is a Message responsbile to provide the feedback if the message was accepted by the receiver.
+
+> The receipt information is not the final information and means that the message was accepted but not processed.
+> To ask of the message was processed please see the Query Section
+
+### Fields of the Message
+
+|Field|Description|Data Type|Sample|Note|
+|-----|-----------|---------|------|----|
+|id|The id of the Message|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID have to be unique inside the Trading Partner|
+|date|The date of the Message Generation|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined with GMT-0|
+|schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
+|sender|The Sender of the Transaction|Partner (see XSD)|```<partnerFrom><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></partnerFrom>```||
+|receiver|The Receiver of the Transaction|Partner (see XSD)|```<partnerTo><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></partnerTo>```||
+|receipt|The content of the Message|Content (see XSD)|```<content><fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX.xml</fileURL></content>```||
+
+##### Sample using fileURL
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<InboundResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-04T15:24:05Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+    <sender>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15042274000195</partnerValue>
+    </sender>
+    <receiver>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15041786000176</partnerValue>
+    </receiver>
+    <receipt>1910191019333440ABCAHYG</receipt>
+</InboundResponse>
+```
+
+
