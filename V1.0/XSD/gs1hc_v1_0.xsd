@@ -370,7 +370,7 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
 		</xs:annotation>
         <xs:complexType>
             <xs:sequence>                
-                <xs:element name="partner"
+                <xs:element name="sender"
                             type="Partner"
                             minOccurs="1"
                             maxOccurs="1" />
