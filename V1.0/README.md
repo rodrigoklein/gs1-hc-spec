@@ -165,7 +165,7 @@ Below you can see the list of the Sample Messages
 | inboundResponseError | The Message received by a Sender when we have some error on the communication | [inboundResponseError_SIGNED.xml](XML_Samples/inboundResponseError_SIGNED.xml)| [Reference](References/InboundResponseReceipt.md#fields-of-the-message-with-error) |
 | QueryRequest | Query Message to ask for Messages in the server (Pulling Strategy) | [queryRequest_SIGNED.xml](XML_Samples/queryRequest_SIGNED.xml)| [Reference](References/QueryRequest.md) |
 | QueryResponse | Response Message returned by the server in getMessage method | [queryResponse_SIGNED.xml](XML_Samples/queryResponse_SIGNED.xml)| [Reference](References/QueryResponse.md) |
-| PreferenceData | Message returned by the getPreferences method which expose the Trading Partner Preferences | [preferenceData_SIGNED.xml](XML_Samples/preferenceData_SIGNED.xml)| Reference |
+| PreferenceData | Message returned by the getPreferences method which expose the Trading Partner Preferences | [preferenceData_SIGNED.xml](XML_Samples/preferenceData_SIGNED.xml)| [Reference](References/PreferenceData.md) |
 
 ### Hands on!
 
