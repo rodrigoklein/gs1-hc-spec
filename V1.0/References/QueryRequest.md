@@ -53,9 +53,9 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 |index|initial index for query results|Numeric|N|0|Start at result 0|
 |offset|final index of the query result|Numeric|N|10|Finish at result 10|
 |sender.Key|Key of the sender Partner object|String|Y|Ex: CNPJ||
-|sender.Value|Value of the sender Partner object|Y|String|15042274000199||
-|receiver.Key|Key of the receiver Partner object|Y|String|Ex: CNPJ||
-|receiver.Value|Value of the sender Partner object|Y|String|15042274000499||
+|sender.Value|Value of the sender Partner object|String|Y|15042274000199||
+|receiver.Key|Key of the receiver Partner object|String|Y!Ex: CNPJ||
+|receiver.Value|Value of the sender Partner object|String|Y|15042274000499||
 |dateFrom|Start date of the query|Datetime|N|2021-10-04T16:16:39Z||
 |dateTo|End date of the query|Datetime|N|2021-10-04T16:16:39Z||
 |additionalInfo.key|Key of the additionalInfo tag|String|N|InvoiceNumber||
