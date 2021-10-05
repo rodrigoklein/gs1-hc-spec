@@ -12,14 +12,7 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
 |sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
 |receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
-|queryRequestItem|list of QueryrequestItem|QueryRequestItem (see XSD)|``` <queryRequestItem>
-        <parameterKey>parameter</parameterKey>
-        <parameterValue>value</parameterValue>
-    </queryRequestItem>
-    <queryRequestItem>
-        <parameterKey>parameter1</parameterKey>
-        <parameterValue>value1</parameterValue>
-    </queryRequestItem>```|List of QueryRequestItem to pass parameters for the query|
+|queryRequestItem|list of QueryrequestItem|QueryRequestItem (see XSD)|```<queryRequestItem><parameterKey>parameter</parameterKey><parameterValue>value</parameterValue></queryRequestItem><queryRequestItem><parameterKey>parameter1</parameterKey><parameterValue>value1</parameterValue></queryRequestItem>```|List of QueryRequestItem to pass parameters for the query|
 
 ##### Sample
 
