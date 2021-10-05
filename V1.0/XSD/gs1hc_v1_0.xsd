@@ -369,8 +369,7 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
 			<xs:documentation>Response of the preferences Webservice Method.</xs:documentation>
 		</xs:annotation>
         <xs:complexType>
-            <xs:sequence>
-                
+            <xs:sequence>                
                 <xs:element name="partner"
                             type="Partner"
                             minOccurs="1"
