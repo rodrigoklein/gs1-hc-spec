@@ -48,5 +48,13 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 
 ### List of Parameters
 
-|Field|Description|Data Type|Sample|Note|
+|Parameter|Description|Data Type|Sample|Note|
 |-----|-----------|---------|------|----|
+|index|||||
+|offset|||||
+|sender.Key|||||
+|sender.Value|||||
+|receiver.Key|||||
+|receiver.Value|||||
+|dateFrom|||||
+|dateTo|||||
