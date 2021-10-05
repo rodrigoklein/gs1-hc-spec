@@ -58,3 +58,5 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 |receiver.Value|||||
 |dateFrom|||||
 |dateTo|||||
+|additionalInfo.key|||||
+|additionalInfo.value|||||
