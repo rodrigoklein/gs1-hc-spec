@@ -3,14 +3,14 @@
    <soapenv:Body>
       <ws:getPreferences>
          <queryRequest><![CDATA[<?xml version="1.0" encoding="UTF-8"?><QueryRequest xmlns="http://hc.gs1br.org.br/" date="2021-09-28T04:57:01Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
-    <partnerFrom>
+    <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13042274000195</partnerValue>
-    </partnerFrom>
-    <partnerTo>
+    </sender>
+    <receiver>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>13041786000176</partnerValue>
-    </partnerTo>
+    </receiver>
     <queryRequestItem>
         <parameterKey>parameter</parameterKey>
         <parameterValue>value</parameterValue>
