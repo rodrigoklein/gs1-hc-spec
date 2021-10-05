@@ -13,7 +13,7 @@ The QueryResponse is a Message returned by a Server when receives a QueryRequest
 |sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
 |receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
 |response|list of QueryResponseItem|QueryResponseItem(see XSD)|```<response><queryResponseItem><date>2021-10-04T16:16:40Z</date><content format="SNCM" schemaVersion="1.0" encoding="XML">  <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL></content></queryResponseItem></response>```|List of QueryResponseItem |
-
+|error|list of Error|Error (see XSD)||List of Error |
 ##### Sample
 
 ```xml
@@ -76,11 +76,13 @@ The QueryResponse is a Message returned by a Server when receives a QueryRequest
     <receiver>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15041786000176</partnerValue>
-    </receiver>    
-        <error>
-            <errorCode>1001</errorCode>
-            <errorDescription>Unknown Error</errorDescription>
-        </error>
+    </receiver>  
+	<response>	
+		<error>
+			<errorCode>1001</errorCode>
+			<errorDescription>Unknown Error</errorDescription>
+		</error>
+	</response>
     </response>
 </QueryResponse>
 ```
