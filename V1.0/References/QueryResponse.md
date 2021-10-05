@@ -82,7 +82,6 @@ The QueryResponse is a Message returned by a Server when receives a QueryRequest
 			<errorCode>1001</errorCode>
 			<errorDescription>Unknown Error</errorDescription>
 		</error>
-	</response>
     </response>
 </QueryResponse>
 ```
