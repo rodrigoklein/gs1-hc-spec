@@ -48,6 +48,7 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 
 ### List of Parameters
 
+
 |Parameter|Description|Data Type|Required|Sample|Note|
 |---------|-----------|---------|--------|------|----|
 |index|initial index for query results|Numeric|N|0|Start at result 0|
