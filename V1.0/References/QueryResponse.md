@@ -60,7 +60,23 @@ The QueryResponse is a Message returned by a Server when receives a QueryRequest
             <additionalInfo>
                 <info key="AttorneyAuthorization">https://files.xxxx.com/0000000111212.xml</info>
             </additionalInfo>
-        </queryResponseItem>
+        </queryResponseItem>       
+    </response>
+</QueryResponse>
+```
+##### Sample with Error
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-04T16:16:40Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+    <sender>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15042274000195</partnerValue>
+    </sender>
+    <receiver>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15041786000176</partnerValue>
+    </receiver>    
         <error>
             <errorCode>1001</errorCode>
             <errorDescription>Unknown Error</errorDescription>
@@ -68,5 +84,3 @@ The QueryResponse is a Message returned by a Server when receives a QueryRequest
     </response>
 </QueryResponse>
 ```
-
-
