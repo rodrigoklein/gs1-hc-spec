@@ -46,7 +46,7 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 
 ```
 
-### List of Parameters
+### List of allowed Parameters
 
 
 |Parameter|Description|Data Type|Required|Sample|Note|
