@@ -57,6 +57,6 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 |receiver.Key|Key of the receiver Partner object|Y|String|Ex: CNPJ||
 |receiver.Value|Value of the sender Partner object|Y|String|15042274000499||
 |dateFrom|Start date of the query|Datetime|N|2021-10-04T16:16:39Z||
-|dateTo|End date of the query|Datetime||2021-10-04T16:16:39Z||
+|dateTo|End date of the query|Datetime|N|2021-10-04T16:16:39Z||
 |additionalInfo.key|Key of the additionalInfo tag|String|N|InvoiceNumber||
 |additionalInfo.value|Value of the additionalInfo tag|String|N|10||
