@@ -181,4 +181,5 @@ Below you can see the real behavior of the standard an how it works.
 | Receiving  | This workflow demonstrate how to confirm to a trading partner the receiving of the serialized products |  [Reference](Workflow_Samples/ReceivingSample.md) |
 | Query Messages   | This workflow demonstrate how to query Messages from a Trading Partner |  [Reference](Workflow_Samples/QueryMessages.md) |
 | Query Preferences   | This workflow demonstrate how to query Preferences from a Trading Partner |  [Reference](Workflow_Samples/QueryPreferences.md) |
+| Query a Receipt   | This workflow demonstrate how to query to retrieve the results of a sending |  [Reference](#) |
 

@@ -127,6 +127,18 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                         type="xs:string" />
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="Message">
+        <xs:annotation>
+            <xs:documentation>Message field</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="messageCode"
+                        type="xs:string" />
+            <xs:element name="messageDescription"
+                        type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
     
     <xs:complexType name="QueryResponseItem">
         <xs:annotation>
@@ -234,9 +246,12 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
         <xs:sequence>
             <xs:element name="queryResponseItem" type="QueryResponseItem" maxOccurs="unbounded"/>
         </xs:sequence>
-            <xs:sequence>
-                <xs:element name="error" type="Error" maxOccurs="unbounded"/>
-            </xs:sequence>    
+        <xs:sequence>
+            <xs:element name="error" type="Error" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:sequence>
+            <xs:element name="message" type="Message" maxOccurs="unbounded"/>
+        </xs:sequence>
         </xs:choice>
     </xs:complexType>
 
@@ -303,9 +318,7 @@ This file is part of the work made by GS1 Brazil Horizontal Communication Workgr
                 <xs:element name="attorney"
                             type="Partner"
                             minOccurs="1"
-                            maxOccurs="1" />
-                
-
+                            maxOccurs="1" />            
                 <xs:element name="additionalInfo"
                             type="infolist" maxOccurs="1"></xs:element>
 
