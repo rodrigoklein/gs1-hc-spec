@@ -16,15 +16,15 @@ In the image below you can see the *red line* representing the Vertical Communic
 
 ### What does this standard implement?
 
-This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. These artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed implements a **Transport Layer** and are basically an Envelope that carries the SNCM (or any other) information from one Trading Partner to another. The messages usually do not implement any Business Rule or limit the content to be delivered allowing the companies to exchange many types of files such as **SNCM** messages, **EPCIS**, **electronic Invoice** etc.
+This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. These artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed implements a **Transport Layer** and are basically an Envelope that carries the SNCM (or any other) information from one Trading Partner to another. The messages usually do not implement any Business Rule or limit the content to be delivered allowing the companies to exchange many types of files such as **SNCM** messages, **EPCIS**, **Electronic Invoice** etc.
 
-Additionally, the standard implement a common Query Interface that enables the companies to query information on the HC Databases. It means that the sta##ndard enable pushing or pulling strategy.
+Additionally, the standard implement a common Query Interface that enables the companies to query information on the HC Databases. It means that the standard enable pushing or pulling strategy.
 
 ![Two Way Communication](images/PushPull.jpg)
 
 ### What does we have inside the HC Standard?
 
-The standard basically implements a Webservice whith 3 simple methods that allows the data exchange between the companies. In addition we also developed some XML artifacts that can act as an Envelope to provide a standard wey to package and route messages among the supply chain.
+The standard basically implements a Webservice with 3 simple methods that allows the data exchange between the companies. In addition we also developed some XML artifacts that can act as an Envelope to provide a standard way to package and route messages among the supply chain.
 
 ### What is the technology and security of the HC Standard?
 

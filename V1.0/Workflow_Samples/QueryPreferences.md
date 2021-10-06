@@ -46,55 +46,25 @@ To do this, we have to create the QueryRequest message and send throught the Man
 </QueryRequest>
 ```
 
-The Manufacturer webservice will answer with the list of messages involved in that transaction.
+The Distributor webservice will answer with the list of hos preferences.
 
 ### QueryResponse
 
 ````xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-04T16:16:40Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
-    <sender>
-        <partnerKey>CNPJ</partnerKey>
-        <partnerValue>15042274000195</partnerValue>
-    </sender>
-    <receiver>
+<PreferenceData id="056B8150AA384A8FA08990C7AE01E7ED" xmlns="http://hc.gs1br.org.br/">
+    <partner>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>83042274000167</partnerValue>
-    </receiver>
-    <response>
-        <queryResponseItem>
-            <date>2021-10-04T16:16:40Z</date>
-            <content format="SNCM" schemaVersion="1.0" encoding="XML">
-                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL>
-            </content>
-        </queryResponseItem>
-        <queryResponseItem>
-            <date>2021-10-04T16:16:40Z</date>
-            <content format="SNCM" schemaVersion="1.0" encoding="XML">
-                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-1.xml</fileURL>
-            </content>
-        </queryResponseItem>
-        <queryResponseItem>
-            <date>2021-10-04T16:16:40Z</date>
-            <content format="SNCM" schemaVersion="1.0" encoding="XML">
-                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
-            </content>
-        </queryResponseItem>
-        <queryResponseItem>
-            <date>2021-10-04T16:16:40Z</date>
-            <content format="SNCM" schemaVersion="1.0" encoding="XML">
-                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-3.xml</fileURL>
-            </content>
-        </queryResponseItem>
-        <queryResponseItem>
-            <date>2021-10-04T16:16:40Z</date>
-            <content format="EPCIS" schemaVersion="2.0" encoding="XML">
-                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-4.xml</fileURL>
-            </content>
-            <additionalInfo>
-                <info key="AttorneyAuthorization">https://files.xxxx.com/0000000111212.xml</info>
-            </additionalInfo>
-        </queryResponseItem>       
-    </response>
-</QueryResponse>
+    </partner>
+    <preferences>
+        <info key="key0">value0</info>
+        <info key="key1">value1</info>
+        <info key="key2">value2</info>
+        <info key="key3">value3</info>
+        <info key="key4">value4</info>
+        <info key="key5">value5</info>
+        <info key="key6">value6</info>
+    </preferences>
+</PreferenceData>
 ```

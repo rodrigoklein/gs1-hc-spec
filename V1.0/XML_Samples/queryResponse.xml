@@ -42,9 +42,5 @@
                 <info key="AttorneyAuthorization">https://files.xxxx.com/0000000111212.xml</info>
             </additionalInfo>
         </queryResponseItem>
-        <error>
-            <errorCode>1001</errorCode>
-            <errorDescription>Unknown Error</errorDescription>
-        </error>
     </response>
 </QueryResponse>
