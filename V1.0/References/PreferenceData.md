@@ -30,3 +30,11 @@ The PreferenceData is the message returned by getPreferences webservice method.
     </preferences>
 </PreferenceData>
 ```
+
+### Allowed PreferenceData
+
+|Preference|Description|Data Type|Note|
+|----------|-----------|---------|----|
+|epcis.allowed|If the server accept EPCIS BR Standard|true/false||
+|base64message.allowed|If the server accept base64 messages in the body|true/false||
+
