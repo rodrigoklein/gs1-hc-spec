@@ -31,8 +31,8 @@ To do this, we have to create the QueryRequest message and send throught the Man
         <partnerValue>83042274000167</partnerValue>
     </sender>
     <receiver>
-	<partnerKey>CNPJ</partnerKey>
-	<partnerKey>15042274000195</partnerKey>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerKey>15042274000195</partnerKey>
     </receiver>
     <queryRequestItem>
         <parameterKey>sender.Key</parameterKey>
