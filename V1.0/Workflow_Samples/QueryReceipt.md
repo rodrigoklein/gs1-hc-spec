@@ -72,8 +72,8 @@ The Distributor webservice will answer with the list of the errors.
         <partnerValue>15042274000195</partnerValue>
     </sender>
     <receiver>
-        <partnerKey>CNPJ</partnerKey>
-        <partnerValue>15041786000176</partnerValue>
+    	   <partnerKey>CNPJ</partnerKey>
+        <partnerKey>83042274000167</partnerKey>
     </receiver>
     <response>
         <message>
@@ -89,13 +89,13 @@ The Distributor webservice will answer with the list of the errors.
 ````xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-06T12:52:01Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
-    <sender>
+   <sender>
         <partnerKey>CNPJ</partnerKey>
         <partnerValue>15042274000195</partnerValue>
     </sender>
     <receiver>
-        <partnerKey>CNPJ</partnerKey>
-        <partnerValue>15041786000176</partnerValue>
+    	   <partnerKey>CNPJ</partnerKey>
+        <partnerKey>83042274000167</partnerKey>
     </receiver>
     <response>
         <error>
