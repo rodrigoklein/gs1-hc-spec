@@ -28,11 +28,11 @@ To do this, we have to create the QueryRequest message and send throught the Man
 <QueryRequest xmlns="http://hc.gs1br.org.br/" date="2021-09-27T06:13:29Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <sender>
 		<partnerKey>CNPJ</partnerKey>
-        <partnerValue>83042274000167</partnerValue>
+		<partnerValue>83042274000167</partnerValue>
     </sender>
     <receiver>
 		<partnerKey>CNPJ</partnerKey>
-        <partnerKey>15042274000195</partnerKey>
+		<partnerKey>15042274000195</partnerKey>
     </receiver>
     <queryRequestItem>
         <parameterKey>sender.Key</parameterKey>
