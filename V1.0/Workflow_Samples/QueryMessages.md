@@ -1,4 +1,4 @@
-# Shipment Sample
+# QueryMessage Sample
 
 In this scenario you are a Distributor and you received a shipment from a Manufacturer but you didn´t receive the information.
 
