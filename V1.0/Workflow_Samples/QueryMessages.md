@@ -27,8 +27,8 @@ To do this, we have to create the QueryRequest message and send throught the Man
 <?xml version="1.0" encoding="UTF-8"?>
 <QueryRequest xmlns="http://hc.gs1br.org.br/" date="2021-09-27T06:13:29Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
     <sender>
-	<partnerKey>CNPJ</partnerKey>
-	<partnerValue>83042274000167</partnerValue>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>83042274000167</partnerValue>
     </sender>
     <receiver>
 	<partnerKey>CNPJ</partnerKey>
