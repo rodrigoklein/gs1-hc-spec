@@ -54,7 +54,7 @@ To do this, we have to create the QueryRequest message and send throught the Man
         <parameterKey>additionalInfo.key</parameterKey>
         <parameterValue>InvoiceNumber</parameterValue>
     </queryRequestItem>	
-	<queryRequestItem>
+    <queryRequestItem>
         <parameterKey>additionalInfo.value</parameterKey>
         <parameterValue>1000988</parameterValue>
     </queryRequestItem>
