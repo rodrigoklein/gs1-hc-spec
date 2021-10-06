@@ -17,92 +17,127 @@ In this scenario, you are the CNPJ 83042274000167 and you are receiving 3 serial
 
 ![image info](../images/Query.jpg)
 
+Based on the scenario above, the Distributor need to find messages in the Manufacturer.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Sending message to SNCM
-
-
-
-
-
-
-This is the message you sent to SNCM:
+To do this, we have to create the QueryRequest message and send throught the Manufacturer Webservice.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<msgEvtIn xmlns="http://sncm.anvisa.gov.br/">
-    <docId>38C78456D9444E609F4E</docId>
-    <ccTime>2021-08-19T19:29:31Z</ccTime>
-    <ver>0.01</ver>
-    <lc>pt-BR</lc>
-    <env>1</env>
-    <declarant>
-        <cnpj>15042274000195</cnpj>
-    </declarant>
-    <mbrAgt>15042274000195</mbrAgt>
-    <usrAgt>T2 Software S.A - V1.0</usrAgt>
-    <evts>
-        <shpt>
-            <evtNotifId>73A1E095C3B547F281FF</evtNotifId>
-            <realTime>true</realTime>
-            <pastTime>2021-08-19T19:29:31Z</pastTime>
-            <fit>false</fit>
-            <prtnr>
-                <cnpj>83042274000167</cnpj>
-            </prtnr>
-            <carrs>
-                <car>
-                    <cnpj>73042274000167</cnpj>
-                </car>
-            </carrs>
-            <pld>
-                <dui>
-                    <gtin>07891234545454</gtin>
-                    <serl>01010101001010</serl>
-                    <exp>2021-08</exp>
-                    <lot>LOTE</lot>
-                </dui>
-                <dui>
-                    <gtin>07891234545454</gtin>
-                    <serl>01010101001011</serl>
-                    <exp>2021-08</exp>
-                    <lot>LOTE</lot>
-                </dui>
-                <dui>
-                    <gtin>07891234545454</gtin>
-                    <serl>01010101001012</serl>
-                    <exp>2021-08</exp>
-                    <lot>LOTE</lot>
-                </dui>                
-            </pld>
-        </shpt>
-    </evts>
-</msgEvtIn>
+<?xml version="1.0" encoding="UTF-8"?>
+<QueryRequest xmlns="http://hc.gs1br.org.br/" date="2021-09-27T06:13:29Z" id="123456978696050595050AAAABBBDDDDD" schemaVersion="1.0">
+    <sender>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>83042274000167</partnerValue>
+    </sender>
+    <receiver>
+		<partnerKey>CNPJ</partnerKey>
+        <partnerKey>15042274000195</partnerKey>
+    </receiver>
+    <queryRequestItem>
+        <parameterKey>sender.Key</parameterKey>
+        <parameterValue>CNPJ</parameterValue>
+    </queryRequestItem>
+    <queryRequestItem>
+        <parameterKey>sender.Value</parameterKey>
+        <parameterValue>15042274000195</parameterValue>
+    </queryRequestItem>
+	<queryRequestItem>
+        <parameterKey>receiver.Key</parameterKey>
+        <parameterValue>CNPJ</parameterValue>
+    </queryRequestItem>
+    <queryRequestItem>
+        <parameterKey>receiver.Value</parameterKey>
+        <parameterValue>83042274000167</parameterValue>
+    </queryRequestItem>
+	<queryRequestItem>
+        <parameterKey>additionalInfo.key</parameterKey>
+        <parameterValue>InvoiceNumber</parameterValue>
+    </queryRequestItem>	
+	<queryRequestItem>
+        <parameterKey>additionalInfo.value</parameterKey>
+        <parameterValue>1000988</parameterValue>
+    </queryRequestItem>
+</QueryRequest>
 ```
+
+The Manufacturer webservice will answer with the list of messages involved in that transaction.
+
+### QueryResponse
+
+````xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-04T16:16:40Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+    <sender>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15042274000195</partnerValue>
+    </sender>
+    <receiver>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>83042274000167</partnerValue>
+    </receiver>
+    <response>
+        <queryResponseItem>
+            <date>2021-10-04T16:16:40Z</date>
+            <content format="SNCM" schemaVersion="1.0" encoding="XML">
+                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-0.xml</fileURL>
+            </content>
+        </queryResponseItem>
+        <queryResponseItem>
+            <date>2021-10-04T16:16:40Z</date>
+            <content format="SNCM" schemaVersion="1.0" encoding="XML">
+                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-1.xml</fileURL>
+            </content>
+        </queryResponseItem>
+        <queryResponseItem>
+            <date>2021-10-04T16:16:40Z</date>
+            <content format="SNCM" schemaVersion="1.0" encoding="XML">
+                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-2.xml</fileURL>
+            </content>
+        </queryResponseItem>
+        <queryResponseItem>
+            <date>2021-10-04T16:16:40Z</date>
+            <content format="SNCM" schemaVersion="1.0" encoding="XML">
+                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-3.xml</fileURL>
+            </content>
+        </queryResponseItem>
+        <queryResponseItem>
+            <date>2021-10-04T16:16:40Z</date>
+            <content format="EPCIS" schemaVersion="2.0" encoding="XML">
+                <fileURL>https://sampleurl.sampledomain.com/fileXXXXXXXX-4.xml</fileURL>
+            </content>
+            <additionalInfo>
+                <info key="AttorneyAuthorization">https://files.xxxx.com/0000000111212.xml</info>
+            </additionalInfo>
+        </queryResponseItem>       
+    </response>
+</QueryResponse>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Preparing the Horizontal Communication
 
