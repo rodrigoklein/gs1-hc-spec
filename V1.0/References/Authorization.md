@@ -1,6 +1,6 @@
 # Authorization Reference
 
-The Authorization Message is a way to expose to a Trading Partner the authorization to perform transactions on benhalf of another.
+The Authorization Message is a way to expose to a Trading Partner the authorization to perform transactions on behalf of another.
 
 > Please see the ANVISA´s Attorney reference.
 

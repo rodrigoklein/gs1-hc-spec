@@ -8,12 +8,12 @@ To have a better understanding, please read the Shipment Sample before continue.
 
 In this scenario, we will receive the transaction that was sent by a Manufacturer to a Distributor. 
 
-If in the last sample (Shipment), the sender was the CNPJ 15042274000195, now we need to invert the trading partners because the flow now starts from the distribuitor that needs to confirm the receiving of the goods.
+If in the last sample (Shipment), the sender was the CNPJ 15042274000195, now we need to invert the trading partners because the flow now starts from the distributor that needs to confirm the receiving of the goods.
 
 - Sender - CNPJ 83042274000167 (Distributor)
 - Receiver - CNPJ 15042274000195 (Manufacturer)
 
-> Just to give a clear information, 
+> Just to give clear information, 
 > the messages in this sample
 > do not have the SIGNATURE tags
 
@@ -24,6 +24,7 @@ If in the last sample (Shipment), the sender was the CNPJ 15042274000195, now we
 ### Sending message to SNCM
 
 This is the message you sent to SNCM:
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -83,7 +84,7 @@ Once you have the message, you need to inform the Manufacturer that you are rece
 
 To perform this operation you need to package this information into a Horizontal Communication message InboundMessage and you also need to know the address of his webservice.
 
-You have two options use inside the InboundMessage message.
+You have two options to use inside the InboundMessage message.
 
 - Store the message in a public address and use the fileurl tag;
 - Encode the message in a BASE64 format and use the filecontent tag
@@ -155,7 +156,7 @@ Once you do it, you need to send the InboundMessage through the receiver (Manufa
 
 ### Webservice Response
 
-The webservice will receive the message and need to return a InboundResponse message which contains a receipt identification that must be stored by the sender in order to have the confirmation of the receiver.
+The webservice will receive the message and need to return an InboundResponse message which contains a receipt identification that must be stored by the sender in order to have the confirmation of the receiver.
 
 ```xml
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -178,7 +179,7 @@ The webservice will receive the message and need to return a InboundResponse mes
 </soap:Envelope>
 ```
 
-If the receiver has any problem with the message in receiving process, the server need to send an InboundResponse with an error that can indicate we have a problem and the message will not be processed.
+If the receiver has any problem with the message in receiving process, the server needs to send an InboundResponse with an error that can indicate we have a problem and the message will not be processed.
 
 These problems can be an unknown partner at that server, problems with the message format, problems with the Authorization, with the certificate, with the signature etc.
 
@@ -186,7 +187,7 @@ These problems can be an unknown partner at that server, problems with the messa
 
 Below you can find an InboundResponse with an Error.
 
-If you get an error tag instead a receipt, knows that the message can´t be consider delivered.
+If you get an error tag instead of a receipt, know that the message can´t be considered delivered.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

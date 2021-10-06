@@ -1,9 +1,10 @@
 # InboundResponse Reference
 
-The InboundResponse is a Message responsbile to provide the feedback if the message was accepted by the receiver.
+The InboundResponse is a Message responsible to provide feedback if the message was accepted by the receiver.
 
 > The receipt information is not the final information and means that the message was accepted but not processed.
-> To ask of the message was processed please see the Query Section
+> To ask if the message was processed please see the Query Section
+
 
 ### Fields of the Message
 

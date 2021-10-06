@@ -78,7 +78,7 @@ This is the message you sent to SNCM:
 Once you have the message, you need to inform the Distributor that you are sending the goods to him.
 To perform this operation you need to package this information into a Horizontal Communication message InboundMessage and you also need to know the address of his webservice.
 
-You have two options use inside the InboundMessage message.
+You have two options to use inside the InboundMessage message.
 
 - Store the message in a public address and use the fileurl tag;
 - Encode the message in a BASE64 format and use the filecontent tag
@@ -93,7 +93,7 @@ PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8bXNn
 
 ### Packaging the SNCM message inside the HC InboundMessage Envelope.
 
-Now we need to package the message inside the InboundMessage in order to allow the message rounting between the trading partners on the supply chain.
+Now we need to package the message inside the InboundMessage in order to allow the message routing between the trading partners on the supply chain.
 
 Packaging this message inside an InboundMessage we have the XML below.
 
@@ -152,7 +152,7 @@ Once you do it, you need to send the InboundMessage through the receiver (Distri
 
 ### Webservice Response
 
-The webservice will receive the message and need to return a InboundResponse message which contains a receipt identification that must be stored by the sender in order to have the confirmation of the receiver.
+The webservice will receive the message and need to return an InboundResponse message which contains a receipt identification that must be stored by the sender in order to have the confirmation of the receiver.
 
 ```xml
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
@@ -174,7 +174,7 @@ The webservice will receive the message and need to return a InboundResponse mes
    </soap:Body>
 </soap:Envelope>
 ```
-If the receiver has any problem with the message in receiving process, the server need to send an InboundResponse with an error that can indicate we have a problem and the message will not be processed.
+If the receiver has any problem with the message in receiving process, the server needs to send an InboundResponse with an error that can indicate we have a problem and the message will not be processed.
 
 These problems can be an unknown partner at that server, problems with the message format, problems with the Authorization, with the certificate, with the signature etc.
 
@@ -182,7 +182,7 @@ These problems can be an unknown partner at that server, problems with the messa
 
 Below you can find an InboundResponse with an Error.
 
-If you get an error tag instead a receipt, knows that the message can´t be consider delivered.
+If you get an error tag instead of a receipt, know that the message can´t be considered delivered.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
