@@ -62,20 +62,47 @@ The Distributor webservice will answer with the list of the errors.
 
 > if you receive a message with 0 errors
 
-### QueryResponse
+### QueryResponse with Message
 
 ````xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<QueryResponse id="90189F279F0043E891EDA41664F9DD4D" date="2021-10-06T09:40:21Z" xmlns="http://hc.gs1br.org.br/">
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-06T12:52:01Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
     <sender>
         <partnerKey>CNPJ</partnerKey>
-        <partnerValue>13042274000195</partnerValue>
+        <partnerValue>15042274000195</partnerValue>
     </sender>
-<response>
+    <receiver>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15041786000176</partnerValue>
+    </receiver>
+    <response>
+        <message>
+            <messageCode>9999</messageCode>
+            <messageDescription>Message Received</messageDescription>
+        </message>
+    </response>
+</QueryResponse>
+```
+
+### QueryResponse with Error
+
+````xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-06T12:52:01Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+    <sender>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15042274000195</partnerValue>
+    </sender>
+    <receiver>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15041786000176</partnerValue>
+    </receiver>
+    <response>
         <error>
             <errorCode>1001</errorCode>
             <errorDescription>Unknown Error</errorDescription>
         </error>
     </response>
 </QueryResponse>
+
 ```
