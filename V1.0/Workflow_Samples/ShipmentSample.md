@@ -1,6 +1,6 @@
 # Shipment Sample
 
-within a commercial transaction context between two trading partners.
+Shipment is the first and most basic transaction happening in the supply chain, within a commercial transaction context between two trading partners.
 
 In the shipment example below, we will use a hypothetical example of a manufacturer sending goods to a distributor.
 
