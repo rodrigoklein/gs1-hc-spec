@@ -1,40 +1,40 @@
 # The Horizontal Communication Standard
 
-The information on this page explains how horizontal communication works.
+The information on this page explains how the horizontal communication (HC) in Brazil works.
 
 ### What is Horizontal Communication?
 
-If you are here, probably you are in developing something or you are in charge to manage a traceability project to follow the Brazil Regulation about the SNCM.
+If you are reading this document, probably you are developing something or in charge to implement a traceability project following the Brazilian Regulation.
 
-Based on the ANVISA´s decision to keep their efforts to handle only the Vertical Communication of the drug traceability, the market needs to find a way to improve the efficiency of the data exchange on the supply chain. 
+Based on ANVISA´s decision to keep their focus to handle only the Vertical Communication, the market had to find a collaborative way to technically align on how the track & trace communication among trading partners will occur. This alignment also had a basic assumption that trading partners should not implement two different communication models for the same market.
 
-This search for efficiency means that we need to have some standard interfaces to provide a faster onboarding of the trading partners in Brazil. If we start looking only on the private market, we have more than 70000 drugstores, 2000 distributors, and 400 pharmaceutical companies to connect. It can consume a lot of time (and money) when we look at the traditional approach that the service providers usually use to connect the trading partners.
+This search for an effective solution also considered standard interfaces as a way to provide faster onboarding to the trading partners in Brazil. Looking only in the private market, Brazil has more than 70000 drugstores, 2000 distributors, and 400 manufacturers to connect. It can consume a lot of time (and money) if we follow the traditional approach that service providers usually use to connect trading partners.
 
-In the image below you can see the *red line* representing the Vertical Communication that is the data exchange between the companies and the regulatory authority (ANVISA). In *blue* you can see what we are addressing in this standard that is the communication among trading partners in the supply chain..
+In the image below the red line represents the Vertical Communication, which is the data exchange happening between companies and the regulatory authority (ANVISA). The data exchange in blue represents the communication among trading partners in the supply chain, which is the focus of this HC standard.
 
 ![Horizontal Communication vs Vertical Communication](images/HorizontalComm.jpg)
 
 ### What does this standard implement?
 
-This standard developed by a GS1 Brazil Workgroup developed some common artifacts that enable the interoperability between trading partners. These artifacts are basically a set of Interfaces and Messages that act as a glue between companies in the supply chain. The messages here developed implements a **Transport Layer** and are basically an Envelope that carries the SNCM (or any other) information from one Trading Partner to another. The messages usually do not implement any Business Rule or limit the content to be delivered allowing the companies to exchange many types of files such as **SNCM** messages, **EPCIS**, **Electronic Invoice**, etc.
+This standard created by participants of a focused GS1 Brazil Workgroup developed some common artifacts that will enable the interoperability among trading partners. These artifacts are formed by a set of Interfaces and Messages that act as a glue across companies within the supply chain. The messages here developed implement a **Transport Layer** that can be considered as an Envelope that carries the SNCM (or any other) message from one Trading Partner to another one. These messages are not implementing any Business Rule and are not restricting the content to be delivered. It allows trading partners to exchange different types of files such as the **SNCM** messages, **EPCIS messages**, **Electronic Invoice**, etc.
 
-Additionally, the standard implements a common Query Interface that enables the companies to query information on the HC Databases. It means that the standard enables a pushing or pulling strategy.
+This standard also implements a common Query Interface that enables companies to query information from their trading partners’ webservices. It means that the standard enables either a pushing or pulling strategy.
 
 ![Two Way Communication](images/PushPull.jpg)
 
-### What do we have inside the HC Standard?
+### What do we have in this HC Standard?
 
-The standard basically implements a Webservice with 3 simple methods that allow the data exchange between the companies. In addition, we also developed some XML artifacts that can act as an Envelope to provide a standard way to package and route messages among the supply chain.
+The standard basically helps companies on the implementation of a Webservice with 3 simple methods that allow the data exchange among companies. In addition, we also developed some XML artifacts that can act as an Envelope to provide a standard way to package and route messages through the supply chain.
 
-### What is the technology and security of the HC Standard?
+### What is the technology and the security aspects of this HC Standard?
 
-At the beginning of the work, the workgroup made some assumptions to speed up the development and put the focus on the most important points to work. 
+At early stages of the GS1 Workgroup effort, the participants aligned on assumptions that could speed up the development of the standard and focused on the most critical decisions needed.
 
-The main assumption was that we do not need to stay focused on the technology because it can become an infinite loop. Nowadays we have many good alternatives on the market and each member of the group could have their own preferences. 
+The main assumption was that the group would not focus on new technologies as it would drive the team to a never ending technical discussion . Nowadays there are many technical alternatives on the market for data exchange and the risk that each member of the group would have specific technical preferences could create a negative impact to the final outcome.
 
-Based on that, we have decided to keep the same stack that ANVISA is using. With this strategy, we can save time discussing the technology and can save a lot of money in terms of software development because the same developer that needs to implement the vertical connection to the SNCM also can develop horizontal communication.
+Based on that, the group participants decided to keep the same technological stack that ANVISA is using. With this strategy, all trading partners can save time and resources in terms of software development as the same developer who needs to implement the vertical communication with the SNCM also can develop the HC.
 
-In this way, we are following the same stack of the SNCM System that means:
+The HC principles are following the same technical stack as the SNCM System, meaning:
 
 - The use of the SSL (Secure Shell Layer) over HTTP communication.
 
@@ -46,7 +46,6 @@ In this way, we are following the same stack of the SNCM System that means:
 
 
 ![image info](images/authSchema.png)
-
 
 Below you can find a Sample Signed message with the specific tags needed by the XML Signature using X509 Certificates.
 
@@ -133,11 +132,11 @@ sJ8=</X509Certificate>
 
 ### Anatomy of the Webservice
 
-The technology behind the main interface of Horizontal Communication is SOAP (Simple Object Access Protocol). This technology is a well-known technology that many companies already have developers that knows it.
+The technology behind the main interface of the HC is SOAP (Simple Object Access Protocol). This technology is a well-known among many companies and developers worldwide.
 
-The Standard has only one web service which contains 3 methods that enable communication.
+The HC Standard has only one webservice which contains 3 methods that enable communication.
 
-The web service named DataWS is responsible to make available the methods below.
+The webservice named DataWS is responsible to make available the methods below.
 
 | Method | Description | Input | Return|
 |--------|-------------|--------|--------|
@@ -151,9 +150,10 @@ For more information about the webservice, please look at the WSDL file.
 
 ### Messages
 
-As we told before, the standard is a set of artifacts that can enable the communication between trading partners acting as a glue between them. To perform this task using the webservice above, we need to have a set of Messages that can be used as an Envelope to enable the routing between the parts.
+As we mentioned before, the HC standard is a set of artifacts that can enable the communication among trading partners. For this task to be performed using the webservice above, a set of messages need to be structured so they can be used as an Envelope to enable the routing across the parties.
 
-Below you can see the list of the Sample Messages
+Below you can see the complete list of these messages
+
 
 | Message  | Purpose | Sample File | Reference |
 |----------|---------|-------------|-----------|
@@ -169,11 +169,11 @@ Below you can see the list of the Sample Messages
 
 ### Hands on!
 
-Here we can demonstrate how choreography works in the practice.
+In this section we demonstrate how the choreography will be put into practice.
 
 #### Sample Workflow
 
-Below you can see the real behavior of the standard and how it works.
+The details about how the HC choreography works is shown throughout the workflows below.
 
 | Workflow  | Description |  Reference |
 |-----------|-------------|------------|
