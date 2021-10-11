@@ -1,6 +1,6 @@
 # Authorization Reference
 
-The Authorization Message is a way to expose to a Trading Partner the authorization to perform transactions on behalf of another.
+The Authorization Message is the method a company has to formalize its "attorney" to act on their behalf and perform transactions with a Trading Partner.
 
 > Please see the ANVISA´s Attorney reference.
 
@@ -8,12 +8,12 @@ The Authorization Message is a way to expose to a Trading Partner the authorizat
 
 |Field|Description|Data Type|Sample|Note|
 |-----|-----------|---------|------|----|
-|id|The id of the Message|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID have to be unique inside the Trading Partner|
-|date|The date of the Message Generation|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined with GMT-0|
+|id|The Message ID|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID has to be unique for the Trading Partner|
+|date|Message Generation Date|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined as GMT-0|
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
-|expireDate|The expire date of this Authorization|Datetime with Timezone|2021-12-01T00:00:00Z|The Authorization will be valid until this date|
-|sender|Partner that is generating this Authorization|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
-|partnerAttorney|Partner that is allowed to use this Authorization|Partner (see XSD)|```<partnerAttorney><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></partnerAttorney>```||
+|expireDate|Authorization Expiration Date|Datetime with Timezone|2021-12-01T00:00:00Z|The Authorization will be valid till this date|
+|sender|Partner that is giving the Authorization|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
+|partnerAttorney|Partner that is allowed to use the Authorization|Partner (see XSD)|```<partnerAttorney><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></partnerAttorney>```||
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
