@@ -1,10 +1,10 @@
-# QueryMessage Sample
+# QueryPreferences Sample
 
-Following the workflow samples, in this document we will explain how to query a HC Server to retrieve the partner Preferences.
+Following the previous workflow examples, in this section we will explain how to query a trading partner webservice to retrieve the partner’s Preferences.
 
-In this scenario, you are the CNPJ 15042274000195 and your trading partner has the CNPJ 83042274000167 that is a Distributor.
+In this hypothetical scenario, a manufacturer has the CNPJ 15042274000195 and its trading partner (distributor) has the CNPJ 83042274000167.
 
-You want to know how can you send the messages to his server.
+The manufacturer wants to know how messages need to be sent to the distributor’s webservice.
 
 - Sender - CNPJ 15042274000195 (Manufacturer)
 - Receiver - CNPJ 83042274000167 (Distributor)
@@ -18,9 +18,10 @@ You want to know how can you send the messages to his server.
 
 ![image info](../images/getPreferences.jpg)
 
-Based on the scenario above, the Manufacturer will call the getPreferences method in the webservice of the Distributor.
+Based on the scenario above, the manufacturer will call the getPreferences method in the distributor’s webservice.
 
-To do this, we have to create the QueryRequest message and send throught the Manufacturer Webservice.
+To perform this operation, a QueryRequest message has to be created and sent throught the manufacturer’s webservice.
+
 
 ### Creating the QueryRequest
 
@@ -46,7 +47,7 @@ To do this, we have to create the QueryRequest message and send throught the Man
 </QueryRequest>
 ```
 
-The Distributor webservice will answer with the list of hos preferences.
+The Distributor webservice will answer with the list of host preferences.
 
 ### QueryResponse
 

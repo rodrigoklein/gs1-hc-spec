@@ -1,27 +1,25 @@
 # QueryMessage Sample
 
-Following the workflow samples, in this document, we will explain how to query a HC Server to retrieve the results of processing.
+Following the previous workflow samples, in this section, we will explain how to query a trading partner webservice to retrieve the processing results.
 
-In this scenario, you are the CNPJ 15042274000195 and your trading partner has the CNPJ 83042274000167 that is a Distributor.
+In this hypothetical scenario, a manufacturer has the CNPJ 15042274000195 and its trading partner (distributor) has the CNPJ 83042274000167.
 
-You want to know how can you send the messages to his server.
+The manufacturer wants to know how messages need to be sent to the distributor’s webservice.
 
 - Sender - CNPJ 15042274000195 (Manufacturer)
 - Receiver - CNPJ 83042274000167 (Distributor)
 
-> Just to give a clear information, 
-> the messages in this sample
-> do not have the SIGNATURE tags
-
+> Just be aware that the messages 
+> in this example do not have 
+> the SIGNATURE tags
 
 ### Communication flow
 
 ![image info](../images/getPreferences.jpg)
 
-Based on the scenario above, the Manufacturer will call the getMessage method in the webservice of the Distributor.
+Based on the scenario above, the manufacturer will call the getMessage method in the distributor’s webservice.
 
-To do this, we have to create the QueryRequest message and send it through the Distributor Webservice.
-
+To perform this operation, a QueryRequest message has to be created and sent through the manufacturer’s webservice.
 
 ### Creating the QueryRequest
 
@@ -60,7 +58,7 @@ To do this, we have to create the QueryRequest message and send it through the D
 
 The Distributor webservice will answer with the list of the errors.
 
-> if you receive a message with 0 errors
+> if the manufacturer receives a message with 0 errors.
 
 ### QueryResponse with Message
 

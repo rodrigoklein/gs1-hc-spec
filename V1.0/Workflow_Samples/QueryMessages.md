@@ -1,10 +1,10 @@
 # QueryMessage Sample
 
-In this scenario you are a Distributor and you received a shipment from a Manufacturer but you didn´t receive the information.
+In this hypothetical scenario a distributor received a physical shipment from a manufacturer but the shipment message was not received.
 
-You need to have the information to avoid individual readings for each serial received.
+The distributor needs to have the information about all the serialized units with their respective hierarchies, to avoid individual readings for each serial number (sellable unit) received.
 
-In this scenario, you are the CNPJ 83042274000167 and you are receiving 3 serialized units from the CNPJ 15042274000195.
+In this scenario, the distributors has the CNPJ 83042274000167 and is receiving 3 serialized units from the CNPJ 15042274000195.
 
 - Sender - CNPJ 15042274000195 (Manufacturer)
 - Receiver - CNPJ 83042274000167 (Distributor)
@@ -17,9 +17,9 @@ In this scenario, you are the CNPJ 83042274000167 and you are receiving 3 serial
 
 ![image info](../images/Query.jpg)
 
-Based on the scenario above, the Distributor need to find messages in the Manufacturer.
+Based on the scenario above, the distributor needs to check whether messages at the manufacturer’s side are available or not.
 
-To do this, we have to create the QueryRequest message and send throught the Manufacturer Webservice.
+To do this, the distributor has to create the QueryRequest message and send to the manufacturer webservice.
 
 ### Creating the QueryRequest
 
@@ -61,7 +61,7 @@ To do this, we have to create the QueryRequest message and send throught the Man
 </QueryRequest>
 ```
 
-The Manufacturer webservice will answer with the list of messages involved in that transaction.
+The manufacturer’s webservice will answer with the list of messages involved on that transaction.
 
 ### QueryResponse
 
