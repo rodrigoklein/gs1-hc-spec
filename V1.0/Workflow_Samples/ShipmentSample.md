@@ -1,17 +1,19 @@
 # Shipment Sample
 
-Imagine you are a Manufacturer and you are trying to send a transaction to a Distributor.
+within a commercial transaction context between two trading partners.
 
-Firstly, you will need to generate the information about your shipment and submit it to the SNCM.
+In the shipment example below, we will use a hypothetical example of a manufacturer sending goods to a distributor.
 
-In this hypothetical scenario, you are the CNPJ 15042274000195 and you are sending 3 serialized units to your Distributor, with the CNPJ 83042274000167.
+Firstly, the manufacturer will need to generate the information about its shipment and submit it to the SNCM.
+
+In this hypothetical scenario, the manufacturer has the CNPJ 15042274000195 and is sending 3 serialized units to its Distributor, with the CNPJ 83042274000167.
 
 - Sender - CNPJ 15042274000195 (Manufacturer)
 - Receiver - CNPJ 83042274000167 (Distributor)
 
-> Just to make it clear, 
-> the messages in this example
-> do not have the SIGNATURE tags
+> Just be aware that the messages 
+> in this example do not have 
+> the SIGNATURE tags
 
 ### Communication flow
 
@@ -19,7 +21,7 @@ In this hypothetical scenario, you are the CNPJ 15042274000195 and you are sendi
 
 ### Sending message to SNCM
 
-This is the message you sent to SNCM:
+This is the message to be sent to the SNCM::
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -75,10 +77,9 @@ This is the message you sent to SNCM:
 
 ### Preparing the Horizontal Communication
 
-Once you have the message, you need to inform the Distributor that you are sending serialized goods.
-To perform this operation you need to package this information into the message named InboundMessage and you also need to know the address of the Distributor's webservice.
+Once the message is ready, the manufacturer needs to inform the distributor that the goods are being shipped. To perform this operation the manufacturer needs to package this information into the Horizontal Communication message called InboundMessage and the manufacturer also needs to know the address of the distributor's webservice.
 
-You have two options to handle the content within the InboundMessage message.
+There are two options to handle the information within the InboundMessage message.
 
 - Store the message in a public address and use the fileurl tag;
 - Encode the message in a BASE64 format and use the filecontent tag
@@ -91,11 +92,11 @@ The message in BASE64 is shown right below.
 PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8bXNnRXZ0SW4geG1sbnM9Imh0dHA6Ly9zbmNtLmFudmlzYS5nb3YuYnIvIj4KICAgIDxkb2NJZD4zOEM3ODQ1NkQ5NDQ0RTYwOUY0RTwvZG9jSWQ+CiAgICA8Y2NUaW1lPjIwMjEtMDgtMTlUMTk6Mjk6MzFaPC9jY1RpbWU+CiAgICA8dmVyPjAuMDE8L3Zlcj4KICAgIDxsYz5wdC1CUjwvbGM+CiAgICA8ZW52PjE8L2Vudj4KICAgIDxkZWNsYXJhbnQ+CiAgICAgICAgPGNucGo+MTMwNDIyNzQwMDAxOTU8L2NucGo+CiAgICA8L2RlY2xhcmFudD4KICAgIDxtYnJBZ3Q+MTMwNDIyNzQwMDAxOTU8L21ickFndD4KICAgIDx1c3JBZ3Q+VDIgU29mdHdhcmUgUy5BIC0gVjEuMDwvdXNyQWd0PgogICAgPGV2dHM+CiAgICAgICAgPHNocHQ+CiAgICAgICAgICAgIDxldnROb3RpZklkPjczQTFFMDk1QzNCNTQ3RjI4MUZGPC9ldnROb3RpZklkPgogICAgICAgICAgICA8cmVhbFRpbWU+dHJ1ZTwvcmVhbFRpbWU+CiAgICAgICAgICAgIDxwYXN0VGltZT4yMDIxLTA4LTE5VDE5OjI5OjMxWjwvcGFzdFRpbWU+CiAgICAgICAgICAgIDxmaXQ+ZmFsc2U8L2ZpdD4KICAgICAgICAgICAgPHBydG5yPgogICAgICAgICAgICAgICAgPGNucGo+ODMwNDIyNzQwMDAxNjc8L2NucGo+CiAgICAgICAgICAgIDwvcHJ0bnI+CiAgICAgICAgICAgIDxjYXJycz4KICAgICAgICAgICAgICAgIDxjYXI+CiAgICAgICAgICAgICAgICAgICAgPGNucGo+NzMwNDIyNzQwMDAxNjc8L2NucGo+CiAgICAgICAgICAgICAgICA8L2Nhcj4KICAgICAgICAgICAgPC9jYXJycz4KICAgICAgICAgICAgPHBsZD4KICAgICAgICAgICAgICAgIDxkdWk+CiAgICAgICAgICAgICAgICAgICAgPGd0aW4+MDc4OTEyMzQ1NDU0NTQ8L2d0aW4+CiAgICAgICAgICAgICAgICAgICAgPHNlcmw+MDEwMTAxMDEwMDEwMTA8L3Nlcmw+CiAgICAgICAgICAgICAgICAgICAgPGV4cD4yMDIxLTA4PC9leHA+CiAgICAgICAgICAgICAgICAgICAgPGxvdD5MT1RFPC9sb3Q+CiAgICAgICAgICAgICAgICA8L2R1aT4KICAgICAgICAgICAgICAgIDxkdWk+CiAgICAgICAgICAgICAgICAgICAgPGd0aW4+MDc4OTEyMzQ1NDU0NTQ8L2d0aW4+CiAgICAgICAgICAgICAgICAgICAgPHNlcmw+MDEwMTAxMDEwMDEwMTE8L3Nlcmw+CiAgICAgICAgICAgICAgICAgICAgPGV4cD4yMDIxLTA4PC9leHA+CiAgICAgICAgICAgICAgICAgICAgPGxvdD5MT1RFPC9sb3Q+CiAgICAgICAgICAgICAgICA8L2R1aT4KICAgICAgICAgICAgICAgIDxkdWk+CiAgICAgICAgICAgICAgICAgICAgPGd0aW4+MDc4OTEyMzQ1NDU0NTQ8L2d0aW4+CiAgICAgICAgICAgICAgICAgICAgPHNlcmw+MDEwMTAxMDEwMDEwMTI8L3Nlcmw+CiAgICAgICAgICAgICAgICAgICAgPGV4cD4yMDIxLTA4PC9leHA+CiAgICAgICAgICAgICAgICAgICAgPGxvdD5MT1RFPC9sb3Q+CiAgICAgICAgICAgICAgICA8L2R1aT4gICAgICAgICAgICAgICAgCiAgICAgICAgICAgIDwvcGxkPgogICAgICAgIDwvc2hwdD4KICAgIDwvZXZ0cz4KPC9tc2dFdnRJbj4K
 ```
 
-### Packaging the SNCM message inside the HC InboundMessage Envelope.
+### Packaging the SNCM message within the HC InboundMessage Envelope.
 
-Now we need to package the message into the InboundMessage in order to allow the message routing between the trading partners in the supply chain.
+Now the manufacturer needs to package the message into the InboundMessage in order to allow the message routing between the trading partners in the supply chain.
 
-When we pack this message within the InboundMessage, the XML below is created.
+When the manufacturer packs this message into the InboundMessage, the XML below is created.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -119,7 +120,7 @@ When we pack this message within the InboundMessage, the XML below is created.
 
 ### Sending the message through the DataWS Webservice.
 
-After that, you need to send the InboundMessage to the receiver (Distributor) webservice using the sendMessage method.
+Once the XML is created, the manufacturer needs to send the InboundMessage to the receiver (distributor) webservice using the sendMessage method.
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ws="http://ws.med.healthcare.gs1br.org/">
