@@ -7,8 +7,8 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 
 |Field|Description|Data Type|Sample|Note|
 |-----|-----------|---------|------|----|
-|id|The id of the Message|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID have to be unique inside the Trading Partner|
-|date|The date of the Message Generation|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined with GMT-0|
+|id|The Message ID|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID has to be unique for the Trading Partner|
+|date|Message Generation Date|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined for GMT-0|
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
 |sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
 |receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
@@ -50,7 +50,7 @@ The QueryRequest is a Message responsbile to carry information to query a HC Ser
 |sender.Value|Value of the sender Partner object|String|Y|15042274000199||
 |receiver.Key|Key of the receiver Partner object|String|Y|Ex: CNPJ||
 |receiver.Value|Value of the sender Partner object|String|Y|15042274000499||
-|dateFrom|Start date of the query|Datetime|N|2021-10-04T16:16:39Z||
-|dateTo|End date of the query|Datetime|N|2021-10-04T16:16:39Z||
+|dateFrom|Query Start Date|Datetime|N|2021-10-04T16:16:39Z||
+|dateTo|Query End Date|Datetime|N|2021-10-04T16:16:39Z||
 |additionalInfo.key|Key of the additionalInfo tag|String|N|InvoiceNumber||
 |additionalInfo.value|Value of the additionalInfo tag|String|N|10||
