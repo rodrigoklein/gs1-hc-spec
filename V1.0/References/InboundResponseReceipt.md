@@ -1,16 +1,16 @@
 # InboundResponse Reference
 
-The InboundResponse is a Message responsible  to provide the feedback if the message was accepted by the receiver.
+The InboundResponse is a Message aimed to provide feedback to the sender that the message was accepted by the receiver.
 
-> The receipt information is not the final information and means that the message was accepted but not processed.
+> The receipt information is not the final response, meaning the message was accepted but not processed.
 > To ask if the message was processed please see the Query Section
 
 ### Fields of the Message with Receipt
 
 |Field|Description|Data Type|Sample|Note|
 |-----|-----------|---------|------|----|
-|id|The id of the Message|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID have to be unique inside the Trading Partner|
-|date|The date of the Message Generation|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined with GMT-0|
+|id|The Message ID|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID has to be unique for the Trading Partner|
+|date|Message Generation Date|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined as GMT-0|
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
 |sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
 |receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
@@ -37,8 +37,8 @@ The InboundResponse is a Message responsible  to provide the feedback if the mes
 
 |Field|Description|Data Type|Sample|Note|
 |-----|-----------|---------|------|----|
-|id|The id of the Message|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID have to be unique inside the Trading Partner|
-|date|The date of the Message Generation|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined with GMT-0|
+|id|The Message ID|Alphanumeric String|123456978696050595050AAAABBBDDDDD| The ID has to be unique for the Trading Partner|
+|date|Message Generation Date|Datetime with Timezone|2021-10-03T22:06:45Z| The date reference is always defined as GMT-0|
 |schemaVersion|The version of the GS1 HC Schema used|Double|1.0||
 |sender|The Sender of the Transaction|Partner (see XSD)|```<sender><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></sender>```||
 |receiver|The Receiver of the Transaction|Partner (see XSD)|```<receiver><partnerKey>CNPJ</partnerKey><partnerValue>15041786000176</partnerValue></receiver>```||
