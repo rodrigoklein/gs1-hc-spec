@@ -97,8 +97,8 @@ The Distributor webservice will answer with the list of the errors.
     </receiver>
     <response>
         <error>
-            <errorCode>1001</errorCode>
-            <errorDescription>Unknown Error</errorDescription>
+            <errorCode>400</errorCode>
+            <errorDescription>Unable to process</errorDescription>
         </error>
     </response>
 </QueryResponse>

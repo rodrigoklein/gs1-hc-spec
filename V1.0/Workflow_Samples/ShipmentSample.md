@@ -197,8 +197,8 @@ If you get an error tag instead of a receipt, be aware that the message cannot b
         <partnerValue>83042274000167</partnerValue>
     </receiver>
     <error>
-        <errorCode>1001</errorCode>
-        <errorDescription>No data</errorDescription>
+        <errorCode>401</errorCode>
+        <errorDescription>Unauthorized</errorDescription>
     </error>
 </InboundResponse>
 ```

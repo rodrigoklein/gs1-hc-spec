@@ -203,8 +203,8 @@ If an error tag appears in the message instead of a receipt confirmation, be awa
         <partnerValue>83042274000167</partnerValue>
     </receiver>
     <error>
-        <errorCode>1001</errorCode>
-        <errorDescription>No data</errorDescription>
+        <errorCode>401</errorCode>
+        <errorDescription>Unauthorized</errorDescription>
     </error>
 </InboundResponse>
 ```
