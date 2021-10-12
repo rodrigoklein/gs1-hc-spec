@@ -59,14 +59,12 @@ The InboundResponse is a Message aimed to provide feedback to the sender that th
     </receiver>
     <response>
         <error>
-            <errorCode>1001</errorCode>
-            <errorDescription>No data</errorDescription>
-        </error>
-        <error>
-            <errorCode>2001</errorCode>
+            <errorCode>402</errorCode>
             <errorDescription>Invalid parameters</errorDescription>
         </error>
     </response>
 </InboundResponse>
 ```
+
+
 

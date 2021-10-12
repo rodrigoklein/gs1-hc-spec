@@ -32,15 +32,18 @@ The InboundResponse is a Message responsible to provide feedback if the message 
     </receiver>
     <response>
         <error>
-            <errorCode>1001</errorCode>
-            <errorDescription>No data</errorDescription>
-        </error>
-        <error>
-            <errorCode>2001</errorCode>
+            <errorCode>402</errorCode>
             <errorDescription>Invalid parameters</errorDescription>
         </error>
     </response>
 </InboundResponse>
 ```
 
+### List of error codes
 
+|Error Code|Error Description|Note|
+|----------|-----------------|------|
+|400|Unable to process|The server is unable to process the request due to problems in the message|
+|401|Unauthorized|The sender is not authorized to send messages to this server|
+|402|Invalid Parameters|The server is unable to process the request due to invalid parameters| 
+|500|Server Error|The server is unable to process the request due to problems in the server| 
