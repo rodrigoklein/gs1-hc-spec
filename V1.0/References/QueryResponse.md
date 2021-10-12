@@ -79,8 +79,8 @@ The QueryResponse is a Message returned by a Server when it receives a QueryRequ
     </receiver>  
 	<response>	
 		<error>
-			<errorCode>1001</errorCode>
-			<errorDescription>Unknown Error</errorDescription>
+			<errorCode>400</errorCode>
+			<errorDescription>Unable to process</errorDescription>
 		</error>
     </response>
 </QueryResponse>
@@ -102,8 +102,8 @@ The QueryResponse is a Message returned by a Server when it receives a QueryRequ
     </receiver>
     <response>
         <message>
-            <messageCode>9999</messageCode>
-            <messageDescription>Message Received</messageDescription>
+            <messageCode>200</messageCode>
+            <messageDescription>Message Accepted</messageDescription>
         </message>
     </response>
 </QueryResponse>
