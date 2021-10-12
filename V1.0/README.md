@@ -46,6 +46,7 @@ The HC principles are following the same technical stack as the SNCM System, mea
 
 The authentication of the Horizontal Communication uses Digital Certificate with Mutual authentication to stabilish a secured channel between two parts. The authentication schema works like the image below. 
 
+
 ![image info](images/authSchema.png)
 
 Below you can find a Sample Signed message with the specific tags needed by the XML Signature using X509 Certificates.
