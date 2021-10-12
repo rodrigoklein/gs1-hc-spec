@@ -87,7 +87,7 @@ The QueryResponse is a Message returned by a Server when it receives a QueryRequ
 ```
 ### Sample with messages
 
-### QueryResponse with Message
+#### QueryResponse with Message
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
