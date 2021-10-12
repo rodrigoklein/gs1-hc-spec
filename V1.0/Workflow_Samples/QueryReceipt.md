@@ -84,7 +84,7 @@ The Distributor webservice will answer with the list of the errors.
 
 ### QueryResponse with Error
 
-````xml
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-06T12:52:01Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
    <sender>
