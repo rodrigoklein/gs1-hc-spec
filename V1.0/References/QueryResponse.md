@@ -111,7 +111,7 @@ The QueryResponse is a Message returned by a Server when it receives a QueryRequ
 
 The messages and the errors were inspired in HTTP request codes and you can see below the small list of codes allowed.
 
-> This is a start point of the message and error list. 
+> This is a start point of the message and error list.<br>
 > The list can be improved in the future.
 
 ### List of message codes
