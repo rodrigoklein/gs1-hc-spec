@@ -114,7 +114,7 @@ The messages and the errors were inspired in HTTP request codes and you can see 
 
 ### List of messages
 
-|Message Code|Message Description|------|
+|Message Code|Message Description|Note|
 |----------|-----------------|------|
 |200|Message Accepted|The message was accepted|
 |201|Message Processed|The Message was Processed|
