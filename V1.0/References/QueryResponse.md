@@ -124,6 +124,6 @@ The messages and the errors were inspired in HTTP request codes and you can see 
 
 |Error Code|Error Description|Note|
 |----------|-----------------|------|
-|400|Unable to process the request|The server is unable to process the request due to problems in the message|
+|400|Unable to process|The server is unable to process the request due to problems in the message|
 |401|Unauthorized|The sender is not authorized to send messages to this server|
 |500|Server Error|The server is unable to process the request due to problems in the server| 
