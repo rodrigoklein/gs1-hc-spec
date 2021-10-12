@@ -85,3 +85,45 @@ The QueryResponse is a Message returned by a Server when it receives a QueryRequ
     </response>
 </QueryResponse>
 ```
+### Sample with messages
+
+### QueryResponse with Message
+
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QueryResponse id="123456978696050595050AAAABBBDDDDD" date="2021-10-06T12:52:01Z" schemaVersion="1.0" xmlns="http://hc.gs1br.org.br/">
+    <sender>
+        <partnerKey>CNPJ</partnerKey>
+        <partnerValue>15042274000195</partnerValue>
+    </sender>
+    <receiver>
+    	   <partnerKey>CNPJ</partnerKey>
+        <partnerKey>83042274000167</partnerKey>
+    </receiver>
+    <response>
+        <message>
+            <messageCode>9999</messageCode>
+            <messageDescription>Message Received</messageDescription>
+        </message>
+    </response>
+</QueryResponse>
+```
+
+The messages and the errors were inspired in HTTP request codes and you can see below the small list of codes allowed.
+
+
+### List of messages
+
+|Message Code|Message Description|------|
+|----------|-----------------|------|
+|200|Message Accepted|The message was accepted|
+|201|Message Processed|The Message was Processed|
+
+
+### List of errors
+
+|Error Code|Error Description|Note|
+|----------|-----------------|------|
+|400|Unable to process the request|The server is unable to process the request due to problems in the message|
+|401|Unauthorized|The sender is not authorized to send messages to this server|
+|500|Server Error|The server is unable to process the request due to problems in the server| 
