@@ -8,7 +8,11 @@ If you are reading this document, probably you are developing something or in ch
 
 Based on ANVISA´s decision to keep their focus to handle only the Vertical Communication, the market had to find a collaborative way to technically align on how the track & trace communication among trading partners will occur. This alignment also had a basic assumption that trading partners should not implement two different communication models for the same market.
 
+![Traditional HC](images/traditional_hc.jpg)
+
 This search for an effective solution also considered standard interfaces as a way to provide faster onboarding to the trading partners in Brazil. Looking only in the private market, Brazil has more than 70000 drugstores, 2000 distributors, and 400 manufacturers to connect. It can consume a lot of time (and money) if we follow the traditional approach that service providers usually use to connect trading partners.
+
+![Gs1 HC](images/gs1_hc.jpg)
 
 In the image below the red line represents the Vertical Communication, which is the data exchange happening between companies and the regulatory authority (ANVISA). The data exchange in blue represents the communication among trading partners in the supply chain, which is the focus of this HC standard.
 
