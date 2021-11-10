@@ -189,3 +189,18 @@ The details about how the HC choreography works is shown throughout the workflow
 | Query Preferences   | This workflow demonstrate how to query Preferences from a Trading Partner |  [Reference](Workflow_Samples/QueryPreferences.md) |
 | Query a Receipt   | This workflow demonstrate how to query to retrieve the results of a sending |  [Reference](Workflow_Samples/QueryReceipt.md) |
 
+#### How to Process the ICP-Brasil Certificate information
+
+The certificates used in Brazil to Authenticate the companies are part of a Public Infrastructure that can provide us the way to identify any company in Brazil. The certificates are basically X509 Certificates with some local information reserved to be used in ICP-Brasil rules.
+
+Inside the certificate we have the CNPJ information inside the Subject Alternative Name. This infomation can be retrieved from the publica certificate in each message and have to be used to authorize the trading partner inside the systems.
+
+The CNPJ field is stored as "otherName" inside "Subject Alternative Name" as below.
+
+| Field           | Description |  Reference |
+|-----------------|-------------|------------|
+|OID 2.16.76.1.3.3|CNPJ of the company| ITI IN 21/Requirement  I18|
+
+* For more information please read
+https://www.in.gov.br/en/web/dou/-/instrucao-normativa-iti-n-15-de-18-de-novembro-de-2020-289210694
+https://www.in.gov.br/en/web/dou/-/instrucao-normativa-iti-n-21-de-15-de-dezembro-de-2020-295257685
