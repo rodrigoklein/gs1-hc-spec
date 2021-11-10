@@ -36,4 +36,6 @@ Please if you have any doubt, please send message to ricardo.melo@gs1br.org or r
 
 ################################
 
-[Version 1.0] (gs1-hc-spec/V1.0/)
+[Version 1.0](gs1-hc-spec/V1.0/)
+
+[InboundResponse](SoapUI_Requests/sendMessageResponse.xml)
