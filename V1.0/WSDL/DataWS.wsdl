@@ -103,7 +103,7 @@
 	</wsdl:binding>
 	<wsdl:service name="DataWSService">
 		<wsdl:port binding="tns:DataWSServiceSoapBinding" name="DataWSPort">
-			<soap:address location="http://127.0.1.1:8080/mdw/DataWS"/>
+			<soap:address location="https://hc.t2software.com.br/mdw/DataWS"/>
 		</wsdl:port>
 	</wsdl:service>
 </wsdl:definitions>
