@@ -202,5 +202,6 @@ The CNPJ field is stored as "otherName" inside "Subject Alternative Name" as bel
 |OID 2.16.76.1.3.3|CNPJ of the company| ITI IN 21/Requirement  I18|
 
 * For more information please read
+
 https://www.in.gov.br/en/web/dou/-/instrucao-normativa-iti-n-15-de-18-de-novembro-de-2020-289210694
 https://www.in.gov.br/en/web/dou/-/instrucao-normativa-iti-n-21-de-15-de-dezembro-de-2020-295257685
